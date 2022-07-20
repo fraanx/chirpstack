@@ -26,6 +26,10 @@ jobs:
       -
         name: Run tests
         run: make test
+      -
+        name: Make cache accessible to caching action
+        run: |
+          sudo chown $(whoami):$(whoami) -R .rust
 
   dist:
     needs: tests
@@ -58,6 +62,10 @@ jobs:
         run: |
           aws s3 sync dist s3://builds.loraserver.io/chirpstack
         if: startsWith(github.ref, 'refs/tags/v')
+      -
+        name: Make cache accessible to caching action
+        run: |
+          sudo chown $(whoami):$(whoami) -R .rust
 
   docker:
     needs: tests
@@ -66,12 +74,6 @@ jobs:
       -
         name: Checkout
         uses: actions/checkout@v2
-      -
-        name: Cargo cache
-        uses: actions/cache@v3
-        with:
-          path: .rust/
-          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
       -
         name: Docker meta
         id: meta
