@@ -2,7 +2,7 @@
 
 # Build distributable binaries.
 dist:
-	docker-compose run --rm chirpstack make dist
+	docker-compose run --rm --no-deps chirpstack make dist
 
 # Set the versions
 version:
@@ -21,7 +21,7 @@ api: version
 
 # Builds the UI.
 build-ui:
-	docker-compose run --rm chirpstack-ui make build
+	docker-compose run --rm --no-deps chirpstack-ui make build
 
 # Enters the devshell for ChirpStack development.
 devshell:
