@@ -1,18 +1,8 @@
 .PHONY: dist api
 
-# Builds a debug / development binary.
-build-debug:
-	docker-compose run --rm chirpstack make debug
-
-# Builds a release binary.
-build-release:
-	docker-compose run --rm chirpstack make release
-
 # Build distributable binaries.
 dist:
-	# The pull is needed as else the specified platform is not respected.
-	docker-compose pull chirpstack-build-amd64 && docker-compose run --rm chirpstack-build-amd64 make dist
-	docker-compose pull chirpstack-build-arm64 && docker-compose run --rm chirpstack-build-arm64 make dist
+	docker-compose run --rm chirpstack make dist
 
 # Set the versions
 version:
@@ -52,5 +42,5 @@ test-server: build-ui
 
 # Update the Docker development images
 update-images:
-	docker-compose pull chirpstack
+	docker-compose build chirpstack
 	docker-compose build chirpstack-ui

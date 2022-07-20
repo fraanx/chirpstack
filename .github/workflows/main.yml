@@ -15,6 +15,12 @@ jobs:
         name: Checkout
         uses: actions/checkout@v2
       -
+        name: Cargo cache
+        uses: actions/cache@v3
+        with:
+          path: .rust/
+          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
+      -
         name: Build UI
         run: make build-ui
       -
@@ -24,17 +30,16 @@ jobs:
   dist:
     needs: tests
     runs-on: ubuntu-latest
-    if: startsWith(github.ref, 'refs/tags/v')
     steps:
       -
         name: Checkout
         uses: actions/checkout@v2
       -
-        name: Set up QEMU
-        uses: docker/setup-qemu-action@v1
-      -
-        name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v1
+        name: Cargo cache
+        uses: actions/cache@v3
+        with:
+          path: .rust/
+          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
       -
         name: Build UI
         run: make build-ui
@@ -52,15 +57,21 @@ jobs:
         name: Upload binaries to S3
         run: |
           aws s3 sync dist s3://builds.loraserver.io/chirpstack
+        if: startsWith(github.ref, 'refs/tags/v')
 
   docker:
     needs: tests
     runs-on: ubuntu-latest
-    if: startsWith(github.ref, 'refs/tags/v')
     steps:
       -
         name: Checkout
         uses: actions/checkout@v2
+      -
+        name: Cargo cache
+        uses: actions/cache@v3
+        with:
+          path: .rust/
+          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
       -
         name: Docker meta
         id: meta
@@ -89,7 +100,7 @@ jobs:
         id: docker_build
         uses: docker/build-push-action@v2
         with:
-          platforms: linux/amd64,linux/arm64
+          platforms: linux/amd64,linux/arm/v7,linux/arm64
           push: ${{ startsWith(github.ref, 'refs/tags/v') }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
