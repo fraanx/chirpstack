@@ -81,7 +81,7 @@ release-rpm-armv7hf:
 	BINDGEN_EXTRA_CLANG_ARGS="--sysroot=/usr/arm-linux-gnueabihf" \
 	PKG_CONFIG_SYSROOT_DIR="/usr/arm-linux-gnueabihf" \
 		cargo rpm build --target armv7-unknown-linux-gnueabihf
-	find ../target/release/rpmbuild/RPMS -type f -exec cp {} /chirpstack/dist \;
+	find ../target/armv7-unknown-linux-gnueabihf/release/rpmbuild/RPMS -type f -exec cp {} /chirpstack/dist \;
 
 release-rpm-arm64:
 	apt update && apt install -y libpq-dev:arm64
@@ -89,7 +89,7 @@ release-rpm-arm64:
 	BINDGEN_EXTRA_CLANG_ARGS="--sysroot=/usr/aarch64-linux-gnu" \
 	PKG_CONFIG_SYSROOT_DIR="/usr/aarch64-linux-gnu" \
 		cargo rpm build --target aarch64-unknown-linux-gnu
-	find ../target/release/rpmbuild/RPMS -type f -exec cp {} /chirpstack/dist \;
+	find ../target/aarch64-unknown-linux-gnu/release/rpmbuild/RPMS -type f -exec cp {} /chirpstack/dist \;
 
 release-targz-amd64: release-amd64
 	mkdir -p /chirpstack/dist
