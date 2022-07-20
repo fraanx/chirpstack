@@ -59,7 +59,7 @@ release-deb-armv7hf:
 	BINDGEN_EXTRA_CLANG_ARGS="--sysroot=/usr/arm-linux-gnueabihf" \
 	PKG_CONFIG_SYSROOT_DIR="/usr/arm-linux-gnueabihf" \
 		cargo deb --target armv7-unknown-linux-gnueabihf
-	cp ../target/debian/*.deb /chirpstack/dist
+	cp ../target/armv7-unknown-linux-gnueabihf/debian/*.deb /chirpstack/dist
 
 release-deb-arm64:
 	apt update && apt install -y libpq-dev:arm64
@@ -67,7 +67,7 @@ release-deb-arm64:
 	BINDGEN_EXTRA_CLANG_ARGS="--sysroot=/usr/aarch64-linux-gnu" \
 	PKG_CONFIG_SYSROOT_DIR="/usr/aarch64-linux-gnu" \
 		cargo deb --target aarch64-unknown-linux-gnu
-	cp ../target/debian/*.deb /chirpstack/dist
+	cp ../target/aarch64-unknown-linux-gnu/debian/*.deb /chirpstack/dist
 
 release-rpm-amd64:
 	apt update && apt install -y libpq-dev:amd64
