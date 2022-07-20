@@ -35,6 +35,7 @@ jobs:
   dist:
     # needs: tests
     runs-on: ubuntu-latest
+    if: false
     steps:
       -
         name: Checkout
@@ -71,7 +72,6 @@ jobs:
   docker:
     # needs: tests
     runs-on: ubuntu-latest
-    if: false
     steps:
       -
         name: Checkout
