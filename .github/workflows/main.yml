@@ -33,7 +33,7 @@ jobs:
           sudo chown $(whoami):$(whoami) -R .rust
 
   dist:
-    needs: tests
+    # needs: tests
     runs-on: ubuntu-latest
     steps:
       -
@@ -69,7 +69,7 @@ jobs:
           sudo chown $(whoami):$(whoami) -R .rust
 
   docker:
-    needs: tests
+    # needs: tests
     runs-on: ubuntu-latest
     if: false
     steps:
