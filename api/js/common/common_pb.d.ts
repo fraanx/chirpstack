@@ -151,6 +151,7 @@ export interface RegionMap {
   IN865: 9;
   RU864: 10;
   ISM2400: 11;
+  SS001: 15;
 }
 
 export const Region: RegionMap;

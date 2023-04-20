@@ -750,6 +750,7 @@ pub fn get_required_snr_for_sf(sf: u8) -> Result<f32> {
         10 => -15.0,
         11 => -17.5,
         12 => -20.0,
+        64 => -20.0,
         _ => {
             return Err(anyhow!("Unknown sf {} for get_required_snr_for_sf", sf));
         }

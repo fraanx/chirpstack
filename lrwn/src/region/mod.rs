@@ -24,6 +24,7 @@ pub mod ism2400;
 pub mod kr920;
 pub mod ru864;
 pub mod us915;
+pub mod ss001;
 
 #[derive(Deserialize, Serialize, Copy, Clone, Debug, Eq, PartialEq, AsExpression, FromSqlRow)]
 #[allow(non_camel_case_types)]
@@ -43,6 +44,7 @@ pub enum CommonName {
     IN865,
     RU864,
     ISM2400,
+    SS001,
 }
 
 impl fmt::Display for CommonName {
@@ -96,6 +98,7 @@ impl FromStr for CommonName {
             "IN865" => CommonName::IN865,
             "RU864" => CommonName::RU864,
             "ISM2400" => CommonName::ISM2400,
+            "SS001" => CommonName::SS001,
             _ => {
                 return Err(anyhow!("Unexpected CommonName: {}", s));
             }
@@ -884,6 +887,7 @@ pub fn get(
         CommonName::EU868 => Box::new(eu868::Configuration::new(repeater_compatible)),
         CommonName::IN865 => Box::new(in865::Configuration::new(repeater_compatible)),
         CommonName::ISM2400 => Box::new(ism2400::Configuration::new(repeater_compatible)),
+        CommonName::SS001 => Box::new(ss001::Configuration::new(repeater_compatible)),
         CommonName::KR920 => Box::new(kr920::Configuration::new(repeater_compatible)),
         CommonName::RU864 => Box::new(ru864::Configuration::new(repeater_compatible)),
         CommonName::US915 => Box::new(us915::Configuration::new(repeater_compatible)),

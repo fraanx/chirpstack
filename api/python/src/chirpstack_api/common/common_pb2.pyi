@@ -52,6 +52,7 @@ RP002_1_0_1: RegParamsRevision
 RP002_1_0_2: RegParamsRevision
 RP002_1_0_3: RegParamsRevision
 RU864: Region
+SS001: Region
 UNCONFIRMED_DATA_DOWN: MType
 UNCONFIRMED_DATA_UP: MType
 UNKNOWN: LocationSource

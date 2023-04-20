@@ -34,28 +34,28 @@ namespace Chirpstack.Common {
             "ZGF0YXNldHMYAyADKAsyFS5jb21tb24uTWV0cmljRGF0YXNldBIgCgRraW5k",
             "GAQgASgOMhIuY29tbW9uLk1ldHJpY0tpbmQiLAoNTWV0cmljRGF0YXNldBIN",
             "CgVsYWJlbBgBIAEoCRIMCgRkYXRhGAIgAygCKiwKCk1vZHVsYXRpb24SCAoE",
-            "TE9SQRAAEgcKA0ZTSxABEgsKB0xSX0ZIU1MQAiqqAQoGUmVnaW9uEgkKBUVV",
+            "TE9SQRAAEgcKA0ZTSxABEgsKB0xSX0ZIU1MQAiq1AQoGUmVnaW9uEgkKBUVV",
             "ODY4EAASCQoFVVM5MTUQAhIJCgVDTjc3ORADEgkKBUVVNDMzEAQSCQoFQVU5",
             "MTUQBRIJCgVDTjQ3MBAGEgkKBUFTOTIzEAcSCwoHQVM5MjNfMhAMEgsKB0FT",
             "OTIzXzMQDRILCgdBUzkyM180EA4SCQoFS1I5MjAQCBIJCgVJTjg2NRAJEgkK",
-            "BVJVODY0EAoSCwoHSVNNMjQwMBALKrMBCgVNVHlwZRIQCgxKT0lOX1JFUVVF",
-            "U1QQABIPCgtKT0lOX0FDQ0VQVBABEhcKE1VOQ09ORklSTUVEX0RBVEFfVVAQ",
-            "AhIZChVVTkNPTkZJUk1FRF9EQVRBX0RPV04QAxIVChFDT05GSVJNRURfREFU",
-            "QV9VUBAEEhcKE0NPTkZJUk1FRF9EQVRBX0RPV04QBRISCg5SRUpPSU5fUkVR",
-            "VUVTVBAGEg8KC1BST1BSSUVUQVJZEAcqfgoKTWFjVmVyc2lvbhIRCg1MT1JB",
-            "V0FOXzFfMF8wEAASEQoNTE9SQVdBTl8xXzBfMRABEhEKDUxPUkFXQU5fMV8w",
-            "XzIQAhIRCg1MT1JBV0FOXzFfMF8zEAMSEQoNTE9SQVdBTl8xXzBfNBAEEhEK",
-            "DUxPUkFXQU5fMV8xXzAQBSplChFSZWdQYXJhbXNSZXZpc2lvbhIFCgFBEAAS",
-            "BQoBQhABEg8KC1JQMDAyXzFfMF8wEAISDwoLUlAwMDJfMV8wXzEQAxIPCgtS",
-            "UDAwMl8xXzBfMhAEEg8KC1JQMDAyXzFfMF8zEAUqjgEKDkxvY2F0aW9uU291",
-            "cmNlEgsKB1VOS05PV04QABIHCgNHUFMQARIKCgZDT05GSUcQAhIVChFHRU9f",
-            "UkVTT0xWRVJfVERPQRADEhUKEUdFT19SRVNPTFZFUl9SU1NJEAQSFQoRR0VP",
-            "X1JFU09MVkVSX0dOU1MQBRIVChFHRU9fUkVTT0xWRVJfV0lGSRAGKisKC0Fn",
-            "Z3JlZ2F0aW9uEggKBEhPVVIQABIHCgNEQVkQARIJCgVNT05USBACKjIKCk1l",
-            "dHJpY0tpbmQSCwoHQ09VTlRFUhAAEgwKCEFCU09MVVRFEAESCQoFR0FVR0UQ",
-            "AkJpChFpby5jaGlycHN0YWNrLmFwaUILQ29tbW9uUHJvdG9QAVoxZ2l0aHVi",
-            "LmNvbS9jaGlycHN0YWNrL2NoaXJwc3RhY2svYXBpL2dvL3Y0L2NvbW1vbqoC",
-            "EUNoaXJwc3RhY2suQ29tbW9uYgZwcm90bzM="));
+            "BVJVODY0EAoSCwoHSVNNMjQwMBALEgkKBVNTMDAxEA8qswEKBU1UeXBlEhAK",
+            "DEpPSU5fUkVRVUVTVBAAEg8KC0pPSU5fQUNDRVBUEAESFwoTVU5DT05GSVJN",
+            "RURfREFUQV9VUBACEhkKFVVOQ09ORklSTUVEX0RBVEFfRE9XThADEhUKEUNP",
+            "TkZJUk1FRF9EQVRBX1VQEAQSFwoTQ09ORklSTUVEX0RBVEFfRE9XThAFEhIK",
+            "DlJFSk9JTl9SRVFVRVNUEAYSDwoLUFJPUFJJRVRBUlkQByp+CgpNYWNWZXJz",
+            "aW9uEhEKDUxPUkFXQU5fMV8wXzAQABIRCg1MT1JBV0FOXzFfMF8xEAESEQoN",
+            "TE9SQVdBTl8xXzBfMhACEhEKDUxPUkFXQU5fMV8wXzMQAxIRCg1MT1JBV0FO",
+            "XzFfMF80EAQSEQoNTE9SQVdBTl8xXzFfMBAFKmUKEVJlZ1BhcmFtc1Jldmlz",
+            "aW9uEgUKAUEQABIFCgFCEAESDwoLUlAwMDJfMV8wXzAQAhIPCgtSUDAwMl8x",
+            "XzBfMRADEg8KC1JQMDAyXzFfMF8yEAQSDwoLUlAwMDJfMV8wXzMQBSqOAQoO",
+            "TG9jYXRpb25Tb3VyY2USCwoHVU5LTk9XThAAEgcKA0dQUxABEgoKBkNPTkZJ",
+            "RxACEhUKEUdFT19SRVNPTFZFUl9URE9BEAMSFQoRR0VPX1JFU09MVkVSX1JT",
+            "U0kQBBIVChFHRU9fUkVTT0xWRVJfR05TUxAFEhUKEUdFT19SRVNPTFZFUl9X",
+            "SUZJEAYqKwoLQWdncmVnYXRpb24SCAoESE9VUhAAEgcKA0RBWRABEgkKBU1P",
+            "TlRIEAIqMgoKTWV0cmljS2luZBILCgdDT1VOVEVSEAASDAoIQUJTT0xVVEUQ",
+            "ARIJCgVHQVVHRRACQmkKEWlvLmNoaXJwc3RhY2suYXBpQgtDb21tb25Qcm90",
+            "b1ABWjFnaXRodWIuY29tL2NoaXJwc3RhY2svY2hpcnBzdGFjay9hcGkvZ28v",
+            "djQvY29tbW9uqgIRQ2hpcnBzdGFjay5Db21tb25iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Chirpstack.Common.Modulation), typeof(global::Chirpstack.Common.Region), typeof(global::Chirpstack.Common.MType), typeof(global::Chirpstack.Common.MacVersion), typeof(global::Chirpstack.Common.RegParamsRevision), typeof(global::Chirpstack.Common.LocationSource), typeof(global::Chirpstack.Common.Aggregation), typeof(global::Chirpstack.Common.MetricKind), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -141,6 +141,10 @@ namespace Chirpstack.Common {
     /// ISM2400 (LoRaWAN 2.4 GHz)
     /// </summary>
     [pbr::OriginalName("ISM2400")] Ism2400 = 11,
+    /// <summary>
+    /// SS001
+    /// </summary>
+    [pbr::OriginalName("SS001")] Ss001 = 15,
   }
 
   public enum MType {
