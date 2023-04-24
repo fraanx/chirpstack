@@ -4,7 +4,7 @@ use anyhow::Result;
 
 use super::{
     Channel, CommonName, DataRate, DataRateModulation, Defaults, FskDataRate, LinkADRReqPayload,
-    LoraDataRate, LrFhssDataRate, MacVersion, MaxPayloadSize, Region, RegionBaseConfig, Revision,
+    LoraDataRate, XssDataRate, MacVersion, MaxPayloadSize, Region, RegionBaseConfig, Revision,
 };
 use crate::{CFList, DevAddr};
 
@@ -25,7 +25,7 @@ impl Configuration {
                         DataRate {
                             uplink: true,
                             downlink: false,
-                            modulation: DataRateModulation::Lora(LoraDataRate {
+                            modulation: DataRateModulation::Xss(XssDataRate {
                                 spreading_factor: 64,
                                 bandwidth: 240000,
                                 coding_rate: "4/5".into(),
@@ -37,7 +37,7 @@ impl Configuration {
                         DataRate {
                             uplink: true,
                             downlink: false,
-                            modulation: DataRateModulation::Lora(LoraDataRate {
+                            modulation: DataRateModulation::Xss(XssDataRate {
                                 spreading_factor: 128,
                                 bandwidth: 240000,
                                 coding_rate: "4/5".into(),
@@ -49,7 +49,7 @@ impl Configuration {
                         DataRate {
                             uplink: true,
                             downlink: false,
-                            modulation: DataRateModulation::Lora(LoraDataRate {
+                            modulation: DataRateModulation::Xss(XssDataRate {
                                 spreading_factor: 255,
                                 bandwidth: 240000,
                                 coding_rate: "4/5".into(),
@@ -61,7 +61,7 @@ impl Configuration {
                         DataRate {
                             uplink: true,
                             downlink: false,
-                            modulation: DataRateModulation::Lora(LoraDataRate {
+                            modulation: DataRateModulation::Xss(XssDataRate {
                                 spreading_factor: 64,
                                 bandwidth: 240000,
                                 coding_rate: "4/5".into(),
@@ -73,7 +73,7 @@ impl Configuration {
                         DataRate {
                             uplink: true,
                             downlink: false,
-                            modulation: DataRateModulation::Lora(LoraDataRate {
+                            modulation: DataRateModulation::Xss(XssDataRate {
                                 spreading_factor: 128,
                                 bandwidth: 240000,
                                 coding_rate: "4/5".into(),
@@ -85,7 +85,7 @@ impl Configuration {
                         DataRate {
                             uplink: true,
                             downlink: false,
-                            modulation: DataRateModulation::Lora(LoraDataRate {
+                            modulation: DataRateModulation::Xss(XssDataRate {
                                 spreading_factor: 255,
                                 bandwidth: 240000,
                                 coding_rate: "4/5".into(),
@@ -97,7 +97,7 @@ impl Configuration {
                         DataRate {
                             uplink: false,
                             downlink: true,
-                            modulation: DataRateModulation::Lora(LoraDataRate {
+                            modulation: DataRateModulation::Xss(XssDataRate {
                                 spreading_factor: 16,
                                 bandwidth: 2400000,
                                 coding_rate: "4/5".into(),
@@ -686,7 +686,7 @@ mod tests {
         let tests: Vec<(bool, DataRateModulation, u8)> = vec![
             (
                 true,
-                DataRateModulation::Lora(LoraDataRate {
+                DataRateModulation::Xss(XssDataRate {
                     spreading_factor: 64,
                     bandwidth: 240000,
                     coding_rate: "4/5".into(),
@@ -695,7 +695,7 @@ mod tests {
             ),
             (
                 false,
-                DataRateModulation::Lora(LoraDataRate {
+                DataRateModulation::Xss(XssDataRate {
                     spreading_factor: 128,
                     bandwidth: 240000,
                     coding_rate: "4/5".into(),
@@ -704,7 +704,7 @@ mod tests {
             ),
             (
                 true,
-                DataRateModulation::Lora(LoraDataRate {
+                DataRateModulation::Xss(XssDataRate {
                     spreading_factor: 255,
                     bandwidth: 240000,
                     coding_rate: "4/5".into(),
@@ -713,7 +713,7 @@ mod tests {
             ),
             (
                 false,
-                DataRateModulation::Lora(LoraDataRate {
+                DataRateModulation::Xss(XssDataRate {
                     spreading_factor: 64,
                     bandwidth: 240000,
                     coding_rate: "4/5".into(),
@@ -722,7 +722,7 @@ mod tests {
             ),
             (
                 true,
-                DataRateModulation::Lora(LoraDataRate {
+                DataRateModulation::Xss(XssDataRate {
                     spreading_factor: 16,
                     bandwidth: 2400000,
                     coding_rate: "4/5".into(),
