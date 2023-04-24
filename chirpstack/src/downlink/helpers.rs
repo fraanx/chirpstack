@@ -102,7 +102,7 @@ pub fn set_tx_info_data_rate(
             tx_info.modulation = Some(gw::Modulation {
                 parameters: Some(gw::modulation::Parameters::Fsk(gw::FskModulationInfo {
                     datarate: v.bitrate,
-                    frequency_deviation: v.bitrate / 2, // see: https://github.com/brocaar/chirpstack-gateway-bridge/issues/16
+                    frequency_deviation: v.bitrate / 2, // see: https://github.com/fraanx/chirpstack-gateway-bridge/issues/16
                 })),
             });
         }

@@ -6,7 +6,7 @@ license = "MIT"
 version = "4.3.1"
 authors = ["Orne Brocaar <info@brocaar.com>"]
 edition = "2018"
-repository = "https://github.com/chirpstack/chirpstack"
+repository = "https://github.com/fraanx/chirpstack"
 
 [dependencies]
 hex = "0.4"

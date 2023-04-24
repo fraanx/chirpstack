@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/chirpstack/chirpstack/api/go/v4/integration"
+	"github.com/fraanx/chirpstack/api/go/v4/integration"
 	"github.com/go-redis/redis/v8"
 	"google.golang.org/protobuf/encoding/protojson"
 	"google.golang.org/protobuf/proto"
