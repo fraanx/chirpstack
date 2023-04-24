@@ -213,6 +213,7 @@ impl Stats {
                     modulation_legacy: match c.modulation {
                         config::GatewayChannelModulation::LORA => common::Modulation::Lora,
                         config::GatewayChannelModulation::FSK => common::Modulation::Fsk,
+                        config::GatewayChannelModulation::XSS => common::Modulation::Xss,
                     }
                     .into(),
                     modulation_config: Some(match c.modulation {
@@ -231,6 +232,15 @@ impl Stats {
                                     bandwidth_legacy: c.bandwidth / 1000,
                                     bandwidth: c.bandwidth,
                                     bitrate: c.datarate,
+                                },
+                            )
+                        }
+                        config::GatewayChannelModulation::XSS => {
+                            gw::channel_configuration::ModulationConfig::XssModulationConfig(
+                                gw::XssModulationConfig {
+                                    bandwidth_legacy: c.bandwidth / 1000,
+                                    bandwidth: c.bandwidth,
+                                    spreading_factors: c.spreading_factors.clone(),
                                 },
                             )
                         }
@@ -285,6 +295,13 @@ fn per_modultation_to_per_dr(
                 lrwn::region::DataRateModulation::LrFhss(lrwn::region::LrFhssDataRate {
                     coding_rate: v.code_rate().into(),
                     occupied_channel_width: v.operating_channel_width,
+                })
+            }
+            gw::modulation::Parameters::Xss(v) => {
+                lrwn::region::DataRateModulation::Xss(lrwn::region::XssDataRate {
+                    spreading_factor: v.spreading_factor as u8,
+                    bandwidth: v.bandwidth,
+                    coding_rate: v.code_rate().into(),
                 })
             }
         };

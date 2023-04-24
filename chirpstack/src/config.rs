@@ -646,6 +646,7 @@ impl Default for GatewayBackendMqtt {
 pub enum GatewayChannelModulation {
     LORA,
     FSK,
+    XSS,
 }
 
 #[derive(Serialize, Deserialize, Clone, Hash)]

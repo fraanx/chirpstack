@@ -42,6 +42,13 @@ pub fn get_uplink_dr(
                 occupied_channel_width: v.operating_channel_width,
             })
         }
+        chirpstack_api::gw::modulation::Parameters::Xss(v) => {
+            lrwn::region::DataRateModulation::Xss(lrwn::region::XssDataRate {
+                spreading_factor: v.spreading_factor as u8,
+                bandwidth: v.bandwidth,
+                coding_rate: v.code_rate().into(),
+            })
+        }
     };
 
     region_conf.get_data_rate_index(true, &dr_modulation)
@@ -82,6 +89,17 @@ pub fn set_uplink_modulation(
                         .into(),
                     // GridSteps: this value can't be derived from a DR?
                     ..Default::default()
+                })
+            }
+            lrwn::region::DataRateModulation::Xss(v) => {
+                gw::modulation::Parameters::Xss(gw::XssModulationInfo {
+                    bandwidth: v.bandwidth,
+                    spreading_factor: v.spreading_factor as u32,
+                    code_rate: gw::CodeRate::from_str(&v.coding_rate)
+                        .map_err(|e| anyhow!("{}", e))?
+                        .into(),
+                    code_rate_legacy: "".into(),
+                    polarization_inversion: true,
                 })
             }
         }),

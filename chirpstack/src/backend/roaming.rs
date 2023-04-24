@@ -296,6 +296,15 @@ pub fn ul_meta_data_to_tx_info(ul_meta_data: &ULMetaData) -> Result<gw::UplinkTx
                         ..Default::default()
                     })
                 }
+                lrwn::region::DataRateModulation::Xss(v) => {
+                    gw::modulation::Parameters::Xss(gw::XssModulationInfo {
+                        bandwidth: v.bandwidth,
+                        spreading_factor: v.spreading_factor as u32,
+                        code_rate: gw::CodeRate::Cr45.into(),
+                        code_rate_legacy: "".into(),
+                        polarization_inversion: true,
+                    })
+                }
             }),
         }),
     })

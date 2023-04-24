@@ -19,6 +19,9 @@ enum Modulation {
 
     // LR-FHSS
     LR_FHSS = 2;
+
+    // XSS
+    XSS = 3;
 }
 
 enum Region {

@@ -1009,7 +1009,8 @@ proto.common.MetricDataset.prototype.clearDataList = function() {
 proto.common.Modulation = {
   LORA: 0,
   FSK: 1,
-  LR_FHSS: 2
+  LR_FHSS: 2,
+  XSS: 3
 };
 
 /**

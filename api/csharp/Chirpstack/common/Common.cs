@@ -33,29 +33,30 @@ namespace Chirpstack.Common {
             "ZXN0YW1wcxgCIAMoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASJwoI",
             "ZGF0YXNldHMYAyADKAsyFS5jb21tb24uTWV0cmljRGF0YXNldBIgCgRraW5k",
             "GAQgASgOMhIuY29tbW9uLk1ldHJpY0tpbmQiLAoNTWV0cmljRGF0YXNldBIN",
-            "CgVsYWJlbBgBIAEoCRIMCgRkYXRhGAIgAygCKiwKCk1vZHVsYXRpb24SCAoE",
-            "TE9SQRAAEgcKA0ZTSxABEgsKB0xSX0ZIU1MQAiq1AQoGUmVnaW9uEgkKBUVV",
-            "ODY4EAASCQoFVVM5MTUQAhIJCgVDTjc3ORADEgkKBUVVNDMzEAQSCQoFQVU5",
-            "MTUQBRIJCgVDTjQ3MBAGEgkKBUFTOTIzEAcSCwoHQVM5MjNfMhAMEgsKB0FT",
-            "OTIzXzMQDRILCgdBUzkyM180EA4SCQoFS1I5MjAQCBIJCgVJTjg2NRAJEgkK",
-            "BVJVODY0EAoSCwoHSVNNMjQwMBALEgkKBVNTMDAxEA8qswEKBU1UeXBlEhAK",
-            "DEpPSU5fUkVRVUVTVBAAEg8KC0pPSU5fQUNDRVBUEAESFwoTVU5DT05GSVJN",
-            "RURfREFUQV9VUBACEhkKFVVOQ09ORklSTUVEX0RBVEFfRE9XThADEhUKEUNP",
-            "TkZJUk1FRF9EQVRBX1VQEAQSFwoTQ09ORklSTUVEX0RBVEFfRE9XThAFEhIK",
-            "DlJFSk9JTl9SRVFVRVNUEAYSDwoLUFJPUFJJRVRBUlkQByp+CgpNYWNWZXJz",
-            "aW9uEhEKDUxPUkFXQU5fMV8wXzAQABIRCg1MT1JBV0FOXzFfMF8xEAESEQoN",
-            "TE9SQVdBTl8xXzBfMhACEhEKDUxPUkFXQU5fMV8wXzMQAxIRCg1MT1JBV0FO",
-            "XzFfMF80EAQSEQoNTE9SQVdBTl8xXzFfMBAFKmUKEVJlZ1BhcmFtc1Jldmlz",
-            "aW9uEgUKAUEQABIFCgFCEAESDwoLUlAwMDJfMV8wXzAQAhIPCgtSUDAwMl8x",
-            "XzBfMRADEg8KC1JQMDAyXzFfMF8yEAQSDwoLUlAwMDJfMV8wXzMQBSqOAQoO",
-            "TG9jYXRpb25Tb3VyY2USCwoHVU5LTk9XThAAEgcKA0dQUxABEgoKBkNPTkZJ",
-            "RxACEhUKEUdFT19SRVNPTFZFUl9URE9BEAMSFQoRR0VPX1JFU09MVkVSX1JT",
-            "U0kQBBIVChFHRU9fUkVTT0xWRVJfR05TUxAFEhUKEUdFT19SRVNPTFZFUl9X",
-            "SUZJEAYqKwoLQWdncmVnYXRpb24SCAoESE9VUhAAEgcKA0RBWRABEgkKBU1P",
-            "TlRIEAIqMgoKTWV0cmljS2luZBILCgdDT1VOVEVSEAASDAoIQUJTT0xVVEUQ",
-            "ARIJCgVHQVVHRRACQmkKEWlvLmNoaXJwc3RhY2suYXBpQgtDb21tb25Qcm90",
-            "b1ABWjFnaXRodWIuY29tL2NoaXJwc3RhY2svY2hpcnBzdGFjay9hcGkvZ28v",
-            "djQvY29tbW9uqgIRQ2hpcnBzdGFjay5Db21tb25iBnByb3RvMw=="));
+            "CgVsYWJlbBgBIAEoCRIMCgRkYXRhGAIgAygCKjUKCk1vZHVsYXRpb24SCAoE",
+            "TE9SQRAAEgcKA0ZTSxABEgsKB0xSX0ZIU1MQAhIHCgNYU1MQAyq1AQoGUmVn",
+            "aW9uEgkKBUVVODY4EAASCQoFVVM5MTUQAhIJCgVDTjc3ORADEgkKBUVVNDMz",
+            "EAQSCQoFQVU5MTUQBRIJCgVDTjQ3MBAGEgkKBUFTOTIzEAcSCwoHQVM5MjNf",
+            "MhAMEgsKB0FTOTIzXzMQDRILCgdBUzkyM180EA4SCQoFS1I5MjAQCBIJCgVJ",
+            "Tjg2NRAJEgkKBVJVODY0EAoSCwoHSVNNMjQwMBALEgkKBVNTMDAxEA8qswEK",
+            "BU1UeXBlEhAKDEpPSU5fUkVRVUVTVBAAEg8KC0pPSU5fQUNDRVBUEAESFwoT",
+            "VU5DT05GSVJNRURfREFUQV9VUBACEhkKFVVOQ09ORklSTUVEX0RBVEFfRE9X",
+            "ThADEhUKEUNPTkZJUk1FRF9EQVRBX1VQEAQSFwoTQ09ORklSTUVEX0RBVEFf",
+            "RE9XThAFEhIKDlJFSk9JTl9SRVFVRVNUEAYSDwoLUFJPUFJJRVRBUlkQByp+",
+            "CgpNYWNWZXJzaW9uEhEKDUxPUkFXQU5fMV8wXzAQABIRCg1MT1JBV0FOXzFf",
+            "MF8xEAESEQoNTE9SQVdBTl8xXzBfMhACEhEKDUxPUkFXQU5fMV8wXzMQAxIR",
+            "Cg1MT1JBV0FOXzFfMF80EAQSEQoNTE9SQVdBTl8xXzFfMBAFKmUKEVJlZ1Bh",
+            "cmFtc1JldmlzaW9uEgUKAUEQABIFCgFCEAESDwoLUlAwMDJfMV8wXzAQAhIP",
+            "CgtSUDAwMl8xXzBfMRADEg8KC1JQMDAyXzFfMF8yEAQSDwoLUlAwMDJfMV8w",
+            "XzMQBSqOAQoOTG9jYXRpb25Tb3VyY2USCwoHVU5LTk9XThAAEgcKA0dQUxAB",
+            "EgoKBkNPTkZJRxACEhUKEUdFT19SRVNPTFZFUl9URE9BEAMSFQoRR0VPX1JF",
+            "U09MVkVSX1JTU0kQBBIVChFHRU9fUkVTT0xWRVJfR05TUxAFEhUKEUdFT19S",
+            "RVNPTFZFUl9XSUZJEAYqKwoLQWdncmVnYXRpb24SCAoESE9VUhAAEgcKA0RB",
+            "WRABEgkKBU1PTlRIEAIqMgoKTWV0cmljS2luZBILCgdDT1VOVEVSEAASDAoI",
+            "QUJTT0xVVEUQARIJCgVHQVVHRRACQmkKEWlvLmNoaXJwc3RhY2suYXBpQgtD",
+            "b21tb25Qcm90b1ABWjFnaXRodWIuY29tL2NoaXJwc3RhY2svY2hpcnBzdGFj",
+            "ay9hcGkvZ28vdjQvY29tbW9uqgIRQ2hpcnBzdGFjay5Db21tb25iBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Chirpstack.Common.Modulation), typeof(global::Chirpstack.Common.Region), typeof(global::Chirpstack.Common.MType), typeof(global::Chirpstack.Common.MacVersion), typeof(global::Chirpstack.Common.RegParamsRevision), typeof(global::Chirpstack.Common.LocationSource), typeof(global::Chirpstack.Common.Aggregation), typeof(global::Chirpstack.Common.MetricKind), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -82,6 +83,10 @@ namespace Chirpstack.Common {
     /// LR-FHSS
     /// </summary>
     [pbr::OriginalName("LR_FHSS")] LrFhss = 2,
+    /// <summary>
+    /// XSS
+    /// </summary>
+    [pbr::OriginalName("XSS")] Xss = 3,
   }
 
   public enum Region {

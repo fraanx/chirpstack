@@ -108,6 +108,9 @@ message Modulation {
 
         // LR-FHSS modulation information.
         LrFhssModulationInfo lr_fhss = 5;
+
+        // XSS modulation information.
+        XssModulationInfo xss = 6;
     }
 }
 
@@ -127,6 +130,9 @@ message UplinkTxInfoLegacy {
 
         // LR-FHSS modulation information.
         LrFhssModulationInfo lr_fhss_modulation_info = 5;
+
+        // XSS modulation information.
+        XssModulationInfo xss_modulation_info = 6;
     }
 }
 
@@ -176,6 +182,23 @@ message LrFhssModulationInfo {
 
     // Hopping grid number of steps.
     uint32 grid_steps = 3;
+}
+
+message XssModulationInfo {
+    // Bandwidth.
+    uint32 bandwidth = 1;
+
+    // Speading-factor.
+    uint32 spreading_factor = 2;
+
+    // Code-rate.
+    string code_rate_legacy = 3;
+
+    // Code-rate.
+    CodeRate code_rate = 5;
+
+    // Polarization inversion.
+    bool polarization_inversion = 4;
 }
 
 message EncryptedFineTimestamp {
@@ -378,6 +401,9 @@ message DownlinkTxInfoLegacy {
 
         // FSK modulation information.
         FskModulationInfo fsk_modulation_info = 9;
+
+        // XSS modulation information.
+        XssModulationInfo xss_modulation_info = 17;
     }
 
     // The board identifier for emitting the frame.
@@ -576,6 +602,9 @@ message ChannelConfiguration {
 
         // FSK modulation config.
         FskModulationConfig fsk_modulation_config = 4;
+
+        // XSS modulation config.
+        XssModulationConfig xss_modulation_config = 7;
     }
 
     // Board index.
@@ -607,6 +636,18 @@ message FskModulationConfig {
 
     // Bitrate.
     uint32 bitrate = 2;
+}
+
+message XssModulationConfig {
+    // Bandwidth (kHz).
+    // Deprecated: use bandwidth.
+    uint32 bandwidth_legacy = 1;
+
+    // Bandwidth (Hz).
+    uint32 bandwidth = 3;
+
+    // Spreading-factors.
+    repeated uint32 spreading_factors = 2;
 }
 
 message GatewayCommandExecRequest {

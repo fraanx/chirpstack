@@ -26,178 +26,189 @@ namespace Chirpstack.Gateway {
           string.Concat(
             "Cgtndy9ndy5wcm90bxICZ3caE2NvbW1vbi9jb21tb24ucHJvdG8aH2dvb2ds",
             "ZS9wcm90b2J1Zi90aW1lc3RhbXAucHJvdG8aHmdvb2dsZS9wcm90b2J1Zi9k",
-            "dXJhdGlvbi5wcm90bxocZ29vZ2xlL3Byb3RvYnVmL3N0cnVjdC5wcm90byKV",
+            "dXJhdGlvbi5wcm90bxocZ29vZ2xlL3Byb3RvYnVmL3N0cnVjdC5wcm90byK7",
             "AQoKTW9kdWxhdGlvbhImCgRsb3JhGAMgASgLMhYuZ3cuTG9yYU1vZHVsYXRp",
             "b25JbmZvSAASJAoDZnNrGAQgASgLMhUuZ3cuRnNrTW9kdWxhdGlvbkluZm9I",
             "ABIrCgdscl9maHNzGAUgASgLMhguZ3cuTHJGaHNzTW9kdWxhdGlvbkluZm9I",
-            "AEIMCgpwYXJhbWV0ZXJzIo0CChJVcGxpbmtUeEluZm9MZWdhY3kSEQoJZnJl",
-            "cXVlbmN5GAEgASgNEiYKCm1vZHVsYXRpb24YAiABKA4yEi5jb21tb24uTW9k",
-            "dWxhdGlvbhI2ChRsb3JhX21vZHVsYXRpb25faW5mbxgDIAEoCzIWLmd3Lkxv",
-            "cmFNb2R1bGF0aW9uSW5mb0gAEjQKE2Zza19tb2R1bGF0aW9uX2luZm8YBCAB",
-            "KAsyFS5ndy5Gc2tNb2R1bGF0aW9uSW5mb0gAEjsKF2xyX2Zoc3NfbW9kdWxh",
-            "dGlvbl9pbmZvGAUgASgLMhguZ3cuTHJGaHNzTW9kdWxhdGlvbkluZm9IAEIR",
-            "Cg9tb2R1bGF0aW9uX2luZm8iRQoMVXBsaW5rVHhJbmZvEhEKCWZyZXF1ZW5j",
-            "eRgBIAEoDRIiCgptb2R1bGF0aW9uGAIgASgLMg4uZ3cuTW9kdWxhdGlvbiKc",
-            "AQoSTG9yYU1vZHVsYXRpb25JbmZvEhEKCWJhbmR3aWR0aBgBIAEoDRIYChBz",
-            "cHJlYWRpbmdfZmFjdG9yGAIgASgNEhgKEGNvZGVfcmF0ZV9sZWdhY3kYAyAB",
-            "KAkSHwoJY29kZV9yYXRlGAUgASgOMgwuZ3cuQ29kZVJhdGUSHgoWcG9sYXJp",
-            "emF0aW9uX2ludmVyc2lvbhgEIAEoCCJCChFGc2tNb2R1bGF0aW9uSW5mbxIb",
-            "ChNmcmVxdWVuY3lfZGV2aWF0aW9uGAEgASgNEhAKCGRhdGFyYXRlGAIgASgN",
-            "IoYBChRMckZoc3NNb2R1bGF0aW9uSW5mbxIfChdvcGVyYXRpbmdfY2hhbm5l",
-            "bF93aWR0aBgBIAEoDRIYChBjb2RlX3JhdGVfbGVnYWN5GAIgASgJEh8KCWNv",
-            "ZGVfcmF0ZRgEIAEoDjIMLmd3LkNvZGVSYXRlEhIKCmdyaWRfc3RlcHMYAyAB",
-            "KA0iVgoWRW5jcnlwdGVkRmluZVRpbWVzdGFtcBIVCg1hZXNfa2V5X2luZGV4",
-            "GAEgASgNEhQKDGVuY3J5cHRlZF9ucxgCIAEoDBIPCgdmcGdhX2lkGAMgASgM",
-            "Ij4KElBsYWluRmluZVRpbWVzdGFtcBIoCgR0aW1lGAEgASgLMhouZ29vZ2xl",
-            "LnByb3RvYnVmLlRpbWVzdGFtcCKQBwoMR2F0ZXdheVN0YXRzEhkKEWdhdGV3",
-            "YXlfaWRfbGVnYWN5GAEgASgMEhIKCmdhdGV3YXlfaWQYESABKAkSKAoEdGlt",
-            "ZRgCIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASIgoIbG9jYXRp",
-            "b24YAyABKAsyEC5jb21tb24uTG9jYXRpb24SFgoOY29uZmlnX3ZlcnNpb24Y",
-            "BCABKAkSGwoTcnhfcGFja2V0c19yZWNlaXZlZBgFIAEoDRIeChZyeF9wYWNr",
-            "ZXRzX3JlY2VpdmVkX29rGAYgASgNEhsKE3R4X3BhY2tldHNfcmVjZWl2ZWQY",
-            "ByABKA0SGgoSdHhfcGFja2V0c19lbWl0dGVkGAggASgNEjAKCG1ldGFkYXRh",
-            "GAogAygLMh4uZ3cuR2F0ZXdheVN0YXRzLk1ldGFkYXRhRW50cnkSTQoYdHhf",
-            "cGFja2V0c19wZXJfZnJlcXVlbmN5GAwgAygLMisuZ3cuR2F0ZXdheVN0YXRz",
-            "LlR4UGFja2V0c1BlckZyZXF1ZW5jeUVudHJ5Ek0KGHJ4X3BhY2tldHNfcGVy",
-            "X2ZyZXF1ZW5jeRgNIAMoCzIrLmd3LkdhdGV3YXlTdGF0cy5SeFBhY2tldHNQ",
-            "ZXJGcmVxdWVuY3lFbnRyeRI5Chl0eF9wYWNrZXRzX3Blcl9tb2R1bGF0aW9u",
-            "GA4gAygLMhYuZ3cuUGVyTW9kdWxhdGlvbkNvdW50EjkKGXJ4X3BhY2tldHNf",
-            "cGVyX21vZHVsYXRpb24YDyADKAsyFi5ndy5QZXJNb2R1bGF0aW9uQ291bnQS",
-            "RwoVdHhfcGFja2V0c19wZXJfc3RhdHVzGBAgAygLMiguZ3cuR2F0ZXdheVN0",
-            "YXRzLlR4UGFja2V0c1BlclN0YXR1c0VudHJ5Gi8KDU1ldGFkYXRhRW50cnkS",
-            "CwoDa2V5GAEgASgJEg0KBXZhbHVlGAIgASgJOgI4ARo8ChpUeFBhY2tldHNQ",
-            "ZXJGcmVxdWVuY3lFbnRyeRILCgNrZXkYASABKA0SDQoFdmFsdWUYAiABKA06",
-            "AjgBGjwKGlJ4UGFja2V0c1BlckZyZXF1ZW5jeUVudHJ5EgsKA2tleRgBIAEo",
-            "DRINCgV2YWx1ZRgCIAEoDToCOAEaOQoXVHhQYWNrZXRzUGVyU3RhdHVzRW50",
-            "cnkSCwoDa2V5GAEgASgJEg0KBXZhbHVlGAIgASgNOgI4ASJHChJQZXJNb2R1",
-            "bGF0aW9uQ291bnQSIgoKbW9kdWxhdGlvbhgBIAEoCzIOLmd3Lk1vZHVsYXRp",
-            "b24SDQoFY291bnQYAiABKA0igAUKElVwbGlua1J4SW5mb0xlZ2FjeRISCgpn",
-            "YXRld2F5X2lkGAEgASgMEigKBHRpbWUYAiABKAsyGi5nb29nbGUucHJvdG9i",
-            "dWYuVGltZXN0YW1wEjcKFHRpbWVfc2luY2VfZ3BzX2Vwb2NoGAMgASgLMhku",
-            "Z29vZ2xlLnByb3RvYnVmLkR1cmF0aW9uEgwKBHJzc2kYBSABKAUSEAoIbG9y",
-            "YV9zbnIYBiABKAESDwoHY2hhbm5lbBgHIAEoDRIQCghyZl9jaGFpbhgIIAEo",
-            "DRINCgVib2FyZBgJIAEoDRIPCgdhbnRlbm5hGAogASgNEiIKCGxvY2F0aW9u",
-            "GAsgASgLMhAuY29tbW9uLkxvY2F0aW9uEjIKE2ZpbmVfdGltZXN0YW1wX3R5",
-            "cGUYDCABKA4yFS5ndy5GaW5lVGltZXN0YW1wVHlwZRI+ChhlbmNyeXB0ZWRf",
-            "ZmluZV90aW1lc3RhbXAYDSABKAsyGi5ndy5FbmNyeXB0ZWRGaW5lVGltZXN0",
-            "YW1wSAASNgoUcGxhaW5fZmluZV90aW1lc3RhbXAYDiABKAsyFi5ndy5QbGFp",
-            "bkZpbmVUaW1lc3RhbXBIABIPCgdjb250ZXh0GA8gASgMEhEKCXVwbGlua19p",
-            "ZBgQIAEoDBIhCgpjcmNfc3RhdHVzGBEgASgOMg0uZ3cuQ1JDU3RhdHVzEjYK",
-            "CG1ldGFkYXRhGBIgAygLMiQuZ3cuVXBsaW5rUnhJbmZvTGVnYWN5Lk1ldGFk",
-            "YXRhRW50cnkaLwoNTWV0YWRhdGFFbnRyeRILCgNrZXkYASABKAkSDQoFdmFs",
-            "dWUYAiABKAk6AjgBQhAKDmZpbmVfdGltZXN0YW1wIu8DCgxVcGxpbmtSeElu",
-            "Zm8SEgoKZ2F0ZXdheV9pZBgBIAEoCRIRCgl1cGxpbmtfaWQYAiABKA0SKAoE",
-            "dGltZRgDIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASNwoUdGlt",
-            "ZV9zaW5jZV9ncHNfZXBvY2gYBCABKAsyGS5nb29nbGUucHJvdG9idWYuRHVy",
-            "YXRpb24SPAoZZmluZV90aW1lX3NpbmNlX2dwc19lcG9jaBgFIAEoCzIZLmdv",
-            "b2dsZS5wcm90b2J1Zi5EdXJhdGlvbhIMCgRyc3NpGAYgASgFEgsKA3NuchgH",
-            "IAEoAhIPCgdjaGFubmVsGAggASgNEhAKCHJmX2NoYWluGAkgASgNEg0KBWJv",
-            "YXJkGAogASgNEg8KB2FudGVubmEYCyABKA0SIgoIbG9jYXRpb24YDCABKAsy",
-            "EC5jb21tb24uTG9jYXRpb24SDwoHY29udGV4dBgNIAEoDBIwCghtZXRhZGF0",
-            "YRgPIAMoCzIeLmd3LlVwbGlua1J4SW5mby5NZXRhZGF0YUVudHJ5EiEKCmNy",
-            "Y19zdGF0dXMYECABKA4yDS5ndy5DUkNTdGF0dXMaLwoNTWV0YWRhdGFFbnRy",
-            "eRILCgNrZXkYASABKAkSDQoFdmFsdWUYAiABKAk6AjgBIoIEChREb3dubGlu",
-            "a1R4SW5mb0xlZ2FjeRISCgpnYXRld2F5X2lkGAEgASgMEhEKCWZyZXF1ZW5j",
-            "eRgFIAEoDRINCgVwb3dlchgGIAEoBRImCgptb2R1bGF0aW9uGAcgASgOMhIu",
-            "Y29tbW9uLk1vZHVsYXRpb24SNgoUbG9yYV9tb2R1bGF0aW9uX2luZm8YCCAB",
-            "KAsyFi5ndy5Mb3JhTW9kdWxhdGlvbkluZm9IABI0ChNmc2tfbW9kdWxhdGlv",
-            "bl9pbmZvGAkgASgLMhUuZ3cuRnNrTW9kdWxhdGlvbkluZm9IABINCgVib2Fy",
-            "ZBgKIAEoDRIPCgdhbnRlbm5hGAsgASgNEiIKBnRpbWluZxgMIAEoDjISLmd3",
-            "LkRvd25saW5rVGltaW5nEjwKF2ltbWVkaWF0ZWx5X3RpbWluZ19pbmZvGA0g",
-            "ASgLMhkuZ3cuSW1tZWRpYXRlbHlUaW1pbmdJbmZvSAESMAoRZGVsYXlfdGlt",
-            "aW5nX2luZm8YDiABKAsyEy5ndy5EZWxheVRpbWluZ0luZm9IARI3ChVncHNf",
-            "ZXBvY2hfdGltaW5nX2luZm8YDyABKAsyFi5ndy5HUFNFcG9jaFRpbWluZ0lu",
-            "Zm9IARIPCgdjb250ZXh0GBAgASgMQhEKD21vZHVsYXRpb25faW5mb0INCgt0",
-            "aW1pbmdfaW5mbyKjAQoORG93bmxpbmtUeEluZm8SEQoJZnJlcXVlbmN5GAEg",
-            "ASgNEg0KBXBvd2VyGAIgASgFEiIKCm1vZHVsYXRpb24YAyABKAsyDi5ndy5N",
-            "b2R1bGF0aW9uEg0KBWJvYXJkGAQgASgNEg8KB2FudGVubmEYBSABKA0SGgoG",
-            "dGltaW5nGAYgASgLMgouZ3cuVGltaW5nEg8KB2NvbnRleHQYByABKAwimwEK",
-            "BlRpbWluZxIwCgtpbW1lZGlhdGVseRgBIAEoCzIZLmd3LkltbWVkaWF0ZWx5",
-            "VGltaW5nSW5mb0gAEiQKBWRlbGF5GAIgASgLMhMuZ3cuRGVsYXlUaW1pbmdJ",
-            "bmZvSAASKwoJZ3BzX2Vwb2NoGAMgASgLMhYuZ3cuR1BTRXBvY2hUaW1pbmdJ",
-            "bmZvSABCDAoKcGFyYW1ldGVycyIXChVJbW1lZGlhdGVseVRpbWluZ0luZm8i",
-            "OwoPRGVsYXlUaW1pbmdJbmZvEigKBWRlbGF5GAEgASgLMhkuZ29vZ2xlLnBy",
-            "b3RvYnVmLkR1cmF0aW9uIk0KEkdQU0Vwb2NoVGltaW5nSW5mbxI3ChR0aW1l",
-            "X3NpbmNlX2dwc19lcG9jaBgBIAEoCzIZLmdvb2dsZS5wcm90b2J1Zi5EdXJh",
-            "dGlvbiLIAQoLVXBsaW5rRnJhbWUSEwoLcGh5X3BheWxvYWQYASABKAwSLgoO",
-            "dHhfaW5mb19sZWdhY3kYAiABKAsyFi5ndy5VcGxpbmtUeEluZm9MZWdhY3kS",
-            "LgoOcnhfaW5mb19sZWdhY3kYAyABKAsyFi5ndy5VcGxpbmtSeEluZm9MZWdh",
-            "Y3kSIQoHdHhfaW5mbxgEIAEoCzIQLmd3LlVwbGlua1R4SW5mbxIhCgdyeF9p",
-            "bmZvGAUgASgLMhAuZ3cuVXBsaW5rUnhJbmZvImsKDlVwbGlua0ZyYW1lU2V0",
-            "EhMKC3BoeV9wYXlsb2FkGAEgASgMEiEKB3R4X2luZm8YAiABKAsyEC5ndy5V",
-            "cGxpbmtUeEluZm8SIQoHcnhfaW5mbxgDIAMoCzIQLmd3LlVwbGlua1J4SW5m",
-            "byKVAQoNRG93bmxpbmtGcmFtZRITCgtkb3dubGlua19pZBgDIAEoDRIaChJk",
-            "b3dubGlua19pZF9sZWdhY3kYBCABKAwSJAoFaXRlbXMYBSADKAsyFS5ndy5E",
-            "b3dubGlua0ZyYW1lSXRlbRIZChFnYXRld2F5X2lkX2xlZ2FjeRgGIAEoDBIS",
-            "CgpnYXRld2F5X2lkGAcgASgJIn8KEURvd25saW5rRnJhbWVJdGVtEhMKC3Bo",
-            "eV9wYXlsb2FkGAEgASgMEjAKDnR4X2luZm9fbGVnYWN5GAIgASgLMhguZ3cu",
-            "RG93bmxpbmtUeEluZm9MZWdhY3kSIwoHdHhfaW5mbxgDIAEoCzISLmd3LkRv",
-            "d25saW5rVHhJbmZvIpUBCg1Eb3dubGlua1R4QWNrEhkKEWdhdGV3YXlfaWRf",
-            "bGVnYWN5GAEgASgMEhIKCmdhdGV3YXlfaWQYBiABKAkSEwoLZG93bmxpbmtf",
-            "aWQYAiABKA0SGgoSZG93bmxpbmtfaWRfbGVnYWN5GAQgASgMEiQKBWl0ZW1z",
-            "GAUgAygLMhUuZ3cuRG93bmxpbmtUeEFja0l0ZW0iNAoRRG93bmxpbmtUeEFj",
-            "a0l0ZW0SHwoGc3RhdHVzGAEgASgOMg8uZ3cuVHhBY2tTdGF0dXMitQEKFEdh",
-            "dGV3YXlDb25maWd1cmF0aW9uEhkKEWdhdGV3YXlfaWRfbGVnYWN5GAEgASgM",
-            "EhIKCmdhdGV3YXlfaWQYBSABKAkSDwoHdmVyc2lvbhgCIAEoCRIqCghjaGFu",
-            "bmVscxgDIAMoCzIYLmd3LkNoYW5uZWxDb25maWd1cmF0aW9uEjEKDnN0YXRz",
-            "X2ludGVydmFsGAQgASgLMhkuZ29vZ2xlLnByb3RvYnVmLkR1cmF0aW9uIocC",
-            "ChRDaGFubmVsQ29uZmlndXJhdGlvbhIRCglmcmVxdWVuY3kYASABKA0SLQoR",
-            "bW9kdWxhdGlvbl9sZWdhY3kYAiABKA4yEi5jb21tb24uTW9kdWxhdGlvbhI6",
-            "ChZsb3JhX21vZHVsYXRpb25fY29uZmlnGAMgASgLMhguZ3cuTG9yYU1vZHVs",
-            "YXRpb25Db25maWdIABI4ChVmc2tfbW9kdWxhdGlvbl9jb25maWcYBCABKAsy",
-            "Fy5ndy5Gc2tNb2R1bGF0aW9uQ29uZmlnSAASDQoFYm9hcmQYBSABKA0SEwoL",
-            "ZGVtb2R1bGF0b3IYBiABKA1CEwoRbW9kdWxhdGlvbl9jb25maWciXgoUTG9y",
-            "YU1vZHVsYXRpb25Db25maWcSGAoQYmFuZHdpZHRoX2xlZ2FjeRgBIAEoDRIR",
-            "CgliYW5kd2lkdGgYAyABKA0SGQoRc3ByZWFkaW5nX2ZhY3RvcnMYAiADKA0i",
-            "UwoTRnNrTW9kdWxhdGlvbkNvbmZpZxIYChBiYW5kd2lkdGhfbGVnYWN5GAEg",
-            "ASgNEhEKCWJhbmR3aWR0aBgDIAEoDRIPCgdiaXRyYXRlGAIgASgNIvQBChlH",
-            "YXRld2F5Q29tbWFuZEV4ZWNSZXF1ZXN0EhkKEWdhdGV3YXlfaWRfbGVnYWN5",
-            "GAEgASgMEhIKCmdhdGV3YXlfaWQYBiABKAkSDwoHY29tbWFuZBgCIAEoCRIP",
-            "CgdleGVjX2lkGAcgASgNEg0KBXN0ZGluGAQgASgMEkMKC2Vudmlyb25tZW50",
-            "GAUgAygLMi4uZ3cuR2F0ZXdheUNvbW1hbmRFeGVjUmVxdWVzdC5FbnZpcm9u",
-            "bWVudEVudHJ5GjIKEEVudmlyb25tZW50RW50cnkSCwoDa2V5GAEgASgJEg0K",
-            "BXZhbHVlGAIgASgJOgI4ASKLAQoaR2F0ZXdheUNvbW1hbmRFeGVjUmVzcG9u",
-            "c2USGQoRZ2F0ZXdheV9pZF9sZWdhY3kYASABKAwSEgoKZ2F0ZXdheV9pZBgG",
-            "IAEoCRIPCgdleGVjX2lkGAcgASgNEg4KBnN0ZG91dBgDIAEoDBIOCgZzdGRl",
-            "cnIYBCABKAwSDQoFZXJyb3IYBSABKAkiWQoXUmF3UGFja2V0Rm9yd2FyZGVy",
-            "RXZlbnQSGQoRZ2F0ZXdheV9pZF9sZWdhY3kYASABKAwSEgoKZ2F0ZXdheV9p",
-            "ZBgEIAEoCRIPCgdwYXlsb2FkGAMgASgMIlsKGVJhd1BhY2tldEZvcndhcmRl",
-            "ckNvbW1hbmQSGQoRZ2F0ZXdheV9pZF9sZWdhY3kYASABKAwSEgoKZ2F0ZXdh",
-            "eV9pZBgEIAEoCRIPCgdwYXlsb2FkGAMgASgMIoABCglDb25uU3RhdGUSGQoR",
-            "Z2F0ZXdheV9pZF9sZWdhY3kYASABKAwSEgoKZ2F0ZXdheV9pZBgDIAEoCRIi",
-            "CgVzdGF0ZRgCIAEoDjITLmd3LkNvbm5TdGF0ZS5TdGF0ZSIgCgVTdGF0ZRIL",
-            "CgdPRkZMSU5FEAASCgoGT05MSU5FEAEqtQEKCENvZGVSYXRlEhAKDENSX1VO",
-            "REVGSU5FRBAAEgoKBkNSXzRfNRABEgoKBkNSXzRfNhACEgoKBkNSXzRfNxAD",
-            "EgoKBkNSXzRfOBAEEgoKBkNSXzNfOBAFEgoKBkNSXzJfNhAGEgoKBkNSXzFf",
-            "NBAHEgoKBkNSXzFfNhAIEgoKBkNSXzVfNhAJEg0KCUNSX0xJXzRfNRAKEg0K",
-            "CUNSX0xJXzRfNhALEg0KCUNSX0xJXzRfOBAMKjsKDkRvd25saW5rVGltaW5n",
-            "Eg8KC0lNTUVESUFURUxZEAASCQoFREVMQVkQARINCglHUFNfRVBPQ0gQAio3",
-            "ChFGaW5lVGltZXN0YW1wVHlwZRIICgROT05FEAASDQoJRU5DUllQVEVEEAES",
-            "CQoFUExBSU4QAiowCglDUkNTdGF0dXMSCgoGTk9fQ1JDEAASCwoHQkFEX0NS",
-            "QxABEgoKBkNSQ19PSxACKrwBCgtUeEFja1N0YXR1cxILCgdJR05PUkVEEAAS",
-            "BgoCT0sQARIMCghUT09fTEFURRACEg0KCVRPT19FQVJMWRADEhQKEENPTExJ",
-            "U0lPTl9QQUNLRVQQBBIUChBDT0xMSVNJT05fQkVBQ09OEAUSCwoHVFhfRlJF",
-            "URAGEgwKCFRYX1BPV0VSEAcSEAoMR1BTX1VOTE9DS0VEEAgSDgoKUVVFVUVf",
-            "RlVMTBAJEhIKDklOVEVSTkFMX0VSUk9SEApCagoUaW8uY2hpcnBzdGFjay5h",
-            "cGkuZ3dCDEdhdGV3YXlQcm90b1ABWi1naXRodWIuY29tL2NoaXJwc3RhY2sv",
-            "Y2hpcnBzdGFjay9hcGkvZ28vdjQvZ3eqAhJDaGlycHN0YWNrLkdhdGV3YXli",
-            "BnByb3RvMw=="));
+            "ABIkCgN4c3MYBiABKAsyFS5ndy5Yc3NNb2R1bGF0aW9uSW5mb0gAQgwKCnBh",
+            "cmFtZXRlcnMiwwIKElVwbGlua1R4SW5mb0xlZ2FjeRIRCglmcmVxdWVuY3kY",
+            "ASABKA0SJgoKbW9kdWxhdGlvbhgCIAEoDjISLmNvbW1vbi5Nb2R1bGF0aW9u",
+            "EjYKFGxvcmFfbW9kdWxhdGlvbl9pbmZvGAMgASgLMhYuZ3cuTG9yYU1vZHVs",
+            "YXRpb25JbmZvSAASNAoTZnNrX21vZHVsYXRpb25faW5mbxgEIAEoCzIVLmd3",
+            "LkZza01vZHVsYXRpb25JbmZvSAASOwoXbHJfZmhzc19tb2R1bGF0aW9uX2lu",
+            "Zm8YBSABKAsyGC5ndy5MckZoc3NNb2R1bGF0aW9uSW5mb0gAEjQKE3hzc19t",
+            "b2R1bGF0aW9uX2luZm8YBiABKAsyFS5ndy5Yc3NNb2R1bGF0aW9uSW5mb0gA",
+            "QhEKD21vZHVsYXRpb25faW5mbyJFCgxVcGxpbmtUeEluZm8SEQoJZnJlcXVl",
+            "bmN5GAEgASgNEiIKCm1vZHVsYXRpb24YAiABKAsyDi5ndy5Nb2R1bGF0aW9u",
+            "IpwBChJMb3JhTW9kdWxhdGlvbkluZm8SEQoJYmFuZHdpZHRoGAEgASgNEhgK",
+            "EHNwcmVhZGluZ19mYWN0b3IYAiABKA0SGAoQY29kZV9yYXRlX2xlZ2FjeRgD",
+            "IAEoCRIfCgljb2RlX3JhdGUYBSABKA4yDC5ndy5Db2RlUmF0ZRIeChZwb2xh",
+            "cml6YXRpb25faW52ZXJzaW9uGAQgASgIIkIKEUZza01vZHVsYXRpb25JbmZv",
+            "EhsKE2ZyZXF1ZW5jeV9kZXZpYXRpb24YASABKA0SEAoIZGF0YXJhdGUYAiAB",
+            "KA0ihgEKFExyRmhzc01vZHVsYXRpb25JbmZvEh8KF29wZXJhdGluZ19jaGFu",
+            "bmVsX3dpZHRoGAEgASgNEhgKEGNvZGVfcmF0ZV9sZWdhY3kYAiABKAkSHwoJ",
+            "Y29kZV9yYXRlGAQgASgOMgwuZ3cuQ29kZVJhdGUSEgoKZ3JpZF9zdGVwcxgD",
+            "IAEoDSKbAQoRWHNzTW9kdWxhdGlvbkluZm8SEQoJYmFuZHdpZHRoGAEgASgN",
+            "EhgKEHNwcmVhZGluZ19mYWN0b3IYAiABKA0SGAoQY29kZV9yYXRlX2xlZ2Fj",
+            "eRgDIAEoCRIfCgljb2RlX3JhdGUYBSABKA4yDC5ndy5Db2RlUmF0ZRIeChZw",
+            "b2xhcml6YXRpb25faW52ZXJzaW9uGAQgASgIIlYKFkVuY3J5cHRlZEZpbmVU",
+            "aW1lc3RhbXASFQoNYWVzX2tleV9pbmRleBgBIAEoDRIUCgxlbmNyeXB0ZWRf",
+            "bnMYAiABKAwSDwoHZnBnYV9pZBgDIAEoDCI+ChJQbGFpbkZpbmVUaW1lc3Rh",
+            "bXASKAoEdGltZRgBIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXAi",
+            "kAcKDEdhdGV3YXlTdGF0cxIZChFnYXRld2F5X2lkX2xlZ2FjeRgBIAEoDBIS",
+            "CgpnYXRld2F5X2lkGBEgASgJEigKBHRpbWUYAiABKAsyGi5nb29nbGUucHJv",
+            "dG9idWYuVGltZXN0YW1wEiIKCGxvY2F0aW9uGAMgASgLMhAuY29tbW9uLkxv",
+            "Y2F0aW9uEhYKDmNvbmZpZ192ZXJzaW9uGAQgASgJEhsKE3J4X3BhY2tldHNf",
+            "cmVjZWl2ZWQYBSABKA0SHgoWcnhfcGFja2V0c19yZWNlaXZlZF9vaxgGIAEo",
+            "DRIbChN0eF9wYWNrZXRzX3JlY2VpdmVkGAcgASgNEhoKEnR4X3BhY2tldHNf",
+            "ZW1pdHRlZBgIIAEoDRIwCghtZXRhZGF0YRgKIAMoCzIeLmd3LkdhdGV3YXlT",
+            "dGF0cy5NZXRhZGF0YUVudHJ5Ek0KGHR4X3BhY2tldHNfcGVyX2ZyZXF1ZW5j",
+            "eRgMIAMoCzIrLmd3LkdhdGV3YXlTdGF0cy5UeFBhY2tldHNQZXJGcmVxdWVu",
+            "Y3lFbnRyeRJNChhyeF9wYWNrZXRzX3Blcl9mcmVxdWVuY3kYDSADKAsyKy5n",
+            "dy5HYXRld2F5U3RhdHMuUnhQYWNrZXRzUGVyRnJlcXVlbmN5RW50cnkSOQoZ",
+            "dHhfcGFja2V0c19wZXJfbW9kdWxhdGlvbhgOIAMoCzIWLmd3LlBlck1vZHVs",
+            "YXRpb25Db3VudBI5ChlyeF9wYWNrZXRzX3Blcl9tb2R1bGF0aW9uGA8gAygL",
+            "MhYuZ3cuUGVyTW9kdWxhdGlvbkNvdW50EkcKFXR4X3BhY2tldHNfcGVyX3N0",
+            "YXR1cxgQIAMoCzIoLmd3LkdhdGV3YXlTdGF0cy5UeFBhY2tldHNQZXJTdGF0",
+            "dXNFbnRyeRovCg1NZXRhZGF0YUVudHJ5EgsKA2tleRgBIAEoCRINCgV2YWx1",
+            "ZRgCIAEoCToCOAEaPAoaVHhQYWNrZXRzUGVyRnJlcXVlbmN5RW50cnkSCwoD",
+            "a2V5GAEgASgNEg0KBXZhbHVlGAIgASgNOgI4ARo8ChpSeFBhY2tldHNQZXJG",
+            "cmVxdWVuY3lFbnRyeRILCgNrZXkYASABKA0SDQoFdmFsdWUYAiABKA06AjgB",
+            "GjkKF1R4UGFja2V0c1BlclN0YXR1c0VudHJ5EgsKA2tleRgBIAEoCRINCgV2",
+            "YWx1ZRgCIAEoDToCOAEiRwoSUGVyTW9kdWxhdGlvbkNvdW50EiIKCm1vZHVs",
+            "YXRpb24YASABKAsyDi5ndy5Nb2R1bGF0aW9uEg0KBWNvdW50GAIgASgNIoAF",
+            "ChJVcGxpbmtSeEluZm9MZWdhY3kSEgoKZ2F0ZXdheV9pZBgBIAEoDBIoCgR0",
+            "aW1lGAIgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBI3ChR0aW1l",
+            "X3NpbmNlX2dwc19lcG9jaBgDIAEoCzIZLmdvb2dsZS5wcm90b2J1Zi5EdXJh",
+            "dGlvbhIMCgRyc3NpGAUgASgFEhAKCGxvcmFfc25yGAYgASgBEg8KB2NoYW5u",
+            "ZWwYByABKA0SEAoIcmZfY2hhaW4YCCABKA0SDQoFYm9hcmQYCSABKA0SDwoH",
+            "YW50ZW5uYRgKIAEoDRIiCghsb2NhdGlvbhgLIAEoCzIQLmNvbW1vbi5Mb2Nh",
+            "dGlvbhIyChNmaW5lX3RpbWVzdGFtcF90eXBlGAwgASgOMhUuZ3cuRmluZVRp",
+            "bWVzdGFtcFR5cGUSPgoYZW5jcnlwdGVkX2ZpbmVfdGltZXN0YW1wGA0gASgL",
+            "MhouZ3cuRW5jcnlwdGVkRmluZVRpbWVzdGFtcEgAEjYKFHBsYWluX2ZpbmVf",
+            "dGltZXN0YW1wGA4gASgLMhYuZ3cuUGxhaW5GaW5lVGltZXN0YW1wSAASDwoH",
+            "Y29udGV4dBgPIAEoDBIRCgl1cGxpbmtfaWQYECABKAwSIQoKY3JjX3N0YXR1",
+            "cxgRIAEoDjINLmd3LkNSQ1N0YXR1cxI2CghtZXRhZGF0YRgSIAMoCzIkLmd3",
+            "LlVwbGlua1J4SW5mb0xlZ2FjeS5NZXRhZGF0YUVudHJ5Gi8KDU1ldGFkYXRh",
+            "RW50cnkSCwoDa2V5GAEgASgJEg0KBXZhbHVlGAIgASgJOgI4AUIQCg5maW5l",
+            "X3RpbWVzdGFtcCLvAwoMVXBsaW5rUnhJbmZvEhIKCmdhdGV3YXlfaWQYASAB",
+            "KAkSEQoJdXBsaW5rX2lkGAIgASgNEigKBHRpbWUYAyABKAsyGi5nb29nbGUu",
+            "cHJvdG9idWYuVGltZXN0YW1wEjcKFHRpbWVfc2luY2VfZ3BzX2Vwb2NoGAQg",
+            "ASgLMhkuZ29vZ2xlLnByb3RvYnVmLkR1cmF0aW9uEjwKGWZpbmVfdGltZV9z",
+            "aW5jZV9ncHNfZXBvY2gYBSABKAsyGS5nb29nbGUucHJvdG9idWYuRHVyYXRp",
+            "b24SDAoEcnNzaRgGIAEoBRILCgNzbnIYByABKAISDwoHY2hhbm5lbBgIIAEo",
+            "DRIQCghyZl9jaGFpbhgJIAEoDRINCgVib2FyZBgKIAEoDRIPCgdhbnRlbm5h",
+            "GAsgASgNEiIKCGxvY2F0aW9uGAwgASgLMhAuY29tbW9uLkxvY2F0aW9uEg8K",
+            "B2NvbnRleHQYDSABKAwSMAoIbWV0YWRhdGEYDyADKAsyHi5ndy5VcGxpbmtS",
+            "eEluZm8uTWV0YWRhdGFFbnRyeRIhCgpjcmNfc3RhdHVzGBAgASgOMg0uZ3cu",
+            "Q1JDU3RhdHVzGi8KDU1ldGFkYXRhRW50cnkSCwoDa2V5GAEgASgJEg0KBXZh",
+            "bHVlGAIgASgJOgI4ASK4BAoURG93bmxpbmtUeEluZm9MZWdhY3kSEgoKZ2F0",
+            "ZXdheV9pZBgBIAEoDBIRCglmcmVxdWVuY3kYBSABKA0SDQoFcG93ZXIYBiAB",
+            "KAUSJgoKbW9kdWxhdGlvbhgHIAEoDjISLmNvbW1vbi5Nb2R1bGF0aW9uEjYK",
+            "FGxvcmFfbW9kdWxhdGlvbl9pbmZvGAggASgLMhYuZ3cuTG9yYU1vZHVsYXRp",
+            "b25JbmZvSAASNAoTZnNrX21vZHVsYXRpb25faW5mbxgJIAEoCzIVLmd3LkZz",
+            "a01vZHVsYXRpb25JbmZvSAASNAoTeHNzX21vZHVsYXRpb25faW5mbxgRIAEo",
+            "CzIVLmd3Llhzc01vZHVsYXRpb25JbmZvSAASDQoFYm9hcmQYCiABKA0SDwoH",
+            "YW50ZW5uYRgLIAEoDRIiCgZ0aW1pbmcYDCABKA4yEi5ndy5Eb3dubGlua1Rp",
+            "bWluZxI8ChdpbW1lZGlhdGVseV90aW1pbmdfaW5mbxgNIAEoCzIZLmd3Lklt",
+            "bWVkaWF0ZWx5VGltaW5nSW5mb0gBEjAKEWRlbGF5X3RpbWluZ19pbmZvGA4g",
+            "ASgLMhMuZ3cuRGVsYXlUaW1pbmdJbmZvSAESNwoVZ3BzX2Vwb2NoX3RpbWlu",
+            "Z19pbmZvGA8gASgLMhYuZ3cuR1BTRXBvY2hUaW1pbmdJbmZvSAESDwoHY29u",
+            "dGV4dBgQIAEoDEIRCg9tb2R1bGF0aW9uX2luZm9CDQoLdGltaW5nX2luZm8i",
+            "owEKDkRvd25saW5rVHhJbmZvEhEKCWZyZXF1ZW5jeRgBIAEoDRINCgVwb3dl",
+            "chgCIAEoBRIiCgptb2R1bGF0aW9uGAMgASgLMg4uZ3cuTW9kdWxhdGlvbhIN",
+            "CgVib2FyZBgEIAEoDRIPCgdhbnRlbm5hGAUgASgNEhoKBnRpbWluZxgGIAEo",
+            "CzIKLmd3LlRpbWluZxIPCgdjb250ZXh0GAcgASgMIpsBCgZUaW1pbmcSMAoL",
+            "aW1tZWRpYXRlbHkYASABKAsyGS5ndy5JbW1lZGlhdGVseVRpbWluZ0luZm9I",
+            "ABIkCgVkZWxheRgCIAEoCzITLmd3LkRlbGF5VGltaW5nSW5mb0gAEisKCWdw",
+            "c19lcG9jaBgDIAEoCzIWLmd3LkdQU0Vwb2NoVGltaW5nSW5mb0gAQgwKCnBh",
+            "cmFtZXRlcnMiFwoVSW1tZWRpYXRlbHlUaW1pbmdJbmZvIjsKD0RlbGF5VGlt",
+            "aW5nSW5mbxIoCgVkZWxheRgBIAEoCzIZLmdvb2dsZS5wcm90b2J1Zi5EdXJh",
+            "dGlvbiJNChJHUFNFcG9jaFRpbWluZ0luZm8SNwoUdGltZV9zaW5jZV9ncHNf",
+            "ZXBvY2gYASABKAsyGS5nb29nbGUucHJvdG9idWYuRHVyYXRpb24iyAEKC1Vw",
+            "bGlua0ZyYW1lEhMKC3BoeV9wYXlsb2FkGAEgASgMEi4KDnR4X2luZm9fbGVn",
+            "YWN5GAIgASgLMhYuZ3cuVXBsaW5rVHhJbmZvTGVnYWN5Ei4KDnJ4X2luZm9f",
+            "bGVnYWN5GAMgASgLMhYuZ3cuVXBsaW5rUnhJbmZvTGVnYWN5EiEKB3R4X2lu",
+            "Zm8YBCABKAsyEC5ndy5VcGxpbmtUeEluZm8SIQoHcnhfaW5mbxgFIAEoCzIQ",
+            "Lmd3LlVwbGlua1J4SW5mbyJrCg5VcGxpbmtGcmFtZVNldBITCgtwaHlfcGF5",
+            "bG9hZBgBIAEoDBIhCgd0eF9pbmZvGAIgASgLMhAuZ3cuVXBsaW5rVHhJbmZv",
+            "EiEKB3J4X2luZm8YAyADKAsyEC5ndy5VcGxpbmtSeEluZm8ilQEKDURvd25s",
+            "aW5rRnJhbWUSEwoLZG93bmxpbmtfaWQYAyABKA0SGgoSZG93bmxpbmtfaWRf",
+            "bGVnYWN5GAQgASgMEiQKBWl0ZW1zGAUgAygLMhUuZ3cuRG93bmxpbmtGcmFt",
+            "ZUl0ZW0SGQoRZ2F0ZXdheV9pZF9sZWdhY3kYBiABKAwSEgoKZ2F0ZXdheV9p",
+            "ZBgHIAEoCSJ/ChFEb3dubGlua0ZyYW1lSXRlbRITCgtwaHlfcGF5bG9hZBgB",
+            "IAEoDBIwCg50eF9pbmZvX2xlZ2FjeRgCIAEoCzIYLmd3LkRvd25saW5rVHhJ",
+            "bmZvTGVnYWN5EiMKB3R4X2luZm8YAyABKAsyEi5ndy5Eb3dubGlua1R4SW5m",
+            "byKVAQoNRG93bmxpbmtUeEFjaxIZChFnYXRld2F5X2lkX2xlZ2FjeRgBIAEo",
+            "DBISCgpnYXRld2F5X2lkGAYgASgJEhMKC2Rvd25saW5rX2lkGAIgASgNEhoK",
+            "EmRvd25saW5rX2lkX2xlZ2FjeRgEIAEoDBIkCgVpdGVtcxgFIAMoCzIVLmd3",
+            "LkRvd25saW5rVHhBY2tJdGVtIjQKEURvd25saW5rVHhBY2tJdGVtEh8KBnN0",
+            "YXR1cxgBIAEoDjIPLmd3LlR4QWNrU3RhdHVzIrUBChRHYXRld2F5Q29uZmln",
+            "dXJhdGlvbhIZChFnYXRld2F5X2lkX2xlZ2FjeRgBIAEoDBISCgpnYXRld2F5",
+            "X2lkGAUgASgJEg8KB3ZlcnNpb24YAiABKAkSKgoIY2hhbm5lbHMYAyADKAsy",
+            "GC5ndy5DaGFubmVsQ29uZmlndXJhdGlvbhIxCg5zdGF0c19pbnRlcnZhbBgE",
+            "IAEoCzIZLmdvb2dsZS5wcm90b2J1Zi5EdXJhdGlvbiLBAgoUQ2hhbm5lbENv",
+            "bmZpZ3VyYXRpb24SEQoJZnJlcXVlbmN5GAEgASgNEi0KEW1vZHVsYXRpb25f",
+            "bGVnYWN5GAIgASgOMhIuY29tbW9uLk1vZHVsYXRpb24SOgoWbG9yYV9tb2R1",
+            "bGF0aW9uX2NvbmZpZxgDIAEoCzIYLmd3LkxvcmFNb2R1bGF0aW9uQ29uZmln",
+            "SAASOAoVZnNrX21vZHVsYXRpb25fY29uZmlnGAQgASgLMhcuZ3cuRnNrTW9k",
+            "dWxhdGlvbkNvbmZpZ0gAEjgKFXhzc19tb2R1bGF0aW9uX2NvbmZpZxgHIAEo",
+            "CzIXLmd3Llhzc01vZHVsYXRpb25Db25maWdIABINCgVib2FyZBgFIAEoDRIT",
+            "CgtkZW1vZHVsYXRvchgGIAEoDUITChFtb2R1bGF0aW9uX2NvbmZpZyJeChRM",
+            "b3JhTW9kdWxhdGlvbkNvbmZpZxIYChBiYW5kd2lkdGhfbGVnYWN5GAEgASgN",
+            "EhEKCWJhbmR3aWR0aBgDIAEoDRIZChFzcHJlYWRpbmdfZmFjdG9ycxgCIAMo",
+            "DSJTChNGc2tNb2R1bGF0aW9uQ29uZmlnEhgKEGJhbmR3aWR0aF9sZWdhY3kY",
+            "ASABKA0SEQoJYmFuZHdpZHRoGAMgASgNEg8KB2JpdHJhdGUYAiABKA0iXQoT",
+            "WHNzTW9kdWxhdGlvbkNvbmZpZxIYChBiYW5kd2lkdGhfbGVnYWN5GAEgASgN",
+            "EhEKCWJhbmR3aWR0aBgDIAEoDRIZChFzcHJlYWRpbmdfZmFjdG9ycxgCIAMo",
+            "DSL0AQoZR2F0ZXdheUNvbW1hbmRFeGVjUmVxdWVzdBIZChFnYXRld2F5X2lk",
+            "X2xlZ2FjeRgBIAEoDBISCgpnYXRld2F5X2lkGAYgASgJEg8KB2NvbW1hbmQY",
+            "AiABKAkSDwoHZXhlY19pZBgHIAEoDRINCgVzdGRpbhgEIAEoDBJDCgtlbnZp",
+            "cm9ubWVudBgFIAMoCzIuLmd3LkdhdGV3YXlDb21tYW5kRXhlY1JlcXVlc3Qu",
+            "RW52aXJvbm1lbnRFbnRyeRoyChBFbnZpcm9ubWVudEVudHJ5EgsKA2tleRgB",
+            "IAEoCRINCgV2YWx1ZRgCIAEoCToCOAEiiwEKGkdhdGV3YXlDb21tYW5kRXhl",
+            "Y1Jlc3BvbnNlEhkKEWdhdGV3YXlfaWRfbGVnYWN5GAEgASgMEhIKCmdhdGV3",
+            "YXlfaWQYBiABKAkSDwoHZXhlY19pZBgHIAEoDRIOCgZzdGRvdXQYAyABKAwS",
+            "DgoGc3RkZXJyGAQgASgMEg0KBWVycm9yGAUgASgJIlkKF1Jhd1BhY2tldEZv",
+            "cndhcmRlckV2ZW50EhkKEWdhdGV3YXlfaWRfbGVnYWN5GAEgASgMEhIKCmdh",
+            "dGV3YXlfaWQYBCABKAkSDwoHcGF5bG9hZBgDIAEoDCJbChlSYXdQYWNrZXRG",
+            "b3J3YXJkZXJDb21tYW5kEhkKEWdhdGV3YXlfaWRfbGVnYWN5GAEgASgMEhIK",
+            "CmdhdGV3YXlfaWQYBCABKAkSDwoHcGF5bG9hZBgDIAEoDCKAAQoJQ29ublN0",
+            "YXRlEhkKEWdhdGV3YXlfaWRfbGVnYWN5GAEgASgMEhIKCmdhdGV3YXlfaWQY",
+            "AyABKAkSIgoFc3RhdGUYAiABKA4yEy5ndy5Db25uU3RhdGUuU3RhdGUiIAoF",
+            "U3RhdGUSCwoHT0ZGTElORRAAEgoKBk9OTElORRABKrUBCghDb2RlUmF0ZRIQ",
+            "CgxDUl9VTkRFRklORUQQABIKCgZDUl80XzUQARIKCgZDUl80XzYQAhIKCgZD",
+            "Ul80XzcQAxIKCgZDUl80XzgQBBIKCgZDUl8zXzgQBRIKCgZDUl8yXzYQBhIK",
+            "CgZDUl8xXzQQBxIKCgZDUl8xXzYQCBIKCgZDUl81XzYQCRINCglDUl9MSV80",
+            "XzUQChINCglDUl9MSV80XzYQCxINCglDUl9MSV80XzgQDCo7Cg5Eb3dubGlu",
+            "a1RpbWluZxIPCgtJTU1FRElBVEVMWRAAEgkKBURFTEFZEAESDQoJR1BTX0VQ",
+            "T0NIEAIqNwoRRmluZVRpbWVzdGFtcFR5cGUSCAoETk9ORRAAEg0KCUVOQ1JZ",
+            "UFRFRBABEgkKBVBMQUlOEAIqMAoJQ1JDU3RhdHVzEgoKBk5PX0NSQxAAEgsK",
+            "B0JBRF9DUkMQARIKCgZDUkNfT0sQAiq8AQoLVHhBY2tTdGF0dXMSCwoHSUdO",
+            "T1JFRBAAEgYKAk9LEAESDAoIVE9PX0xBVEUQAhINCglUT09fRUFSTFkQAxIU",
+            "ChBDT0xMSVNJT05fUEFDS0VUEAQSFAoQQ09MTElTSU9OX0JFQUNPThAFEgsK",
+            "B1RYX0ZSRVEQBhIMCghUWF9QT1dFUhAHEhAKDEdQU19VTkxPQ0tFRBAIEg4K",
+            "ClFVRVVFX0ZVTEwQCRISCg5JTlRFUk5BTF9FUlJPUhAKQmoKFGlvLmNoaXJw",
+            "c3RhY2suYXBpLmd3QgxHYXRld2F5UHJvdG9QAVotZ2l0aHViLmNvbS9jaGly",
+            "cHN0YWNrL2NoaXJwc3RhY2svYXBpL2dvL3Y0L2d3qgISQ2hpcnBzdGFjay5H",
+            "YXRld2F5YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Chirpstack.Common.CommonReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.DurationReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.StructReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Chirpstack.Gateway.CodeRate), typeof(global::Chirpstack.Gateway.DownlinkTiming), typeof(global::Chirpstack.Gateway.FineTimestampType), typeof(global::Chirpstack.Gateway.CRCStatus), typeof(global::Chirpstack.Gateway.TxAckStatus), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Chirpstack.Gateway.Modulation), global::Chirpstack.Gateway.Modulation.Parser, new[]{ "Lora", "Fsk", "LrFhss" }, new[]{ "Parameters" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Chirpstack.Gateway.UplinkTxInfoLegacy), global::Chirpstack.Gateway.UplinkTxInfoLegacy.Parser, new[]{ "Frequency", "Modulation", "LoraModulationInfo", "FskModulationInfo", "LrFhssModulationInfo" }, new[]{ "ModulationInfo" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Chirpstack.Gateway.Modulation), global::Chirpstack.Gateway.Modulation.Parser, new[]{ "Lora", "Fsk", "LrFhss", "Xss" }, new[]{ "Parameters" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Chirpstack.Gateway.UplinkTxInfoLegacy), global::Chirpstack.Gateway.UplinkTxInfoLegacy.Parser, new[]{ "Frequency", "Modulation", "LoraModulationInfo", "FskModulationInfo", "LrFhssModulationInfo", "XssModulationInfo" }, new[]{ "ModulationInfo" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Chirpstack.Gateway.UplinkTxInfo), global::Chirpstack.Gateway.UplinkTxInfo.Parser, new[]{ "Frequency", "Modulation" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Chirpstack.Gateway.LoraModulationInfo), global::Chirpstack.Gateway.LoraModulationInfo.Parser, new[]{ "Bandwidth", "SpreadingFactor", "CodeRateLegacy", "CodeRate", "PolarizationInversion" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Chirpstack.Gateway.FskModulationInfo), global::Chirpstack.Gateway.FskModulationInfo.Parser, new[]{ "FrequencyDeviation", "Datarate" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Chirpstack.Gateway.LrFhssModulationInfo), global::Chirpstack.Gateway.LrFhssModulationInfo.Parser, new[]{ "OperatingChannelWidth", "CodeRateLegacy", "CodeRate", "GridSteps" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Chirpstack.Gateway.XssModulationInfo), global::Chirpstack.Gateway.XssModulationInfo.Parser, new[]{ "Bandwidth", "SpreadingFactor", "CodeRateLegacy", "CodeRate", "PolarizationInversion" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Chirpstack.Gateway.EncryptedFineTimestamp), global::Chirpstack.Gateway.EncryptedFineTimestamp.Parser, new[]{ "AesKeyIndex", "EncryptedNs", "FpgaId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Chirpstack.Gateway.PlainFineTimestamp), global::Chirpstack.Gateway.PlainFineTimestamp.Parser, new[]{ "Time" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Chirpstack.Gateway.GatewayStats), global::Chirpstack.Gateway.GatewayStats.Parser, new[]{ "GatewayIdLegacy", "GatewayId", "Time", "Location", "ConfigVersion", "RxPacketsReceived", "RxPacketsReceivedOk", "TxPacketsReceived", "TxPacketsEmitted", "Metadata", "TxPacketsPerFrequency", "RxPacketsPerFrequency", "TxPacketsPerModulation", "RxPacketsPerModulation", "TxPacketsPerStatus" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, null, null, null, }),
             new pbr::GeneratedClrTypeInfo(typeof(global::Chirpstack.Gateway.PerModulationCount), global::Chirpstack.Gateway.PerModulationCount.Parser, new[]{ "Modulation", "Count" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Chirpstack.Gateway.UplinkRxInfoLegacy), global::Chirpstack.Gateway.UplinkRxInfoLegacy.Parser, new[]{ "GatewayId", "Time", "TimeSinceGpsEpoch", "Rssi", "LoraSnr", "Channel", "RfChain", "Board", "Antenna", "Location", "FineTimestampType", "EncryptedFineTimestamp", "PlainFineTimestamp", "Context", "UplinkId", "CrcStatus", "Metadata" }, new[]{ "FineTimestamp" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
             new pbr::GeneratedClrTypeInfo(typeof(global::Chirpstack.Gateway.UplinkRxInfo), global::Chirpstack.Gateway.UplinkRxInfo.Parser, new[]{ "GatewayId", "UplinkId", "Time", "TimeSinceGpsEpoch", "FineTimeSinceGpsEpoch", "Rssi", "Snr", "Channel", "RfChain", "Board", "Antenna", "Location", "Context", "Metadata", "CrcStatus" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Chirpstack.Gateway.DownlinkTxInfoLegacy), global::Chirpstack.Gateway.DownlinkTxInfoLegacy.Parser, new[]{ "GatewayId", "Frequency", "Power", "Modulation", "LoraModulationInfo", "FskModulationInfo", "Board", "Antenna", "Timing", "ImmediatelyTimingInfo", "DelayTimingInfo", "GpsEpochTimingInfo", "Context" }, new[]{ "ModulationInfo", "TimingInfo" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Chirpstack.Gateway.DownlinkTxInfoLegacy), global::Chirpstack.Gateway.DownlinkTxInfoLegacy.Parser, new[]{ "GatewayId", "Frequency", "Power", "Modulation", "LoraModulationInfo", "FskModulationInfo", "XssModulationInfo", "Board", "Antenna", "Timing", "ImmediatelyTimingInfo", "DelayTimingInfo", "GpsEpochTimingInfo", "Context" }, new[]{ "ModulationInfo", "TimingInfo" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Chirpstack.Gateway.DownlinkTxInfo), global::Chirpstack.Gateway.DownlinkTxInfo.Parser, new[]{ "Frequency", "Power", "Modulation", "Board", "Antenna", "Timing", "Context" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Chirpstack.Gateway.Timing), global::Chirpstack.Gateway.Timing.Parser, new[]{ "Immediately", "Delay", "GpsEpoch" }, new[]{ "Parameters" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Chirpstack.Gateway.ImmediatelyTimingInfo), global::Chirpstack.Gateway.ImmediatelyTimingInfo.Parser, null, null, null, null, null),
@@ -210,9 +221,10 @@ namespace Chirpstack.Gateway {
             new pbr::GeneratedClrTypeInfo(typeof(global::Chirpstack.Gateway.DownlinkTxAck), global::Chirpstack.Gateway.DownlinkTxAck.Parser, new[]{ "GatewayIdLegacy", "GatewayId", "DownlinkId", "DownlinkIdLegacy", "Items" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Chirpstack.Gateway.DownlinkTxAckItem), global::Chirpstack.Gateway.DownlinkTxAckItem.Parser, new[]{ "Status" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Chirpstack.Gateway.GatewayConfiguration), global::Chirpstack.Gateway.GatewayConfiguration.Parser, new[]{ "GatewayIdLegacy", "GatewayId", "Version", "Channels", "StatsInterval" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Chirpstack.Gateway.ChannelConfiguration), global::Chirpstack.Gateway.ChannelConfiguration.Parser, new[]{ "Frequency", "ModulationLegacy", "LoraModulationConfig", "FskModulationConfig", "Board", "Demodulator" }, new[]{ "ModulationConfig" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Chirpstack.Gateway.ChannelConfiguration), global::Chirpstack.Gateway.ChannelConfiguration.Parser, new[]{ "Frequency", "ModulationLegacy", "LoraModulationConfig", "FskModulationConfig", "XssModulationConfig", "Board", "Demodulator" }, new[]{ "ModulationConfig" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Chirpstack.Gateway.LoraModulationConfig), global::Chirpstack.Gateway.LoraModulationConfig.Parser, new[]{ "BandwidthLegacy", "Bandwidth", "SpreadingFactors" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Chirpstack.Gateway.FskModulationConfig), global::Chirpstack.Gateway.FskModulationConfig.Parser, new[]{ "BandwidthLegacy", "Bandwidth", "Bitrate" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Chirpstack.Gateway.XssModulationConfig), global::Chirpstack.Gateway.XssModulationConfig.Parser, new[]{ "BandwidthLegacy", "Bandwidth", "SpreadingFactors" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Chirpstack.Gateway.GatewayCommandExecRequest), global::Chirpstack.Gateway.GatewayCommandExecRequest.Parser, new[]{ "GatewayIdLegacy", "GatewayId", "Command", "ExecId", "Stdin", "Environment" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
             new pbr::GeneratedClrTypeInfo(typeof(global::Chirpstack.Gateway.GatewayCommandExecResponse), global::Chirpstack.Gateway.GatewayCommandExecResponse.Parser, new[]{ "GatewayIdLegacy", "GatewayId", "ExecId", "Stdout", "Stderr", "Error" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Chirpstack.Gateway.RawPacketForwarderEvent), global::Chirpstack.Gateway.RawPacketForwarderEvent.Parser, new[]{ "GatewayIdLegacy", "GatewayId", "Payload" }, null, null, null, null),
@@ -388,6 +400,9 @@ namespace Chirpstack.Gateway {
         case ParametersOneofCase.LrFhss:
           LrFhss = other.LrFhss.Clone();
           break;
+        case ParametersOneofCase.Xss:
+          Xss = other.Xss.Clone();
+          break;
       }
 
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -444,6 +459,21 @@ namespace Chirpstack.Gateway {
       }
     }
 
+    /// <summary>Field number for the "xss" field.</summary>
+    public const int XssFieldNumber = 6;
+    /// <summary>
+    /// XSS modulation information.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Chirpstack.Gateway.XssModulationInfo Xss {
+      get { return parametersCase_ == ParametersOneofCase.Xss ? (global::Chirpstack.Gateway.XssModulationInfo) parameters_ : null; }
+      set {
+        parameters_ = value;
+        parametersCase_ = value == null ? ParametersOneofCase.None : ParametersOneofCase.Xss;
+      }
+    }
+
     private object parameters_;
     /// <summary>Enum of possible cases for the "parameters" oneof.</summary>
     public enum ParametersOneofCase {
@@ -451,6 +481,7 @@ namespace Chirpstack.Gateway {
       Lora = 3,
       Fsk = 4,
       LrFhss = 5,
+      Xss = 6,
     }
     private ParametersOneofCase parametersCase_ = ParametersOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -484,6 +515,7 @@ namespace Chirpstack.Gateway {
       if (!object.Equals(Lora, other.Lora)) return false;
       if (!object.Equals(Fsk, other.Fsk)) return false;
       if (!object.Equals(LrFhss, other.LrFhss)) return false;
+      if (!object.Equals(Xss, other.Xss)) return false;
       if (ParametersCase != other.ParametersCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -495,6 +527,7 @@ namespace Chirpstack.Gateway {
       if (parametersCase_ == ParametersOneofCase.Lora) hash ^= Lora.GetHashCode();
       if (parametersCase_ == ParametersOneofCase.Fsk) hash ^= Fsk.GetHashCode();
       if (parametersCase_ == ParametersOneofCase.LrFhss) hash ^= LrFhss.GetHashCode();
+      if (parametersCase_ == ParametersOneofCase.Xss) hash ^= Xss.GetHashCode();
       hash ^= (int) parametersCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -526,6 +559,10 @@ namespace Chirpstack.Gateway {
         output.WriteRawTag(42);
         output.WriteMessage(LrFhss);
       }
+      if (parametersCase_ == ParametersOneofCase.Xss) {
+        output.WriteRawTag(50);
+        output.WriteMessage(Xss);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -548,6 +585,10 @@ namespace Chirpstack.Gateway {
         output.WriteRawTag(42);
         output.WriteMessage(LrFhss);
       }
+      if (parametersCase_ == ParametersOneofCase.Xss) {
+        output.WriteRawTag(50);
+        output.WriteMessage(Xss);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -566,6 +607,9 @@ namespace Chirpstack.Gateway {
       }
       if (parametersCase_ == ParametersOneofCase.LrFhss) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(LrFhss);
+      }
+      if (parametersCase_ == ParametersOneofCase.Xss) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Xss);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -597,6 +641,12 @@ namespace Chirpstack.Gateway {
             LrFhss = new global::Chirpstack.Gateway.LrFhssModulationInfo();
           }
           LrFhss.MergeFrom(other.LrFhss);
+          break;
+        case ParametersOneofCase.Xss:
+          if (Xss == null) {
+            Xss = new global::Chirpstack.Gateway.XssModulationInfo();
+          }
+          Xss.MergeFrom(other.Xss);
           break;
       }
 
@@ -642,6 +692,15 @@ namespace Chirpstack.Gateway {
             LrFhss = subBuilder;
             break;
           }
+          case 50: {
+            global::Chirpstack.Gateway.XssModulationInfo subBuilder = new global::Chirpstack.Gateway.XssModulationInfo();
+            if (parametersCase_ == ParametersOneofCase.Xss) {
+              subBuilder.MergeFrom(Xss);
+            }
+            input.ReadMessage(subBuilder);
+            Xss = subBuilder;
+            break;
+          }
         }
       }
     #endif
@@ -682,6 +741,15 @@ namespace Chirpstack.Gateway {
             }
             input.ReadMessage(subBuilder);
             LrFhss = subBuilder;
+            break;
+          }
+          case 50: {
+            global::Chirpstack.Gateway.XssModulationInfo subBuilder = new global::Chirpstack.Gateway.XssModulationInfo();
+            if (parametersCase_ == ParametersOneofCase.Xss) {
+              subBuilder.MergeFrom(Xss);
+            }
+            input.ReadMessage(subBuilder);
+            Xss = subBuilder;
             break;
           }
         }
@@ -736,6 +804,9 @@ namespace Chirpstack.Gateway {
           break;
         case ModulationInfoOneofCase.LrFhssModulationInfo:
           LrFhssModulationInfo = other.LrFhssModulationInfo.Clone();
+          break;
+        case ModulationInfoOneofCase.XssModulationInfo:
+          XssModulationInfo = other.XssModulationInfo.Clone();
           break;
       }
 
@@ -823,6 +894,21 @@ namespace Chirpstack.Gateway {
       }
     }
 
+    /// <summary>Field number for the "xss_modulation_info" field.</summary>
+    public const int XssModulationInfoFieldNumber = 6;
+    /// <summary>
+    /// XSS modulation information.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Chirpstack.Gateway.XssModulationInfo XssModulationInfo {
+      get { return modulationInfoCase_ == ModulationInfoOneofCase.XssModulationInfo ? (global::Chirpstack.Gateway.XssModulationInfo) modulationInfo_ : null; }
+      set {
+        modulationInfo_ = value;
+        modulationInfoCase_ = value == null ? ModulationInfoOneofCase.None : ModulationInfoOneofCase.XssModulationInfo;
+      }
+    }
+
     private object modulationInfo_;
     /// <summary>Enum of possible cases for the "modulation_info" oneof.</summary>
     public enum ModulationInfoOneofCase {
@@ -830,6 +916,7 @@ namespace Chirpstack.Gateway {
       LoraModulationInfo = 3,
       FskModulationInfo = 4,
       LrFhssModulationInfo = 5,
+      XssModulationInfo = 6,
     }
     private ModulationInfoOneofCase modulationInfoCase_ = ModulationInfoOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -865,6 +952,7 @@ namespace Chirpstack.Gateway {
       if (!object.Equals(LoraModulationInfo, other.LoraModulationInfo)) return false;
       if (!object.Equals(FskModulationInfo, other.FskModulationInfo)) return false;
       if (!object.Equals(LrFhssModulationInfo, other.LrFhssModulationInfo)) return false;
+      if (!object.Equals(XssModulationInfo, other.XssModulationInfo)) return false;
       if (ModulationInfoCase != other.ModulationInfoCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -878,6 +966,7 @@ namespace Chirpstack.Gateway {
       if (modulationInfoCase_ == ModulationInfoOneofCase.LoraModulationInfo) hash ^= LoraModulationInfo.GetHashCode();
       if (modulationInfoCase_ == ModulationInfoOneofCase.FskModulationInfo) hash ^= FskModulationInfo.GetHashCode();
       if (modulationInfoCase_ == ModulationInfoOneofCase.LrFhssModulationInfo) hash ^= LrFhssModulationInfo.GetHashCode();
+      if (modulationInfoCase_ == ModulationInfoOneofCase.XssModulationInfo) hash ^= XssModulationInfo.GetHashCode();
       hash ^= (int) modulationInfoCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -917,6 +1006,10 @@ namespace Chirpstack.Gateway {
         output.WriteRawTag(42);
         output.WriteMessage(LrFhssModulationInfo);
       }
+      if (modulationInfoCase_ == ModulationInfoOneofCase.XssModulationInfo) {
+        output.WriteRawTag(50);
+        output.WriteMessage(XssModulationInfo);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -947,6 +1040,10 @@ namespace Chirpstack.Gateway {
         output.WriteRawTag(42);
         output.WriteMessage(LrFhssModulationInfo);
       }
+      if (modulationInfoCase_ == ModulationInfoOneofCase.XssModulationInfo) {
+        output.WriteRawTag(50);
+        output.WriteMessage(XssModulationInfo);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -971,6 +1068,9 @@ namespace Chirpstack.Gateway {
       }
       if (modulationInfoCase_ == ModulationInfoOneofCase.LrFhssModulationInfo) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(LrFhssModulationInfo);
+      }
+      if (modulationInfoCase_ == ModulationInfoOneofCase.XssModulationInfo) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(XssModulationInfo);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1008,6 +1108,12 @@ namespace Chirpstack.Gateway {
             LrFhssModulationInfo = new global::Chirpstack.Gateway.LrFhssModulationInfo();
           }
           LrFhssModulationInfo.MergeFrom(other.LrFhssModulationInfo);
+          break;
+        case ModulationInfoOneofCase.XssModulationInfo:
+          if (XssModulationInfo == null) {
+            XssModulationInfo = new global::Chirpstack.Gateway.XssModulationInfo();
+          }
+          XssModulationInfo.MergeFrom(other.XssModulationInfo);
           break;
       }
 
@@ -1061,6 +1167,15 @@ namespace Chirpstack.Gateway {
             LrFhssModulationInfo = subBuilder;
             break;
           }
+          case 50: {
+            global::Chirpstack.Gateway.XssModulationInfo subBuilder = new global::Chirpstack.Gateway.XssModulationInfo();
+            if (modulationInfoCase_ == ModulationInfoOneofCase.XssModulationInfo) {
+              subBuilder.MergeFrom(XssModulationInfo);
+            }
+            input.ReadMessage(subBuilder);
+            XssModulationInfo = subBuilder;
+            break;
+          }
         }
       }
     #endif
@@ -1109,6 +1224,15 @@ namespace Chirpstack.Gateway {
             }
             input.ReadMessage(subBuilder);
             LrFhssModulationInfo = subBuilder;
+            break;
+          }
+          case 50: {
+            global::Chirpstack.Gateway.XssModulationInfo subBuilder = new global::Chirpstack.Gateway.XssModulationInfo();
+            if (modulationInfoCase_ == ModulationInfoOneofCase.XssModulationInfo) {
+              subBuilder.MergeFrom(XssModulationInfo);
+            }
+            input.ReadMessage(subBuilder);
+            XssModulationInfo = subBuilder;
             break;
           }
         }
@@ -2256,6 +2380,358 @@ namespace Chirpstack.Gateway {
 
   }
 
+  public sealed partial class XssModulationInfo : pb::IMessage<XssModulationInfo>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<XssModulationInfo> _parser = new pb::MessageParser<XssModulationInfo>(() => new XssModulationInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<XssModulationInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[6]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public XssModulationInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public XssModulationInfo(XssModulationInfo other) : this() {
+      bandwidth_ = other.bandwidth_;
+      spreadingFactor_ = other.spreadingFactor_;
+      codeRateLegacy_ = other.codeRateLegacy_;
+      codeRate_ = other.codeRate_;
+      polarizationInversion_ = other.polarizationInversion_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public XssModulationInfo Clone() {
+      return new XssModulationInfo(this);
+    }
+
+    /// <summary>Field number for the "bandwidth" field.</summary>
+    public const int BandwidthFieldNumber = 1;
+    private uint bandwidth_;
+    /// <summary>
+    /// Bandwidth.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint Bandwidth {
+      get { return bandwidth_; }
+      set {
+        bandwidth_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "spreading_factor" field.</summary>
+    public const int SpreadingFactorFieldNumber = 2;
+    private uint spreadingFactor_;
+    /// <summary>
+    /// Speading-factor.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint SpreadingFactor {
+      get { return spreadingFactor_; }
+      set {
+        spreadingFactor_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "code_rate_legacy" field.</summary>
+    public const int CodeRateLegacyFieldNumber = 3;
+    private string codeRateLegacy_ = "";
+    /// <summary>
+    /// Code-rate.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string CodeRateLegacy {
+      get { return codeRateLegacy_; }
+      set {
+        codeRateLegacy_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "code_rate" field.</summary>
+    public const int CodeRateFieldNumber = 5;
+    private global::Chirpstack.Gateway.CodeRate codeRate_ = global::Chirpstack.Gateway.CodeRate.CrUndefined;
+    /// <summary>
+    /// Code-rate.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Chirpstack.Gateway.CodeRate CodeRate {
+      get { return codeRate_; }
+      set {
+        codeRate_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "polarization_inversion" field.</summary>
+    public const int PolarizationInversionFieldNumber = 4;
+    private bool polarizationInversion_;
+    /// <summary>
+    /// Polarization inversion.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool PolarizationInversion {
+      get { return polarizationInversion_; }
+      set {
+        polarizationInversion_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as XssModulationInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(XssModulationInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Bandwidth != other.Bandwidth) return false;
+      if (SpreadingFactor != other.SpreadingFactor) return false;
+      if (CodeRateLegacy != other.CodeRateLegacy) return false;
+      if (CodeRate != other.CodeRate) return false;
+      if (PolarizationInversion != other.PolarizationInversion) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Bandwidth != 0) hash ^= Bandwidth.GetHashCode();
+      if (SpreadingFactor != 0) hash ^= SpreadingFactor.GetHashCode();
+      if (CodeRateLegacy.Length != 0) hash ^= CodeRateLegacy.GetHashCode();
+      if (CodeRate != global::Chirpstack.Gateway.CodeRate.CrUndefined) hash ^= CodeRate.GetHashCode();
+      if (PolarizationInversion != false) hash ^= PolarizationInversion.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Bandwidth != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Bandwidth);
+      }
+      if (SpreadingFactor != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(SpreadingFactor);
+      }
+      if (CodeRateLegacy.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(CodeRateLegacy);
+      }
+      if (PolarizationInversion != false) {
+        output.WriteRawTag(32);
+        output.WriteBool(PolarizationInversion);
+      }
+      if (CodeRate != global::Chirpstack.Gateway.CodeRate.CrUndefined) {
+        output.WriteRawTag(40);
+        output.WriteEnum((int) CodeRate);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Bandwidth != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Bandwidth);
+      }
+      if (SpreadingFactor != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(SpreadingFactor);
+      }
+      if (CodeRateLegacy.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(CodeRateLegacy);
+      }
+      if (PolarizationInversion != false) {
+        output.WriteRawTag(32);
+        output.WriteBool(PolarizationInversion);
+      }
+      if (CodeRate != global::Chirpstack.Gateway.CodeRate.CrUndefined) {
+        output.WriteRawTag(40);
+        output.WriteEnum((int) CodeRate);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Bandwidth != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Bandwidth);
+      }
+      if (SpreadingFactor != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(SpreadingFactor);
+      }
+      if (CodeRateLegacy.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CodeRateLegacy);
+      }
+      if (CodeRate != global::Chirpstack.Gateway.CodeRate.CrUndefined) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) CodeRate);
+      }
+      if (PolarizationInversion != false) {
+        size += 1 + 1;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(XssModulationInfo other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Bandwidth != 0) {
+        Bandwidth = other.Bandwidth;
+      }
+      if (other.SpreadingFactor != 0) {
+        SpreadingFactor = other.SpreadingFactor;
+      }
+      if (other.CodeRateLegacy.Length != 0) {
+        CodeRateLegacy = other.CodeRateLegacy;
+      }
+      if (other.CodeRate != global::Chirpstack.Gateway.CodeRate.CrUndefined) {
+        CodeRate = other.CodeRate;
+      }
+      if (other.PolarizationInversion != false) {
+        PolarizationInversion = other.PolarizationInversion;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Bandwidth = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            SpreadingFactor = input.ReadUInt32();
+            break;
+          }
+          case 26: {
+            CodeRateLegacy = input.ReadString();
+            break;
+          }
+          case 32: {
+            PolarizationInversion = input.ReadBool();
+            break;
+          }
+          case 40: {
+            CodeRate = (global::Chirpstack.Gateway.CodeRate) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Bandwidth = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            SpreadingFactor = input.ReadUInt32();
+            break;
+          }
+          case 26: {
+            CodeRateLegacy = input.ReadString();
+            break;
+          }
+          case 32: {
+            PolarizationInversion = input.ReadBool();
+            break;
+          }
+          case 40: {
+            CodeRate = (global::Chirpstack.Gateway.CodeRate) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
   public sealed partial class EncryptedFineTimestamp : pb::IMessage<EncryptedFineTimestamp>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2270,7 +2746,7 @@ namespace Chirpstack.Gateway {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[6]; }
+      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2542,7 +3018,7 @@ namespace Chirpstack.Gateway {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[7]; }
+      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2743,7 +3219,7 @@ namespace Chirpstack.Gateway {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[8]; }
+      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3449,7 +3925,7 @@ namespace Chirpstack.Gateway {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[9]; }
+      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3690,7 +4166,7 @@ namespace Chirpstack.Gateway {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[10]; }
+      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4598,7 +5074,7 @@ namespace Chirpstack.Gateway {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[11]; }
+      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5378,7 +5854,7 @@ namespace Chirpstack.Gateway {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[12]; }
+      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[13]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5412,6 +5888,9 @@ namespace Chirpstack.Gateway {
           break;
         case ModulationInfoOneofCase.FskModulationInfo:
           FskModulationInfo = other.FskModulationInfo.Clone();
+          break;
+        case ModulationInfoOneofCase.XssModulationInfo:
+          XssModulationInfo = other.XssModulationInfo.Clone();
           break;
       }
 
@@ -5527,6 +6006,21 @@ namespace Chirpstack.Gateway {
       }
     }
 
+    /// <summary>Field number for the "xss_modulation_info" field.</summary>
+    public const int XssModulationInfoFieldNumber = 17;
+    /// <summary>
+    /// XSS modulation information.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Chirpstack.Gateway.XssModulationInfo XssModulationInfo {
+      get { return modulationInfoCase_ == ModulationInfoOneofCase.XssModulationInfo ? (global::Chirpstack.Gateway.XssModulationInfo) modulationInfo_ : null; }
+      set {
+        modulationInfo_ = value;
+        modulationInfoCase_ = value == null ? ModulationInfoOneofCase.None : ModulationInfoOneofCase.XssModulationInfo;
+      }
+    }
+
     /// <summary>Field number for the "board" field.</summary>
     public const int BoardFieldNumber = 10;
     private uint board_;
@@ -5639,6 +6133,7 @@ namespace Chirpstack.Gateway {
       None = 0,
       LoraModulationInfo = 8,
       FskModulationInfo = 9,
+      XssModulationInfo = 17,
     }
     private ModulationInfoOneofCase modulationInfoCase_ = ModulationInfoOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5697,6 +6192,7 @@ namespace Chirpstack.Gateway {
       if (Modulation != other.Modulation) return false;
       if (!object.Equals(LoraModulationInfo, other.LoraModulationInfo)) return false;
       if (!object.Equals(FskModulationInfo, other.FskModulationInfo)) return false;
+      if (!object.Equals(XssModulationInfo, other.XssModulationInfo)) return false;
       if (Board != other.Board) return false;
       if (Antenna != other.Antenna) return false;
       if (Timing != other.Timing) return false;
@@ -5719,6 +6215,7 @@ namespace Chirpstack.Gateway {
       if (Modulation != global::Chirpstack.Common.Modulation.Lora) hash ^= Modulation.GetHashCode();
       if (modulationInfoCase_ == ModulationInfoOneofCase.LoraModulationInfo) hash ^= LoraModulationInfo.GetHashCode();
       if (modulationInfoCase_ == ModulationInfoOneofCase.FskModulationInfo) hash ^= FskModulationInfo.GetHashCode();
+      if (modulationInfoCase_ == ModulationInfoOneofCase.XssModulationInfo) hash ^= XssModulationInfo.GetHashCode();
       if (Board != 0) hash ^= Board.GetHashCode();
       if (Antenna != 0) hash ^= Antenna.GetHashCode();
       if (Timing != global::Chirpstack.Gateway.DownlinkTiming.Immediately) hash ^= Timing.GetHashCode();
@@ -5798,6 +6295,10 @@ namespace Chirpstack.Gateway {
         output.WriteRawTag(130, 1);
         output.WriteBytes(Context);
       }
+      if (modulationInfoCase_ == ModulationInfoOneofCase.XssModulationInfo) {
+        output.WriteRawTag(138, 1);
+        output.WriteMessage(XssModulationInfo);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -5860,6 +6361,10 @@ namespace Chirpstack.Gateway {
         output.WriteRawTag(130, 1);
         output.WriteBytes(Context);
       }
+      if (modulationInfoCase_ == ModulationInfoOneofCase.XssModulationInfo) {
+        output.WriteRawTag(138, 1);
+        output.WriteMessage(XssModulationInfo);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -5887,6 +6392,9 @@ namespace Chirpstack.Gateway {
       }
       if (modulationInfoCase_ == ModulationInfoOneofCase.FskModulationInfo) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(FskModulationInfo);
+      }
+      if (modulationInfoCase_ == ModulationInfoOneofCase.XssModulationInfo) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(XssModulationInfo);
       }
       if (Board != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Board);
@@ -5957,6 +6465,12 @@ namespace Chirpstack.Gateway {
             FskModulationInfo = new global::Chirpstack.Gateway.FskModulationInfo();
           }
           FskModulationInfo.MergeFrom(other.FskModulationInfo);
+          break;
+        case ModulationInfoOneofCase.XssModulationInfo:
+          if (XssModulationInfo == null) {
+            XssModulationInfo = new global::Chirpstack.Gateway.XssModulationInfo();
+          }
+          XssModulationInfo.MergeFrom(other.XssModulationInfo);
           break;
       }
 
@@ -6073,6 +6587,15 @@ namespace Chirpstack.Gateway {
             Context = input.ReadBytes();
             break;
           }
+          case 138: {
+            global::Chirpstack.Gateway.XssModulationInfo subBuilder = new global::Chirpstack.Gateway.XssModulationInfo();
+            if (modulationInfoCase_ == ModulationInfoOneofCase.XssModulationInfo) {
+              subBuilder.MergeFrom(XssModulationInfo);
+            }
+            input.ReadMessage(subBuilder);
+            XssModulationInfo = subBuilder;
+            break;
+          }
         }
       }
     #endif
@@ -6165,6 +6688,15 @@ namespace Chirpstack.Gateway {
             Context = input.ReadBytes();
             break;
           }
+          case 138: {
+            global::Chirpstack.Gateway.XssModulationInfo subBuilder = new global::Chirpstack.Gateway.XssModulationInfo();
+            if (modulationInfoCase_ == ModulationInfoOneofCase.XssModulationInfo) {
+              subBuilder.MergeFrom(XssModulationInfo);
+            }
+            input.ReadMessage(subBuilder);
+            XssModulationInfo = subBuilder;
+            break;
+          }
         }
       }
     }
@@ -6186,7 +6718,7 @@ namespace Chirpstack.Gateway {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[13]; }
+      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[14]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6637,7 +7169,7 @@ namespace Chirpstack.Gateway {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[14]; }
+      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[15]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6987,7 +7519,7 @@ namespace Chirpstack.Gateway {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[15]; }
+      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[16]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7139,7 +7671,7 @@ namespace Chirpstack.Gateway {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[16]; }
+      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[17]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7341,7 +7873,7 @@ namespace Chirpstack.Gateway {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[17]; }
+      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[18]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7542,7 +8074,7 @@ namespace Chirpstack.Gateway {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[18]; }
+      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[19]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7930,7 +8462,7 @@ namespace Chirpstack.Gateway {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[19]; }
+      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[20]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8200,7 +8732,7 @@ namespace Chirpstack.Gateway {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[20]; }
+      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[21]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8547,7 +9079,7 @@ namespace Chirpstack.Gateway {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[21]; }
+      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[22]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8837,7 +9369,7 @@ namespace Chirpstack.Gateway {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[22]; }
+      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[23]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -9181,7 +9713,7 @@ namespace Chirpstack.Gateway {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[23]; }
+      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[24]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -9373,7 +9905,7 @@ namespace Chirpstack.Gateway {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[24]; }
+      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[25]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -9724,7 +10256,7 @@ namespace Chirpstack.Gateway {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[25]; }
+      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[26]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -9754,6 +10286,9 @@ namespace Chirpstack.Gateway {
           break;
         case ModulationConfigOneofCase.FskModulationConfig:
           FskModulationConfig = other.FskModulationConfig.Clone();
+          break;
+        case ModulationConfigOneofCase.XssModulationConfig:
+          XssModulationConfig = other.XssModulationConfig.Clone();
           break;
       }
 
@@ -9826,6 +10361,21 @@ namespace Chirpstack.Gateway {
       }
     }
 
+    /// <summary>Field number for the "xss_modulation_config" field.</summary>
+    public const int XssModulationConfigFieldNumber = 7;
+    /// <summary>
+    /// XSS modulation config.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Chirpstack.Gateway.XssModulationConfig XssModulationConfig {
+      get { return modulationConfigCase_ == ModulationConfigOneofCase.XssModulationConfig ? (global::Chirpstack.Gateway.XssModulationConfig) modulationConfig_ : null; }
+      set {
+        modulationConfig_ = value;
+        modulationConfigCase_ = value == null ? ModulationConfigOneofCase.None : ModulationConfigOneofCase.XssModulationConfig;
+      }
+    }
+
     /// <summary>Field number for the "board" field.</summary>
     public const int BoardFieldNumber = 5;
     private uint board_;
@@ -9862,6 +10412,7 @@ namespace Chirpstack.Gateway {
       None = 0,
       LoraModulationConfig = 3,
       FskModulationConfig = 4,
+      XssModulationConfig = 7,
     }
     private ModulationConfigOneofCase modulationConfigCase_ = ModulationConfigOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -9896,6 +10447,7 @@ namespace Chirpstack.Gateway {
       if (ModulationLegacy != other.ModulationLegacy) return false;
       if (!object.Equals(LoraModulationConfig, other.LoraModulationConfig)) return false;
       if (!object.Equals(FskModulationConfig, other.FskModulationConfig)) return false;
+      if (!object.Equals(XssModulationConfig, other.XssModulationConfig)) return false;
       if (Board != other.Board) return false;
       if (Demodulator != other.Demodulator) return false;
       if (ModulationConfigCase != other.ModulationConfigCase) return false;
@@ -9910,6 +10462,7 @@ namespace Chirpstack.Gateway {
       if (ModulationLegacy != global::Chirpstack.Common.Modulation.Lora) hash ^= ModulationLegacy.GetHashCode();
       if (modulationConfigCase_ == ModulationConfigOneofCase.LoraModulationConfig) hash ^= LoraModulationConfig.GetHashCode();
       if (modulationConfigCase_ == ModulationConfigOneofCase.FskModulationConfig) hash ^= FskModulationConfig.GetHashCode();
+      if (modulationConfigCase_ == ModulationConfigOneofCase.XssModulationConfig) hash ^= XssModulationConfig.GetHashCode();
       if (Board != 0) hash ^= Board.GetHashCode();
       if (Demodulator != 0) hash ^= Demodulator.GetHashCode();
       hash ^= (int) modulationConfigCase_;
@@ -9955,6 +10508,10 @@ namespace Chirpstack.Gateway {
         output.WriteRawTag(48);
         output.WriteUInt32(Demodulator);
       }
+      if (modulationConfigCase_ == ModulationConfigOneofCase.XssModulationConfig) {
+        output.WriteRawTag(58);
+        output.WriteMessage(XssModulationConfig);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -9989,6 +10546,10 @@ namespace Chirpstack.Gateway {
         output.WriteRawTag(48);
         output.WriteUInt32(Demodulator);
       }
+      if (modulationConfigCase_ == ModulationConfigOneofCase.XssModulationConfig) {
+        output.WriteRawTag(58);
+        output.WriteMessage(XssModulationConfig);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -10010,6 +10571,9 @@ namespace Chirpstack.Gateway {
       }
       if (modulationConfigCase_ == ModulationConfigOneofCase.FskModulationConfig) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(FskModulationConfig);
+      }
+      if (modulationConfigCase_ == ModulationConfigOneofCase.XssModulationConfig) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(XssModulationConfig);
       }
       if (Board != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Board);
@@ -10053,6 +10617,12 @@ namespace Chirpstack.Gateway {
             FskModulationConfig = new global::Chirpstack.Gateway.FskModulationConfig();
           }
           FskModulationConfig.MergeFrom(other.FskModulationConfig);
+          break;
+        case ModulationConfigOneofCase.XssModulationConfig:
+          if (XssModulationConfig == null) {
+            XssModulationConfig = new global::Chirpstack.Gateway.XssModulationConfig();
+          }
+          XssModulationConfig.MergeFrom(other.XssModulationConfig);
           break;
       }
 
@@ -10105,6 +10675,15 @@ namespace Chirpstack.Gateway {
             Demodulator = input.ReadUInt32();
             break;
           }
+          case 58: {
+            global::Chirpstack.Gateway.XssModulationConfig subBuilder = new global::Chirpstack.Gateway.XssModulationConfig();
+            if (modulationConfigCase_ == ModulationConfigOneofCase.XssModulationConfig) {
+              subBuilder.MergeFrom(XssModulationConfig);
+            }
+            input.ReadMessage(subBuilder);
+            XssModulationConfig = subBuilder;
+            break;
+          }
         }
       }
     #endif
@@ -10154,6 +10733,15 @@ namespace Chirpstack.Gateway {
             Demodulator = input.ReadUInt32();
             break;
           }
+          case 58: {
+            global::Chirpstack.Gateway.XssModulationConfig subBuilder = new global::Chirpstack.Gateway.XssModulationConfig();
+            if (modulationConfigCase_ == ModulationConfigOneofCase.XssModulationConfig) {
+              subBuilder.MergeFrom(XssModulationConfig);
+            }
+            input.ReadMessage(subBuilder);
+            XssModulationConfig = subBuilder;
+            break;
+          }
         }
       }
     }
@@ -10175,7 +10763,7 @@ namespace Chirpstack.Gateway {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[26]; }
+      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[27]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -10439,7 +11027,7 @@ namespace Chirpstack.Gateway {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[27]; }
+      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[28]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -10698,6 +11286,270 @@ namespace Chirpstack.Gateway {
 
   }
 
+  public sealed partial class XssModulationConfig : pb::IMessage<XssModulationConfig>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<XssModulationConfig> _parser = new pb::MessageParser<XssModulationConfig>(() => new XssModulationConfig());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<XssModulationConfig> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[29]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public XssModulationConfig() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public XssModulationConfig(XssModulationConfig other) : this() {
+      bandwidthLegacy_ = other.bandwidthLegacy_;
+      bandwidth_ = other.bandwidth_;
+      spreadingFactors_ = other.spreadingFactors_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public XssModulationConfig Clone() {
+      return new XssModulationConfig(this);
+    }
+
+    /// <summary>Field number for the "bandwidth_legacy" field.</summary>
+    public const int BandwidthLegacyFieldNumber = 1;
+    private uint bandwidthLegacy_;
+    /// <summary>
+    /// Bandwidth (kHz).
+    /// Deprecated: use bandwidth.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint BandwidthLegacy {
+      get { return bandwidthLegacy_; }
+      set {
+        bandwidthLegacy_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "bandwidth" field.</summary>
+    public const int BandwidthFieldNumber = 3;
+    private uint bandwidth_;
+    /// <summary>
+    /// Bandwidth (Hz).
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint Bandwidth {
+      get { return bandwidth_; }
+      set {
+        bandwidth_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "spreading_factors" field.</summary>
+    public const int SpreadingFactorsFieldNumber = 2;
+    private static readonly pb::FieldCodec<uint> _repeated_spreadingFactors_codec
+        = pb::FieldCodec.ForUInt32(18);
+    private readonly pbc::RepeatedField<uint> spreadingFactors_ = new pbc::RepeatedField<uint>();
+    /// <summary>
+    /// Spreading-factors.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<uint> SpreadingFactors {
+      get { return spreadingFactors_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as XssModulationConfig);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(XssModulationConfig other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (BandwidthLegacy != other.BandwidthLegacy) return false;
+      if (Bandwidth != other.Bandwidth) return false;
+      if(!spreadingFactors_.Equals(other.spreadingFactors_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (BandwidthLegacy != 0) hash ^= BandwidthLegacy.GetHashCode();
+      if (Bandwidth != 0) hash ^= Bandwidth.GetHashCode();
+      hash ^= spreadingFactors_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (BandwidthLegacy != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(BandwidthLegacy);
+      }
+      spreadingFactors_.WriteTo(output, _repeated_spreadingFactors_codec);
+      if (Bandwidth != 0) {
+        output.WriteRawTag(24);
+        output.WriteUInt32(Bandwidth);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (BandwidthLegacy != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(BandwidthLegacy);
+      }
+      spreadingFactors_.WriteTo(ref output, _repeated_spreadingFactors_codec);
+      if (Bandwidth != 0) {
+        output.WriteRawTag(24);
+        output.WriteUInt32(Bandwidth);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (BandwidthLegacy != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(BandwidthLegacy);
+      }
+      if (Bandwidth != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Bandwidth);
+      }
+      size += spreadingFactors_.CalculateSize(_repeated_spreadingFactors_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(XssModulationConfig other) {
+      if (other == null) {
+        return;
+      }
+      if (other.BandwidthLegacy != 0) {
+        BandwidthLegacy = other.BandwidthLegacy;
+      }
+      if (other.Bandwidth != 0) {
+        Bandwidth = other.Bandwidth;
+      }
+      spreadingFactors_.Add(other.spreadingFactors_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            BandwidthLegacy = input.ReadUInt32();
+            break;
+          }
+          case 18:
+          case 16: {
+            spreadingFactors_.AddEntriesFrom(input, _repeated_spreadingFactors_codec);
+            break;
+          }
+          case 24: {
+            Bandwidth = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            BandwidthLegacy = input.ReadUInt32();
+            break;
+          }
+          case 18:
+          case 16: {
+            spreadingFactors_.AddEntriesFrom(ref input, _repeated_spreadingFactors_codec);
+            break;
+          }
+          case 24: {
+            Bandwidth = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
   public sealed partial class GatewayCommandExecRequest : pb::IMessage<GatewayCommandExecRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -10712,7 +11564,7 @@ namespace Chirpstack.Gateway {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[28]; }
+      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[30]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -11097,7 +11949,7 @@ namespace Chirpstack.Gateway {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[29]; }
+      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[31]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -11495,7 +12347,7 @@ namespace Chirpstack.Gateway {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[30]; }
+      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[32]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -11773,7 +12625,7 @@ namespace Chirpstack.Gateway {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[31]; }
+      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[33]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -12049,7 +12901,7 @@ namespace Chirpstack.Gateway {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[32]; }
+      get { return global::Chirpstack.Gateway.GwReflection.Descriptor.MessageTypes[34]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

@@ -123,6 +123,7 @@ export enum Modulation {
   LORA = 0,
   FSK = 1,
   LR_FHSS = 2,
+  XSS = 3,
 }
 export enum Region { 
   EU868 = 0,

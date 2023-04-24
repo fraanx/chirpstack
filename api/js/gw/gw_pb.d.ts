@@ -23,6 +23,11 @@ export class Modulation extends jspb.Message {
   getLrFhss(): LrFhssModulationInfo | undefined;
   setLrFhss(value?: LrFhssModulationInfo): void;
 
+  hasXss(): boolean;
+  clearXss(): void;
+  getXss(): XssModulationInfo | undefined;
+  setXss(value?: XssModulationInfo): void;
+
   getParametersCase(): Modulation.ParametersCase;
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): Modulation.AsObject;
@@ -39,6 +44,7 @@ export namespace Modulation {
     lora?: LoraModulationInfo.AsObject,
     fsk?: FskModulationInfo.AsObject,
     lrFhss?: LrFhssModulationInfo.AsObject,
+    xss?: XssModulationInfo.AsObject,
   }
 
   export enum ParametersCase {
@@ -46,6 +52,7 @@ export namespace Modulation {
     LORA = 3,
     FSK = 4,
     LR_FHSS = 5,
+    XSS = 6,
   }
 }
 
@@ -71,6 +78,11 @@ export class UplinkTxInfoLegacy extends jspb.Message {
   getLrFhssModulationInfo(): LrFhssModulationInfo | undefined;
   setLrFhssModulationInfo(value?: LrFhssModulationInfo): void;
 
+  hasXssModulationInfo(): boolean;
+  clearXssModulationInfo(): void;
+  getXssModulationInfo(): XssModulationInfo | undefined;
+  setXssModulationInfo(value?: XssModulationInfo): void;
+
   getModulationInfoCase(): UplinkTxInfoLegacy.ModulationInfoCase;
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): UplinkTxInfoLegacy.AsObject;
@@ -89,6 +101,7 @@ export namespace UplinkTxInfoLegacy {
     loraModulationInfo?: LoraModulationInfo.AsObject,
     fskModulationInfo?: FskModulationInfo.AsObject,
     lrFhssModulationInfo?: LrFhssModulationInfo.AsObject,
+    xssModulationInfo?: XssModulationInfo.AsObject,
   }
 
   export enum ModulationInfoCase {
@@ -96,6 +109,7 @@ export namespace UplinkTxInfoLegacy {
     LORA_MODULATION_INFO = 3,
     FSK_MODULATION_INFO = 4,
     LR_FHSS_MODULATION_INFO = 5,
+    XSS_MODULATION_INFO = 6,
   }
 }
 
@@ -214,6 +228,42 @@ export namespace LrFhssModulationInfo {
     codeRateLegacy: string,
     codeRate: CodeRateMap[keyof CodeRateMap],
     gridSteps: number,
+  }
+}
+
+export class XssModulationInfo extends jspb.Message {
+  getBandwidth(): number;
+  setBandwidth(value: number): void;
+
+  getSpreadingFactor(): number;
+  setSpreadingFactor(value: number): void;
+
+  getCodeRateLegacy(): string;
+  setCodeRateLegacy(value: string): void;
+
+  getCodeRate(): CodeRateMap[keyof CodeRateMap];
+  setCodeRate(value: CodeRateMap[keyof CodeRateMap]): void;
+
+  getPolarizationInversion(): boolean;
+  setPolarizationInversion(value: boolean): void;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): XssModulationInfo.AsObject;
+  static toObject(includeInstance: boolean, msg: XssModulationInfo): XssModulationInfo.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: XssModulationInfo, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): XssModulationInfo;
+  static deserializeBinaryFromReader(message: XssModulationInfo, reader: jspb.BinaryReader): XssModulationInfo;
+}
+
+export namespace XssModulationInfo {
+  export type AsObject = {
+    bandwidth: number,
+    spreadingFactor: number,
+    codeRateLegacy: string,
+    codeRate: CodeRateMap[keyof CodeRateMap],
+    polarizationInversion: boolean,
   }
 }
 
@@ -595,6 +645,11 @@ export class DownlinkTxInfoLegacy extends jspb.Message {
   getFskModulationInfo(): FskModulationInfo | undefined;
   setFskModulationInfo(value?: FskModulationInfo): void;
 
+  hasXssModulationInfo(): boolean;
+  clearXssModulationInfo(): void;
+  getXssModulationInfo(): XssModulationInfo | undefined;
+  setXssModulationInfo(value?: XssModulationInfo): void;
+
   getBoard(): number;
   setBoard(value: number): void;
 
@@ -644,6 +699,7 @@ export namespace DownlinkTxInfoLegacy {
     modulation: common_common_pb.ModulationMap[keyof common_common_pb.ModulationMap],
     loraModulationInfo?: LoraModulationInfo.AsObject,
     fskModulationInfo?: FskModulationInfo.AsObject,
+    xssModulationInfo?: XssModulationInfo.AsObject,
     board: number,
     antenna: number,
     timing: DownlinkTimingMap[keyof DownlinkTimingMap],
@@ -657,6 +713,7 @@ export namespace DownlinkTxInfoLegacy {
     MODULATION_INFO_NOT_SET = 0,
     LORA_MODULATION_INFO = 8,
     FSK_MODULATION_INFO = 9,
+    XSS_MODULATION_INFO = 17,
   }
 
   export enum TimingInfoCase {
@@ -1096,6 +1153,11 @@ export class ChannelConfiguration extends jspb.Message {
   getFskModulationConfig(): FskModulationConfig | undefined;
   setFskModulationConfig(value?: FskModulationConfig): void;
 
+  hasXssModulationConfig(): boolean;
+  clearXssModulationConfig(): void;
+  getXssModulationConfig(): XssModulationConfig | undefined;
+  setXssModulationConfig(value?: XssModulationConfig): void;
+
   getBoard(): number;
   setBoard(value: number): void;
 
@@ -1119,6 +1181,7 @@ export namespace ChannelConfiguration {
     modulationLegacy: common_common_pb.ModulationMap[keyof common_common_pb.ModulationMap],
     loraModulationConfig?: LoraModulationConfig.AsObject,
     fskModulationConfig?: FskModulationConfig.AsObject,
+    xssModulationConfig?: XssModulationConfig.AsObject,
     board: number,
     demodulator: number,
   }
@@ -1127,6 +1190,7 @@ export namespace ChannelConfiguration {
     MODULATION_CONFIG_NOT_SET = 0,
     LORA_MODULATION_CONFIG = 3,
     FSK_MODULATION_CONFIG = 4,
+    XSS_MODULATION_CONFIG = 7,
   }
 }
 
@@ -1185,6 +1249,36 @@ export namespace FskModulationConfig {
     bandwidthLegacy: number,
     bandwidth: number,
     bitrate: number,
+  }
+}
+
+export class XssModulationConfig extends jspb.Message {
+  getBandwidthLegacy(): number;
+  setBandwidthLegacy(value: number): void;
+
+  getBandwidth(): number;
+  setBandwidth(value: number): void;
+
+  clearSpreadingFactorsList(): void;
+  getSpreadingFactorsList(): Array<number>;
+  setSpreadingFactorsList(value: Array<number>): void;
+  addSpreadingFactors(value: number, index?: number): number;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): XssModulationConfig.AsObject;
+  static toObject(includeInstance: boolean, msg: XssModulationConfig): XssModulationConfig.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: XssModulationConfig, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): XssModulationConfig;
+  static deserializeBinaryFromReader(message: XssModulationConfig, reader: jspb.BinaryReader): XssModulationConfig;
+}
+
+export namespace XssModulationConfig {
+  export type AsObject = {
+    bandwidthLegacy: number,
+    bandwidth: number,
+    spreadingFactorsList: Array<number>,
   }
 }
 

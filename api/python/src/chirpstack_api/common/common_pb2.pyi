@@ -57,6 +57,7 @@ UNCONFIRMED_DATA_DOWN: MType
 UNCONFIRMED_DATA_UP: MType
 UNKNOWN: LocationSource
 US915: Region
+XSS: Modulation
 
 class KeyEnvelope(_message.Message):
     __slots__ = ["aes_key", "kek_label"]

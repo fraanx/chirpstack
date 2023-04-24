@@ -109,6 +109,19 @@ pub fn set_tx_info_data_rate(
         DataRateModulation::LrFhss(_) => {
             return Err(anyhow!("LR-FHSS is not supported for downlink"));
         }
+        DataRateModulation::Xss(v) => {
+            tx_info.modulation = Some(gw::Modulation {
+                parameters: Some(gw::modulation::Parameters::Xss(gw::XssModulationInfo {
+                    bandwidth: v.bandwidth,
+                    spreading_factor: v.spreading_factor as u32,
+                    code_rate: gw::CodeRate::from_str(&v.coding_rate)
+                        .map_err(|e| anyhow!("{}", e))?
+                        .into(),
+                    polarization_inversion: true,
+                    code_rate_legacy: "".into(),
+                })),
+            });
+        }
     }
 
     Ok(())

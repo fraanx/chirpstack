@@ -44,20 +44,22 @@ TX_FREQ: TxAckStatus
 TX_POWER: TxAckStatus
 
 class ChannelConfiguration(_message.Message):
-    __slots__ = ["board", "demodulator", "frequency", "fsk_modulation_config", "lora_modulation_config", "modulation_legacy"]
+    __slots__ = ["board", "demodulator", "frequency", "fsk_modulation_config", "lora_modulation_config", "modulation_legacy", "xss_modulation_config"]
     BOARD_FIELD_NUMBER: _ClassVar[int]
     DEMODULATOR_FIELD_NUMBER: _ClassVar[int]
     FREQUENCY_FIELD_NUMBER: _ClassVar[int]
     FSK_MODULATION_CONFIG_FIELD_NUMBER: _ClassVar[int]
     LORA_MODULATION_CONFIG_FIELD_NUMBER: _ClassVar[int]
     MODULATION_LEGACY_FIELD_NUMBER: _ClassVar[int]
+    XSS_MODULATION_CONFIG_FIELD_NUMBER: _ClassVar[int]
     board: int
     demodulator: int
     frequency: int
     fsk_modulation_config: FskModulationConfig
     lora_modulation_config: LoraModulationConfig
     modulation_legacy: _common_pb2.Modulation
-    def __init__(self, frequency: _Optional[int] = ..., modulation_legacy: _Optional[_Union[_common_pb2.Modulation, str]] = ..., lora_modulation_config: _Optional[_Union[LoraModulationConfig, _Mapping]] = ..., fsk_modulation_config: _Optional[_Union[FskModulationConfig, _Mapping]] = ..., board: _Optional[int] = ..., demodulator: _Optional[int] = ...) -> None: ...
+    xss_modulation_config: XssModulationConfig
+    def __init__(self, frequency: _Optional[int] = ..., modulation_legacy: _Optional[_Union[_common_pb2.Modulation, str]] = ..., lora_modulation_config: _Optional[_Union[LoraModulationConfig, _Mapping]] = ..., fsk_modulation_config: _Optional[_Union[FskModulationConfig, _Mapping]] = ..., xss_modulation_config: _Optional[_Union[XssModulationConfig, _Mapping]] = ..., board: _Optional[int] = ..., demodulator: _Optional[int] = ...) -> None: ...
 
 class ConnState(_message.Message):
     __slots__ = ["gateway_id", "gateway_id_legacy", "state"]
@@ -142,7 +144,7 @@ class DownlinkTxInfo(_message.Message):
     def __init__(self, frequency: _Optional[int] = ..., power: _Optional[int] = ..., modulation: _Optional[_Union[Modulation, _Mapping]] = ..., board: _Optional[int] = ..., antenna: _Optional[int] = ..., timing: _Optional[_Union[Timing, _Mapping]] = ..., context: _Optional[bytes] = ...) -> None: ...
 
 class DownlinkTxInfoLegacy(_message.Message):
-    __slots__ = ["antenna", "board", "context", "delay_timing_info", "frequency", "fsk_modulation_info", "gateway_id", "gps_epoch_timing_info", "immediately_timing_info", "lora_modulation_info", "modulation", "power", "timing"]
+    __slots__ = ["antenna", "board", "context", "delay_timing_info", "frequency", "fsk_modulation_info", "gateway_id", "gps_epoch_timing_info", "immediately_timing_info", "lora_modulation_info", "modulation", "power", "timing", "xss_modulation_info"]
     ANTENNA_FIELD_NUMBER: _ClassVar[int]
     BOARD_FIELD_NUMBER: _ClassVar[int]
     CONTEXT_FIELD_NUMBER: _ClassVar[int]
@@ -156,6 +158,7 @@ class DownlinkTxInfoLegacy(_message.Message):
     MODULATION_FIELD_NUMBER: _ClassVar[int]
     POWER_FIELD_NUMBER: _ClassVar[int]
     TIMING_FIELD_NUMBER: _ClassVar[int]
+    XSS_MODULATION_INFO_FIELD_NUMBER: _ClassVar[int]
     antenna: int
     board: int
     context: bytes
@@ -169,7 +172,8 @@ class DownlinkTxInfoLegacy(_message.Message):
     modulation: _common_pb2.Modulation
     power: int
     timing: DownlinkTiming
-    def __init__(self, gateway_id: _Optional[bytes] = ..., frequency: _Optional[int] = ..., power: _Optional[int] = ..., modulation: _Optional[_Union[_common_pb2.Modulation, str]] = ..., lora_modulation_info: _Optional[_Union[LoraModulationInfo, _Mapping]] = ..., fsk_modulation_info: _Optional[_Union[FskModulationInfo, _Mapping]] = ..., board: _Optional[int] = ..., antenna: _Optional[int] = ..., timing: _Optional[_Union[DownlinkTiming, str]] = ..., immediately_timing_info: _Optional[_Union[ImmediatelyTimingInfo, _Mapping]] = ..., delay_timing_info: _Optional[_Union[DelayTimingInfo, _Mapping]] = ..., gps_epoch_timing_info: _Optional[_Union[GPSEpochTimingInfo, _Mapping]] = ..., context: _Optional[bytes] = ...) -> None: ...
+    xss_modulation_info: XssModulationInfo
+    def __init__(self, gateway_id: _Optional[bytes] = ..., frequency: _Optional[int] = ..., power: _Optional[int] = ..., modulation: _Optional[_Union[_common_pb2.Modulation, str]] = ..., lora_modulation_info: _Optional[_Union[LoraModulationInfo, _Mapping]] = ..., fsk_modulation_info: _Optional[_Union[FskModulationInfo, _Mapping]] = ..., xss_modulation_info: _Optional[_Union[XssModulationInfo, _Mapping]] = ..., board: _Optional[int] = ..., antenna: _Optional[int] = ..., timing: _Optional[_Union[DownlinkTiming, str]] = ..., immediately_timing_info: _Optional[_Union[ImmediatelyTimingInfo, _Mapping]] = ..., delay_timing_info: _Optional[_Union[DelayTimingInfo, _Mapping]] = ..., gps_epoch_timing_info: _Optional[_Union[GPSEpochTimingInfo, _Mapping]] = ..., context: _Optional[bytes] = ...) -> None: ...
 
 class EncryptedFineTimestamp(_message.Message):
     __slots__ = ["aes_key_index", "encrypted_ns", "fpga_id"]
@@ -361,14 +365,16 @@ class LrFhssModulationInfo(_message.Message):
     def __init__(self, operating_channel_width: _Optional[int] = ..., code_rate_legacy: _Optional[str] = ..., code_rate: _Optional[_Union[CodeRate, str]] = ..., grid_steps: _Optional[int] = ...) -> None: ...
 
 class Modulation(_message.Message):
-    __slots__ = ["fsk", "lora", "lr_fhss"]
+    __slots__ = ["fsk", "lora", "lr_fhss", "xss"]
     FSK_FIELD_NUMBER: _ClassVar[int]
     LORA_FIELD_NUMBER: _ClassVar[int]
     LR_FHSS_FIELD_NUMBER: _ClassVar[int]
+    XSS_FIELD_NUMBER: _ClassVar[int]
     fsk: FskModulationInfo
     lora: LoraModulationInfo
     lr_fhss: LrFhssModulationInfo
-    def __init__(self, lora: _Optional[_Union[LoraModulationInfo, _Mapping]] = ..., fsk: _Optional[_Union[FskModulationInfo, _Mapping]] = ..., lr_fhss: _Optional[_Union[LrFhssModulationInfo, _Mapping]] = ...) -> None: ...
+    xss: XssModulationInfo
+    def __init__(self, lora: _Optional[_Union[LoraModulationInfo, _Mapping]] = ..., fsk: _Optional[_Union[FskModulationInfo, _Mapping]] = ..., lr_fhss: _Optional[_Union[LrFhssModulationInfo, _Mapping]] = ..., xss: _Optional[_Union[XssModulationInfo, _Mapping]] = ...) -> None: ...
 
 class PerModulationCount(_message.Message):
     __slots__ = ["count", "modulation"]
@@ -533,18 +539,44 @@ class UplinkTxInfo(_message.Message):
     def __init__(self, frequency: _Optional[int] = ..., modulation: _Optional[_Union[Modulation, _Mapping]] = ...) -> None: ...
 
 class UplinkTxInfoLegacy(_message.Message):
-    __slots__ = ["frequency", "fsk_modulation_info", "lora_modulation_info", "lr_fhss_modulation_info", "modulation"]
+    __slots__ = ["frequency", "fsk_modulation_info", "lora_modulation_info", "lr_fhss_modulation_info", "modulation", "xss_modulation_info"]
     FREQUENCY_FIELD_NUMBER: _ClassVar[int]
     FSK_MODULATION_INFO_FIELD_NUMBER: _ClassVar[int]
     LORA_MODULATION_INFO_FIELD_NUMBER: _ClassVar[int]
     LR_FHSS_MODULATION_INFO_FIELD_NUMBER: _ClassVar[int]
     MODULATION_FIELD_NUMBER: _ClassVar[int]
+    XSS_MODULATION_INFO_FIELD_NUMBER: _ClassVar[int]
     frequency: int
     fsk_modulation_info: FskModulationInfo
     lora_modulation_info: LoraModulationInfo
     lr_fhss_modulation_info: LrFhssModulationInfo
     modulation: _common_pb2.Modulation
-    def __init__(self, frequency: _Optional[int] = ..., modulation: _Optional[_Union[_common_pb2.Modulation, str]] = ..., lora_modulation_info: _Optional[_Union[LoraModulationInfo, _Mapping]] = ..., fsk_modulation_info: _Optional[_Union[FskModulationInfo, _Mapping]] = ..., lr_fhss_modulation_info: _Optional[_Union[LrFhssModulationInfo, _Mapping]] = ...) -> None: ...
+    xss_modulation_info: XssModulationInfo
+    def __init__(self, frequency: _Optional[int] = ..., modulation: _Optional[_Union[_common_pb2.Modulation, str]] = ..., lora_modulation_info: _Optional[_Union[LoraModulationInfo, _Mapping]] = ..., fsk_modulation_info: _Optional[_Union[FskModulationInfo, _Mapping]] = ..., lr_fhss_modulation_info: _Optional[_Union[LrFhssModulationInfo, _Mapping]] = ..., xss_modulation_info: _Optional[_Union[XssModulationInfo, _Mapping]] = ...) -> None: ...
+
+class XssModulationConfig(_message.Message):
+    __slots__ = ["bandwidth", "bandwidth_legacy", "spreading_factors"]
+    BANDWIDTH_FIELD_NUMBER: _ClassVar[int]
+    BANDWIDTH_LEGACY_FIELD_NUMBER: _ClassVar[int]
+    SPREADING_FACTORS_FIELD_NUMBER: _ClassVar[int]
+    bandwidth: int
+    bandwidth_legacy: int
+    spreading_factors: _containers.RepeatedScalarFieldContainer[int]
+    def __init__(self, bandwidth_legacy: _Optional[int] = ..., bandwidth: _Optional[int] = ..., spreading_factors: _Optional[_Iterable[int]] = ...) -> None: ...
+
+class XssModulationInfo(_message.Message):
+    __slots__ = ["bandwidth", "code_rate", "code_rate_legacy", "polarization_inversion", "spreading_factor"]
+    BANDWIDTH_FIELD_NUMBER: _ClassVar[int]
+    CODE_RATE_FIELD_NUMBER: _ClassVar[int]
+    CODE_RATE_LEGACY_FIELD_NUMBER: _ClassVar[int]
+    POLARIZATION_INVERSION_FIELD_NUMBER: _ClassVar[int]
+    SPREADING_FACTOR_FIELD_NUMBER: _ClassVar[int]
+    bandwidth: int
+    code_rate: CodeRate
+    code_rate_legacy: str
+    polarization_inversion: bool
+    spreading_factor: int
+    def __init__(self, bandwidth: _Optional[int] = ..., spreading_factor: _Optional[int] = ..., code_rate_legacy: _Optional[str] = ..., code_rate: _Optional[_Union[CodeRate, str]] = ..., polarization_inversion: bool = ...) -> None: ...
 
 class CodeRate(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
     __slots__ = []

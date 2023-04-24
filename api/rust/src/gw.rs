@@ -103,6 +103,17 @@ impl UplinkFrame {
                                     ..info.clone()
                                 })
                             }
+                            uplink_tx_info_legacy::ModulationInfo::XssModulationInfo(info) => {
+                                modulation::Parameters::Xss(XssModulationInfo {
+                                    bandwidth: info.bandwidth * 1000,
+                                    spreading_factor: info.spreading_factor,
+                                    code_rate: CodeRate::from_str(&info.code_rate_legacy)
+                                        .unwrap_or(CodeRate::CrUndefined)
+                                        .into(),
+                                    code_rate_legacy: "".into(),
+                                    polarization_inversion: info.polarization_inversion,
+                                })
+                            }
                         }),
                     }),
                 });
@@ -178,6 +189,20 @@ impl DownlinkFrame {
                                         FskModulationInfo {
                                             frequency_deviation: v.frequency_deviation,
                                             datarate: v.datarate,
+                                        },
+                                    ),
+                                );
+                            }
+                            Some(modulation::Parameters::Xss(v)) => {
+                                tx_info_legacy.modulation = crate::common::Modulation::Xss.into();
+                                tx_info_legacy.modulation_info = Some(
+                                    downlink_tx_info_legacy::ModulationInfo::XssModulationInfo(
+                                        XssModulationInfo {
+                                            bandwidth: v.bandwidth / 1000,
+                                            spreading_factor: v.spreading_factor,
+                                            code_rate_legacy: v.code_rate().into(),
+                                            polarization_inversion: v.polarization_inversion,
+                                            ..Default::default()
                                         },
                                     ),
                                 );

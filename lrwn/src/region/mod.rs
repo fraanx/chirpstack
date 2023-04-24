@@ -282,6 +282,7 @@ pub enum DataRateModulation {
     Lora(LoraDataRate),
     Fsk(FskDataRate),
     LrFhss(LrFhssDataRate),
+    Xss(XssDataRate),
 }
 
 #[derive(Clone, PartialEq, Eq, Debug)]
@@ -300,6 +301,13 @@ pub struct FskDataRate {
 pub struct LrFhssDataRate {
     pub coding_rate: String,
     pub occupied_channel_width: u32,
+}
+
+#[derive(Clone, PartialEq, Eq, Debug)]
+pub struct XssDataRate {
+    pub spreading_factor: u8,
+    pub bandwidth: u32,
+    pub coding_rate: String,
 }
 
 pub struct Defaults {
