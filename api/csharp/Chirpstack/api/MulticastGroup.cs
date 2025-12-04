@@ -110,10 +110,10 @@ namespace Chirpstack.Api {
             "L3ttdWx0aWNhc3RfZ3JvdXBfaWR9L3F1ZXVlEpABCglMaXN0UXVldWUSIy5h",
             "cGkuTGlzdE11bHRpY2FzdEdyb3VwUXVldWVSZXF1ZXN0GiQuYXBpLkxpc3RN",
             "dWx0aWNhc3RHcm91cFF1ZXVlUmVzcG9uc2UiOILT5JMCMhIwL2FwaS9tdWx0",
-            "aWNhc3QtZ3JvdXBzL3ttdWx0aWNhc3RfZ3JvdXBfaWR9L3F1ZXVlQmsKEWlv",
-            "LmNoaXJwc3RhY2suYXBpQhNNdWx0aWNhc3RHcm91cFByb3RvUAFaLmdpdGh1",
-            "Yi5jb20vY2hpcnBzdGFjay9jaGlycHN0YWNrL2FwaS9nby92NC9hcGmqAg5D",
-            "aGlycHN0YWNrLkFwaWIGcHJvdG8z"));
+            "aWNhc3QtZ3JvdXBzL3ttdWx0aWNhc3RfZ3JvdXBfaWR9L3F1ZXVlQmcKEWlv",
+            "LmNoaXJwc3RhY2suYXBpQhNNdWx0aWNhc3RHcm91cFByb3RvUAFaKmdpdGh1",
+            "Yi5jb20vZnJhYW54L2NoaXJwc3RhY2svYXBpL2dvL3Y0L2FwaaoCDkNoaXJw",
+            "c3RhY2suQXBpYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Chirpstack.Common.CommonReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Chirpstack.Api.MulticastGroupType), typeof(global::Chirpstack.Api.MulticastGroupSchedulingType), }, null, new pbr::GeneratedClrTypeInfo[] {

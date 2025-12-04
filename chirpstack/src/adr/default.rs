@@ -4,6 +4,8 @@ use async_trait::async_trait;
 use super::{Handler, Request, Response};
 use crate::region;
 
+use tracing::info; //to print messages
+
 pub struct Algorithm {}
 
 impl Algorithm {
@@ -138,11 +140,15 @@ impl Handler for Algorithm {
             dr: req.dr,
             tx_power_index: req.tx_power_index,
             nb_trans: req.nb_trans,
+            ch_mask: req.ch_mask,
         };
 
         // If ADR is disabled, return with current values.
         if !req.adr {
+            info!("ADR is disabled");
             return Ok(resp);
+        } else {
+            info!("ADR is enabled");
         }
 
         // The max DR might be configured to a non LoRa (125kHz) data-rate.

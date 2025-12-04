@@ -590,6 +590,44 @@ export class UplinkRxInfo extends jspb.Message {
   getCrcStatus(): CRCStatusMap[keyof CRCStatusMap];
   setCrcStatus(value: CRCStatusMap[keyof CRCStatusMap]): void;
 
+  getDemodulatorid(): number;
+  setDemodulatorid(value: number): void;
+
+  getIc(): number;
+  setIc(value: number): void;
+
+  getFormatid(): string;
+  setFormatid(value: string): void;
+
+  getEsovern0(): number;
+  setEsovern0(value: number): void;
+
+  getFrequency(): number;
+  setFrequency(value: number): void;
+
+  getDecodedburst(): Uint8Array | string;
+  getDecodedburst_asU8(): Uint8Array;
+  getDecodedburst_asB64(): string;
+  setDecodedburst(value: Uint8Array | string): void;
+
+  getRlcarrierid(): number;
+  setRlcarrierid(value: number): void;
+
+  getN0(): number;
+  setN0(value: number): void;
+
+  getNoisepower(): number;
+  setNoisepower(value: number): void;
+
+  getSignalpower(): number;
+  setSignalpower(value: number): void;
+
+  getPrefrequency(): number;
+  setPrefrequency(value: number): void;
+
+  getTfi(): number;
+  setTfi(value: number): void;
+
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): UplinkRxInfo.AsObject;
   static toObject(includeInstance: boolean, msg: UplinkRxInfo): UplinkRxInfo.AsObject;
@@ -617,6 +655,18 @@ export namespace UplinkRxInfo {
     context: Uint8Array | string,
     metadataMap: Array<[string, string]>,
     crcStatus: CRCStatusMap[keyof CRCStatusMap],
+    demodulatorid: number,
+    ic: number,
+    formatid: string,
+    esovern0: number,
+    frequency: number,
+    decodedburst: Uint8Array | string,
+    rlcarrierid: number,
+    n0: number,
+    noisepower: number,
+    signalpower: number,
+    prefrequency: number,
+    tfi: number,
   }
 }
 

@@ -1,0 +1,56 @@
+use std::sync::Mutex;
+use tonic::{transport::Server, Request, Response, Status};
+use interface::interface_server::{Interface, InterfaceServer};
+use interface::{TodoItem, GetTodosResponse, CreateTodoRequest, CreateTodoResponse};
+use interface::{ChannelWindowRequest, ChannelWindowResponse, PlatformRequest, Conf};
+
+pub mod interface {
+    tonic::include_proto!("demodtelemetry");
+}
+
+#[derive(Debug, Default)]
+pub struct InterfaceService {
+    todos: Mutex<Vec<TodoItem>>
+}
+
+#[tonic::async_trait]
+impl Interface for InterfaceService {
+
+    async fn conf(&self, request: Request<PlatformRequest>) -> Result<Response<Conf>, Status> {
+        println!("Got a request: {:?}", request);
+           
+           
+        // Create some dummy values for the KPIs
+       // let packet_counters = 100;
+        //let packet_rate_stats = 0.5;
+        
+        // Create the response message
+        let refresh_time = 1000;
+        let windows_duration = 5000;
+        let message = Conf {
+            refresh_time_ms: refresh_time,
+            windows_duration_settings: windows_duration,
+        //kpis: Some(KPIs {
+        //packet_counters: packet_counters,
+        //packet_rate_stats: packet_rate_stats,
+        //}),
+        };
+        
+        // Return the response
+        Ok(Response::new(message))
+        }
+
+}
+
+#[tokio::main]
+async fn main() -> Result<(), Box<dyn std::error::Error>> {
+    let addr = "0.0.0.0:50051".parse().unwrap();
+    let interface_service = InterfaceService::default();
+
+    Server::builder()
+        .add_service(InterfaceServer::new(interface_service))
+        .serve(addr)
+        .await?;
+
+    Ok(())
+}

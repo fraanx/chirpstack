@@ -305,7 +305,7 @@ pub struct LrFhssDataRate {
 
 #[derive(Clone, PartialEq, Eq, Debug)]
 pub struct XssDataRate {
-    pub spreading_factor: u8,
+    pub spreading_factor: u16,
     pub bandwidth: u32,
     pub coding_rate: String,
 }

@@ -1,0 +1,30 @@
+syntax = "proto3";
+package  demodtelemetry;
+
+service Interface {
+    rpc Vote (VotingRequest) returns (VotingResponse);
+    rpc conf(PlatformRequest) returns (Conf) {}
+}
+
+message VotingRequest {
+  string url = 1;
+
+    enum Vote {
+        UP = 0;
+        DOWN = 1;
+    }
+    Vote vote = 2;    
+}
+
+message VotingResponse {
+    string confirmation = 1;
+}
+
+message PlatformRequest {
+    // empty
+}
+
+message Conf {
+    uint32 refresh_time_ms                    = 1; 
+    repeated uint32 windows_duration_settings = 2;
+}

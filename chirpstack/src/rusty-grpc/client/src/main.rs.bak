@@ -1,0 +1,37 @@
+//use std::io::stdin;
+//use std::fs::read_to_string;
+//use std::fs;
+//use std::str::FromStr;
+//use srx::SRX;
+
+
+use demodtelemetry::{voting_client::VotingClient, PlatformRequest};
+//use tonic::{transport::Channel, Request, Response, Status};
+
+pub mod demodtelemetry {
+  tonic::include_proto!("voting");
+}
+
+#[tokio::main]
+async fn main() -> Result<(), Box<dyn std::error::Error>> {
+
+//  let channel = Channel::builder("http://192.168.104.25:53226".parse().unwrap())
+ //     .connect()
+ //     .await
+ //     .unwrap();
+
+//  let addr = "192.168.104.25:53226".parse().unwrap(); // Create a channel to communicate with the server
+//  let addr = "192.168.104.25:53226"; // Create a channel to communicate with the server
+ // let channel = Channel::from_static(addr).connect().await?;
+ // let mut client = VotingClient::new(channel);
+ 
+  
+    let mut client = VotingClient::connect("http://192.168.104.25:53226").await?;
+
+    
+    let request = tonic::Request::new(PlatformRequest {  });
+    let response = client.conf(request).await?;
+    println!("Got: '{}' from service", response.into_inner().windows_duration_settings);
+
+  Ok(())
+}

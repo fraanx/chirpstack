@@ -1,0 +1,145 @@
+syntax = "proto3";
+
+package sampleproxy.rpc;
+
+service Interface {
+  rpc startNoConf(Void) returns (Void) {}
+  rpc start(Configuration) returns (Void) {}
+  rpc stop(Void) returns (Void) {}
+  rpc freq(FreqChange) returns (Void) {}
+  rpc endpoint(EndpointChange) returns (Void) {}
+
+  // This should be on an inherited Interface
+  rpc forceViewUpdate(Endpoint) returns (Void) {}
+  rpc registerRemoteView(Endpoint) returns (Void) {}
+  rpc version(Void)                          returns (Version) {}
+  rpc systemInfo(Void)             returns (SystemInfo) {}
+}
+
+service View {
+  rpc status(Bool) returns (Void) {}
+  rpc configuration(Configuration) returns (Void) {}
+  rpc endpoints(Endpoints) returns (Void) {}
+
+  rpc samplesLost(SamplesLost) returns (Void) {}
+  rpc externalLock(Bool) returns (Void) {}
+  rpc radioPingStatus(PingStatus) returns (Void) {}
+  rpc connected(ConnectedStatus) returns (Void) {}
+
+  rpc power(PowerMessage) returns (Void) {}
+
+  rpc heartBeat(Void) returns (Void) {}
+}
+
+message RadioConf {
+  // same as ClockSource
+  enum ClockSource {
+    INTERNAL = 0;
+    EXTERNAL = 1;
+    GPSDO    = 2;
+  }
+  string address          = 1;
+
+  string antennaRx        = 2;
+  string subdevRx         = 3;
+  uint32 sampleRateRx     = 4;
+  string antennaTx        = 5;
+  string subdevTx         = 6;
+  uint32 sampleRateTx     = 7;
+
+  ClockSource clockSource = 8;
+
+  double frequencyRx      = 9;
+  double loOffsetRx       = 10;
+  double bandwidthRx      = 11;
+  double gainRx           = 12;
+  bool dcCorrection       = 13;
+  bool invertSpectrum     = 14;
+
+  double frequencyTx      = 15;
+  double loOffsetTx       = 16;
+  double bandwidthTx      = 17;
+  double gainTx           = 18;
+
+  double frequencyRx2      = 19;
+  double loOffsetRx2       = 20;
+  double bandwidthRx2      = 21;
+  double gainRx2           = 22;
+  bool dcCorrection2       = 23;
+  bool invertSpectrum2     = 24;
+}
+
+// -rxOnly = false: the server is running in tx-rx mode
+//  (all the fields marked rx2 in the RadioConf message are ignored)
+// -rxOnly = true: the server is running dual-rx mode
+//  (all the fields marked tx in the RadioConf message are ignored)
+message Configuration {
+  RadioConf radioConf = 2;
+  float backoffRx     = 3;
+  float backoffTx     = 4; // meaningful iff txtx == true
+  float backoffRx2    = 5; // meaningful iff txtx == false
+  bool  txrx          = 6; // if false, then it's dual-rx mode
+}
+
+message FreqChange {
+  uint32 channel   = 1;
+  double frequency = 2;
+}
+
+message EndpointChange {
+  uint32 channel  = 1;
+  string endpoint = 2;
+}
+
+message Endpoint {
+  string value = 1;
+}
+
+message Endpoints {
+  enum Mode {
+    TXRX   = 0;
+    DUALRX = 1;
+  }
+  string endpoint1 = 1;
+  string endpoint2 = 2;
+  Mode   mode      = 3;
+}
+
+message Bool {
+  bool value = 1;
+}
+
+message SamplesLost {
+  uint32 channel = 1;
+  uint64 samples = 2;
+}
+
+message PingStatus {
+  enum Status {
+    NOT_PINGABLE = 0;
+    PING_OK      = 1;
+    PING_NOK     = 2;
+  }
+  Status status = 1;
+}
+
+message ConnectedStatus {
+  uint32 channel   = 1;
+  bool   connected = 2;
+}
+
+message PowerMessage {
+  uint32 channel = 1;
+  double time    = 2;
+  float  power   = 3;
+}
+
+message Void {
+}
+message Version {
+  string value = 1;
+}
+
+message SystemInfo {
+  string hostname = 1;
+}

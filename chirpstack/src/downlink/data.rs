@@ -874,6 +874,26 @@ impl Data {
 
         let ufs = self.uplink_frame_set.as_ref().unwrap();
 
+        
+        let mut req_ch_mask: [bool; 16] = [false; 16];
+        let mut req_ch_mask_cntl: Option<u8> = None;
+
+        for i in &self.device_session.enabled_uplink_channel_indices {
+            match req_ch_mask_cntl {
+                None => {
+                    // set the chMaskCntl
+                    req_ch_mask_cntl = Some((i / 16) as u8);
+                }
+                Some(v) => {
+                    if v != (i / 16) as u8 {
+                        // break the loop as we only need to send one block of channels
+                        break;
+                    }
+                }
+            }
+            req_ch_mask[(i % 16) as usize] = true;
+        }
+
         let req = adr::Request {
             region_config_id: ufs.region_config_id.clone(),
             region_common_name: ufs.region_common_name,
@@ -905,6 +925,7 @@ impl Data {
             min_dr: self.network_conf.min_dr,
             max_dr: self.network_conf.max_dr,
             uplink_history: self.device_session.uplink_adr_history.clone(),
+            ch_mask: req_ch_mask,
         };
 
         let resp = adr::handle(&self.device_profile.adr_algorithm_id, &req).await;
@@ -924,6 +945,8 @@ impl Data {
                         pl.dr = resp.dr;
                         pl.tx_power = resp.tx_power_index;
                         pl.redundancy.nb_rep = resp.nb_trans;
+                        pl.redundancy.ch_mask_cntl = req_ch_mask_cntl.unwrap();
+                        pl.ch_mask = lrwn::ChMask::new(resp.ch_mask);   
 
                         adr_set = true;
                         is_link_adr_set = true;
@@ -939,31 +962,33 @@ impl Data {
 
             // There was no existing LinkADRReq to be sent, we need to construct a new one.
             if !adr_set {
-                let mut ch_mask: [bool; 16] = [false; 16];
-                let mut ch_mask_cntl: Option<u8> = None;
+                // let mut ch_mask: [bool; 16] = [false; 16];
+                // let mut ch_mask_cntl: Option<u8> = None;
+                let mut ch_mask_cntl = req_ch_mask_cntl; 
 
-                for i in &self.device_session.enabled_uplink_channel_indices {
-                    match ch_mask_cntl {
-                        None => {
-                            // set the chMaskCntl
-                            ch_mask_cntl = Some((i / 16) as u8);
-                        }
-                        Some(v) => {
-                            if v != (i / 16) as u8 {
-                                // break the loop as we only need to send one block of channels
-                                break;
-                            }
-                        }
-                    }
+                // for i in &self.device_session.enabled_uplink_channel_indices {
+                //     match ch_mask_cntl {
+                //         None => {
+                //             // set the chMaskCntl
+                //             ch_mask_cntl = Some((i / 16) as u8);
+                //         }
+                //         Some(v) => {
+                //             if v != (i / 16) as u8 {
+                //                 // break the loop as we only need to send one block of channels
+                //                 break;
+                //             }
+                //         }
+                //     }
 
-                    ch_mask[(i % 16) as usize] = true;
-                }
+                //     ch_mask[(i % 16) as usize] = true;
+                // }
 
                 let set = lrwn::MACCommandSet::new(vec![lrwn::MACCommand::LinkADRReq(
                     lrwn::LinkADRReqPayload {
                         dr: resp.dr,
                         tx_power: resp.tx_power_index,
-                        ch_mask: lrwn::ChMask::new(ch_mask),
+//                        ch_mask: lrwn::ChMask::new(ch_mask),  
+                        ch_mask: lrwn::ChMask::new(resp.ch_mask),   
                         redundancy: lrwn::Redundancy {
                             ch_mask_cntl: ch_mask_cntl.unwrap(),
                             nb_rep: resp.nb_trans,
@@ -973,6 +998,7 @@ impl Data {
 
                 mac_command::set_pending(&self.device.dev_eui, lrwn::CID::LinkADRReq, &set).await?;
                 self.mac_commands.push(set);
+
             }
         }
 

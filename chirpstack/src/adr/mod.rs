@@ -10,8 +10,10 @@ use chirpstack_api::internal;
 use lrwn::EUI64;
 
 pub mod default;
-pub mod lora_lr_fhss;
-pub mod lr_fhss;
+pub mod iura;
+pub mod iuraL;
+// pub mod lora_lr_fhss;
+// pub mod lr_fhss;
 pub mod plugin;
 
 lazy_static! {
@@ -27,11 +29,17 @@ pub async fn setup() -> Result<()> {
     let a = default::Algorithm::new();
     algos.insert(a.get_id(), Box::new(a));
 
-    let a = lr_fhss::Algorithm::new();
+    let a = iura::Algorithm::new();
     algos.insert(a.get_id(), Box::new(a));
 
-    let a = lora_lr_fhss::Algorithm::new();
+    let a = iuraL::Algorithm::new();
     algos.insert(a.get_id(), Box::new(a));
+
+    // let a = lr_fhss::Algorithm::new();
+    // algos.insert(a.get_id(), Box::new(a));
+
+    // let a = lora_lr_fhss::Algorithm::new();
+    // algos.insert(a.get_id(), Box::new(a));
 
     trace!("Setting up plugins");
     let conf = config::get();
@@ -66,6 +74,7 @@ pub async fn handle(algo_id: &str, req: &Request) -> Response {
                     dr: req.dr,
                     tx_power_index: req.tx_power_index,
                     nb_trans: req.nb_trans,
+                    ch_mask: req.ch_mask,
                 }
             }
         },
@@ -75,6 +84,7 @@ pub async fn handle(algo_id: &str, req: &Request) -> Response {
                 dr: req.dr,
                 tx_power_index: req.tx_power_index,
                 nb_trans: req.nb_trans,
+                ch_mask: req.ch_mask,
             }
         }
     }
@@ -108,6 +118,7 @@ pub struct Request {
     pub min_dr: u8,
     pub max_dr: u8,
     pub uplink_history: Vec<internal::UplinkAdrHistory>,
+    pub ch_mask: [bool; 16],
 }
 
 #[derive(Debug, PartialEq, Eq)]
@@ -115,4 +126,5 @@ pub struct Response {
     pub dr: u8,
     pub tx_power_index: u8,
     pub nb_trans: u8,
+    pub ch_mask: [bool; 16],
 }

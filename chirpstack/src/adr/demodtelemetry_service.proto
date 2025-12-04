@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package demodtelemetry.rpc;
+
+import "demodtelemetry_data_types.proto";
+
+service Interface {
+    rpc forceViewUpdate(Endpoint)     returns (Void) {}
+    rpc registerRemoteView(Endpoint)  returns (Void) {}
+
+    rpc platform(PlatformRequest)                  returns (PlatformResponse) {}
+    rpc platformPerWindow(PlatformWindowRequest)   returns (PlatformWindowResponse) {}
+    rpc channelKpis(ChannelRequest)                returns (ChannelResponse) {}
+    rpc channelKpisPerWindow(ChannelWindowRequest) returns (ChannelWindowResponse) {}
+
+    rpc getConf(Void) returns (Conf) {}
+}
+
+service View {
+  rpc heartBeat(Void)  returns (Void) {}
+  rpc version(Version) returns (Void) {}
+
+  rpc showConf(Conf) returns (Void) {}
+
+  rpc showPlatform(PlatformResponse)                  returns (Void) {}
+}
+
+

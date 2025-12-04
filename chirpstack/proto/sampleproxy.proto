@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+
+package sampleproxy.rpc;
+
+service Interface {
+
+  rpc freq(FreqChange) returns (google.protobuf.Empty) {}
+  rpc version(Void) returns (Version) {}
+
+}
+
+message Version {
+  string value = 1;
+}
+message Void {
+
+}
+message FreqChange {
+  uint32 channel   = 1;
+  double frequency = 2;
+}
+
+

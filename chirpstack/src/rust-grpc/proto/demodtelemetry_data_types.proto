@@ -1,0 +1,77 @@
+syntax = "proto3";
+
+package demodtelemetry.rpc;
+
+/////////////////////////////////////////////
+//// Section 1. General purpose messages ////
+/////////////////////////////////////////////
+
+message Void { 
+}
+
+message Endpoint {
+  string value = 1;
+}
+
+////////////////////////////////////////////////
+//// Section 2. Component specific messages ////
+////////////////////////////////////////////////
+
+// OUTPUT
+message Conf {
+    string version                            = 1;
+    uint32 refresh_time_ms                    = 2; 
+    repeated uint32 windows_duration_settings = 3;
+    uint32 power_spread_quantile_low          = 4;
+    uint32 power_spread_quantile_high         = 5;
+}
+
+message KPIs {
+    uint32 channel_id                       = 1;
+    uint32 window_duration                  = 2;
+
+    uint64 packet_counters                  = 3;
+    float packet_rate_stats                 = 4;
+    float stt_stats                         = 5;
+    float packet_rate_peak_to_average_ratio = 6;
+    float avg_esovern0_stats                = 7;
+    float signal_power_stats                = 8;
+    float signal_power_spread_stats         = 9;
+    float ber_stats                         = 10;
+    float freq_drift_stats                  = 11;
+}
+
+// INPUT: single Channel/single Window
+message ChannelWindowRequest {
+    uint32 window_duration = 1;
+    uint32 channel_id      = 2;
+}
+
+// INPUT: single channel/multi window
+message ChannelRequest {
+    uint32 channel_id = 1;
+}
+
+// INPUT: multi channel/ single window
+message WindowRequest {
+    uint32 window_duration = 1;
+}
+
+// INPUT: multi channel / multi window
+message PlatformRequest {
+    // empty
+}
+
+// OUTPUT: multi channel / multi window
+message KpiResponse {
+    repeated KPIs kpis = 1;
+}
+
+// OUTPUT: c++ component version
+message Version {
+  string value = 1;
+}
+
+message SystemInfo {
+  string hostname = 1;
+}

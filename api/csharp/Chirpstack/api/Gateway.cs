@@ -91,9 +91,9 @@ namespace Chirpstack.Api {
             "YXlfaWR9L2dlbmVyYXRlLWNlcnRpZmljYXRlEncKCkdldE1ldHJpY3MSHS5h",
             "cGkuR2V0R2F0ZXdheU1ldHJpY3NSZXF1ZXN0Gh4uYXBpLkdldEdhdGV3YXlN",
             "ZXRyaWNzUmVzcG9uc2UiKoLT5JMCJBIiL2FwaS9nYXRld2F5cy97Z2F0ZXdh",
-            "eV9pZH0vbWV0cmljc0JkChFpby5jaGlycHN0YWNrLmFwaUIMR2F0ZXdheVBy",
-            "b3RvUAFaLmdpdGh1Yi5jb20vY2hpcnBzdGFjay9jaGlycHN0YWNrL2FwaS9n",
-            "by92NC9hcGmqAg5DaGlycHN0YWNrLkFwaWIGcHJvdG8z"));
+            "eV9pZH0vbWV0cmljc0JgChFpby5jaGlycHN0YWNrLmFwaUIMR2F0ZXdheVBy",
+            "b3RvUAFaKmdpdGh1Yi5jb20vZnJhYW54L2NoaXJwc3RhY2svYXBpL2dvL3Y0",
+            "L2FwaaoCDkNoaXJwc3RhY2suQXBpYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Chirpstack.Common.CommonReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Chirpstack.Api.GatewayState), }, null, new pbr::GeneratedClrTypeInfo[] {

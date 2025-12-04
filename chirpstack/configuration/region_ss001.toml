@@ -38,7 +38,9 @@
         topic_prefix="ss001"
 
         # MQTT server (e.g. scheme://host:port where scheme is tcp, ssl or ws)
-        server="tcp://$MQTT_BROKER_HOST:1883"
+#        server="tcp://$MQTT_BROKER_HOST:1883"
+#        server="tcp://192.168.26.140:1883"
+        server="tcp://192.168.16.50:1883"
 
         # Connect with the given username (optional)
         username=""
@@ -95,65 +97,11 @@
     # Note: this configuration is only used in case the gateway is using the
     # ChirpStack Concentratord daemon. In any other case, this configuration 
     # is ignored.
-    [[regions.gateway.channels]]
-      frequency=868100000
-      bandwidth=125000
-      modulation="LORA"
-      spreading_factors=[7, 8, 9, 10, 11, 12]
-
-    [[regions.gateway.channels]]
-      frequency=868300000
-      bandwidth=125000
-      modulation="LORA"
-      spreading_factors=[7, 8, 9, 10, 11, 12]
-
-    [[regions.gateway.channels]]
-      frequency=868500000
-      bandwidth=125000
-      modulation="LORA"
-      spreading_factors=[7, 8, 9, 10, 11, 12]
-
-    [[regions.gateway.channels]]
-      frequency=867100000
-      bandwidth=125000
-      modulation="LORA"
-      spreading_factors=[7, 8, 9, 10, 11, 12]
-
-    [[regions.gateway.channels]]
-      frequency=867300000
-      bandwidth=125000
-      modulation="LORA"
-      spreading_factors=[7, 8, 9, 10, 11, 12]
-
-    [[regions.gateway.channels]]
-      frequency=867500000
-      bandwidth=125000
-      modulation="LORA"
-      spreading_factors=[7, 8, 9, 10, 11, 12]
-
-    [[regions.gateway.channels]]
-      frequency=867700000
-      bandwidth=125000
-      modulation="LORA"
-      spreading_factors=[7, 8, 9, 10, 11, 12]
-
-    [[regions.gateway.channels]]
-      frequency=867900000
-      bandwidth=125000
-      modulation="LORA"
-      spreading_factors=[7, 8, 9, 10, 11, 12]
-  
-    [[regions.gateway.channels]]
-      frequency=868300000
-      bandwidth=250000
-      modulation="LORA"
-      spreading_factors=[7]
-    
-    [[regions.gateway.channels]]
-      frequency=868800000
-      bandwidth=125000
-      modulation="FSK"
-      datarate=50000
+    #    [[regions.gateway.channels]]
+    #      frequency=868100000
+    #      bandwidth=125000
+    #      modulation="LORA"
+    #      spreading_factors=[7, 8, 9, 10, 11, 12]
 
 
   # Region specific network configuration.
@@ -165,7 +113,7 @@
     # resulting in a lower data-rate but decreasing the chance that the
     # device gets disconnected because it is unable to reach one of the
     # surrounded gateways.
-    installation_margin=10
+    installation_margin=5
 
     # RX window (Class-A).
     #
@@ -182,10 +130,10 @@
     rx1_dr_offset=0
 
     # RX2 data-rate
-    rx2_dr=0
+    rx2_dr=11
 
     # RX2 frequency (Hz)
-    rx2_frequency=869525000
+    rx2_frequency=1350000000
 
     # Prefer RX2 on RX1 data-rate less than.
     #
@@ -254,27 +202,7 @@
 
     # Below is the common set of extra channels. Please make sure that these
     # channels are also supported by the gateways.
-    [[regions.network.extra_channels]]
-    frequency=867100000
-    min_dr=0
-    max_dr=5
-
-    [[regions.network.extra_channels]]
-    frequency=867300000
-    min_dr=0
-    max_dr=5
-
-    [[regions.network.extra_channels]]
-    frequency=867500000
-    min_dr=0
-    max_dr=5
-
-    [[regions.network.extra_channels]]
-    frequency=867700000
-    min_dr=0
-    max_dr=5
-
-    [[regions.network.extra_channels]]
-    frequency=867900000
-    min_dr=0
-    max_dr=5
+#    [[regions.network.extra_channels]]
+#    frequency=167100000
+#    min_dr=0
+#    max_dr=5

@@ -379,6 +379,21 @@ message UplinkRxInfo {
 
     // CRC status.
     CRCStatus crc_status = 16;
+
+///////////////////////////////////////
+
+    uint64 demodulatorID  = 21;
+    uint32 IC             = 22;
+    string  formatID       = 23;
+    float  esovern0       = 25;
+    float  frequency      = 26;
+    bytes  decodedBurst   = 31;
+    uint32 rlCarrierID    = 33;
+    float  n0             = 35;
+    float  noisePower     = 36;
+    float  signalPower    = 37;
+    float  preFrequency   = 39;
+    uint32 tfi = 45;
 }
 
 message DownlinkTxInfoLegacy {

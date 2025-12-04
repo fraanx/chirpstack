@@ -91,7 +91,7 @@ namespace Chirpstack.Gateway {
             "cxgRIAEoDjINLmd3LkNSQ1N0YXR1cxI2CghtZXRhZGF0YRgSIAMoCzIkLmd3",
             "LlVwbGlua1J4SW5mb0xlZ2FjeS5NZXRhZGF0YUVudHJ5Gi8KDU1ldGFkYXRh",
             "RW50cnkSCwoDa2V5GAEgASgJEg0KBXZhbHVlGAIgASgJOgI4AUIQCg5maW5l",
-            "X3RpbWVzdGFtcCLvAwoMVXBsaW5rUnhJbmZvEhIKCmdhdGV3YXlfaWQYASAB",
+            "X3RpbWVzdGFtcCLMBQoMVXBsaW5rUnhJbmZvEhIKCmdhdGV3YXlfaWQYASAB",
             "KAkSEQoJdXBsaW5rX2lkGAIgASgNEigKBHRpbWUYAyABKAsyGi5nb29nbGUu",
             "cHJvdG9idWYuVGltZXN0YW1wEjcKFHRpbWVfc2luY2VfZ3BzX2Vwb2NoGAQg",
             "ASgLMhkuZ29vZ2xlLnByb3RvYnVmLkR1cmF0aW9uEjwKGWZpbmVfdGltZV9z",
@@ -101,97 +101,102 @@ namespace Chirpstack.Gateway {
             "GAsgASgNEiIKCGxvY2F0aW9uGAwgASgLMhAuY29tbW9uLkxvY2F0aW9uEg8K",
             "B2NvbnRleHQYDSABKAwSMAoIbWV0YWRhdGEYDyADKAsyHi5ndy5VcGxpbmtS",
             "eEluZm8uTWV0YWRhdGFFbnRyeRIhCgpjcmNfc3RhdHVzGBAgASgOMg0uZ3cu",
-            "Q1JDU3RhdHVzGi8KDU1ldGFkYXRhRW50cnkSCwoDa2V5GAEgASgJEg0KBXZh",
-            "bHVlGAIgASgJOgI4ASK4BAoURG93bmxpbmtUeEluZm9MZWdhY3kSEgoKZ2F0",
-            "ZXdheV9pZBgBIAEoDBIRCglmcmVxdWVuY3kYBSABKA0SDQoFcG93ZXIYBiAB",
-            "KAUSJgoKbW9kdWxhdGlvbhgHIAEoDjISLmNvbW1vbi5Nb2R1bGF0aW9uEjYK",
-            "FGxvcmFfbW9kdWxhdGlvbl9pbmZvGAggASgLMhYuZ3cuTG9yYU1vZHVsYXRp",
-            "b25JbmZvSAASNAoTZnNrX21vZHVsYXRpb25faW5mbxgJIAEoCzIVLmd3LkZz",
-            "a01vZHVsYXRpb25JbmZvSAASNAoTeHNzX21vZHVsYXRpb25faW5mbxgRIAEo",
-            "CzIVLmd3Llhzc01vZHVsYXRpb25JbmZvSAASDQoFYm9hcmQYCiABKA0SDwoH",
-            "YW50ZW5uYRgLIAEoDRIiCgZ0aW1pbmcYDCABKA4yEi5ndy5Eb3dubGlua1Rp",
-            "bWluZxI8ChdpbW1lZGlhdGVseV90aW1pbmdfaW5mbxgNIAEoCzIZLmd3Lklt",
-            "bWVkaWF0ZWx5VGltaW5nSW5mb0gBEjAKEWRlbGF5X3RpbWluZ19pbmZvGA4g",
-            "ASgLMhMuZ3cuRGVsYXlUaW1pbmdJbmZvSAESNwoVZ3BzX2Vwb2NoX3RpbWlu",
-            "Z19pbmZvGA8gASgLMhYuZ3cuR1BTRXBvY2hUaW1pbmdJbmZvSAESDwoHY29u",
-            "dGV4dBgQIAEoDEIRCg9tb2R1bGF0aW9uX2luZm9CDQoLdGltaW5nX2luZm8i",
-            "owEKDkRvd25saW5rVHhJbmZvEhEKCWZyZXF1ZW5jeRgBIAEoDRINCgVwb3dl",
-            "chgCIAEoBRIiCgptb2R1bGF0aW9uGAMgASgLMg4uZ3cuTW9kdWxhdGlvbhIN",
-            "CgVib2FyZBgEIAEoDRIPCgdhbnRlbm5hGAUgASgNEhoKBnRpbWluZxgGIAEo",
-            "CzIKLmd3LlRpbWluZxIPCgdjb250ZXh0GAcgASgMIpsBCgZUaW1pbmcSMAoL",
-            "aW1tZWRpYXRlbHkYASABKAsyGS5ndy5JbW1lZGlhdGVseVRpbWluZ0luZm9I",
-            "ABIkCgVkZWxheRgCIAEoCzITLmd3LkRlbGF5VGltaW5nSW5mb0gAEisKCWdw",
-            "c19lcG9jaBgDIAEoCzIWLmd3LkdQU0Vwb2NoVGltaW5nSW5mb0gAQgwKCnBh",
-            "cmFtZXRlcnMiFwoVSW1tZWRpYXRlbHlUaW1pbmdJbmZvIjsKD0RlbGF5VGlt",
-            "aW5nSW5mbxIoCgVkZWxheRgBIAEoCzIZLmdvb2dsZS5wcm90b2J1Zi5EdXJh",
-            "dGlvbiJNChJHUFNFcG9jaFRpbWluZ0luZm8SNwoUdGltZV9zaW5jZV9ncHNf",
-            "ZXBvY2gYASABKAsyGS5nb29nbGUucHJvdG9idWYuRHVyYXRpb24iyAEKC1Vw",
-            "bGlua0ZyYW1lEhMKC3BoeV9wYXlsb2FkGAEgASgMEi4KDnR4X2luZm9fbGVn",
-            "YWN5GAIgASgLMhYuZ3cuVXBsaW5rVHhJbmZvTGVnYWN5Ei4KDnJ4X2luZm9f",
-            "bGVnYWN5GAMgASgLMhYuZ3cuVXBsaW5rUnhJbmZvTGVnYWN5EiEKB3R4X2lu",
-            "Zm8YBCABKAsyEC5ndy5VcGxpbmtUeEluZm8SIQoHcnhfaW5mbxgFIAEoCzIQ",
-            "Lmd3LlVwbGlua1J4SW5mbyJrCg5VcGxpbmtGcmFtZVNldBITCgtwaHlfcGF5",
-            "bG9hZBgBIAEoDBIhCgd0eF9pbmZvGAIgASgLMhAuZ3cuVXBsaW5rVHhJbmZv",
-            "EiEKB3J4X2luZm8YAyADKAsyEC5ndy5VcGxpbmtSeEluZm8ilQEKDURvd25s",
-            "aW5rRnJhbWUSEwoLZG93bmxpbmtfaWQYAyABKA0SGgoSZG93bmxpbmtfaWRf",
-            "bGVnYWN5GAQgASgMEiQKBWl0ZW1zGAUgAygLMhUuZ3cuRG93bmxpbmtGcmFt",
-            "ZUl0ZW0SGQoRZ2F0ZXdheV9pZF9sZWdhY3kYBiABKAwSEgoKZ2F0ZXdheV9p",
-            "ZBgHIAEoCSJ/ChFEb3dubGlua0ZyYW1lSXRlbRITCgtwaHlfcGF5bG9hZBgB",
-            "IAEoDBIwCg50eF9pbmZvX2xlZ2FjeRgCIAEoCzIYLmd3LkRvd25saW5rVHhJ",
-            "bmZvTGVnYWN5EiMKB3R4X2luZm8YAyABKAsyEi5ndy5Eb3dubGlua1R4SW5m",
-            "byKVAQoNRG93bmxpbmtUeEFjaxIZChFnYXRld2F5X2lkX2xlZ2FjeRgBIAEo",
-            "DBISCgpnYXRld2F5X2lkGAYgASgJEhMKC2Rvd25saW5rX2lkGAIgASgNEhoK",
-            "EmRvd25saW5rX2lkX2xlZ2FjeRgEIAEoDBIkCgVpdGVtcxgFIAMoCzIVLmd3",
-            "LkRvd25saW5rVHhBY2tJdGVtIjQKEURvd25saW5rVHhBY2tJdGVtEh8KBnN0",
-            "YXR1cxgBIAEoDjIPLmd3LlR4QWNrU3RhdHVzIrUBChRHYXRld2F5Q29uZmln",
-            "dXJhdGlvbhIZChFnYXRld2F5X2lkX2xlZ2FjeRgBIAEoDBISCgpnYXRld2F5",
-            "X2lkGAUgASgJEg8KB3ZlcnNpb24YAiABKAkSKgoIY2hhbm5lbHMYAyADKAsy",
-            "GC5ndy5DaGFubmVsQ29uZmlndXJhdGlvbhIxCg5zdGF0c19pbnRlcnZhbBgE",
-            "IAEoCzIZLmdvb2dsZS5wcm90b2J1Zi5EdXJhdGlvbiLBAgoUQ2hhbm5lbENv",
-            "bmZpZ3VyYXRpb24SEQoJZnJlcXVlbmN5GAEgASgNEi0KEW1vZHVsYXRpb25f",
-            "bGVnYWN5GAIgASgOMhIuY29tbW9uLk1vZHVsYXRpb24SOgoWbG9yYV9tb2R1",
-            "bGF0aW9uX2NvbmZpZxgDIAEoCzIYLmd3LkxvcmFNb2R1bGF0aW9uQ29uZmln",
-            "SAASOAoVZnNrX21vZHVsYXRpb25fY29uZmlnGAQgASgLMhcuZ3cuRnNrTW9k",
-            "dWxhdGlvbkNvbmZpZ0gAEjgKFXhzc19tb2R1bGF0aW9uX2NvbmZpZxgHIAEo",
-            "CzIXLmd3Llhzc01vZHVsYXRpb25Db25maWdIABINCgVib2FyZBgFIAEoDRIT",
-            "CgtkZW1vZHVsYXRvchgGIAEoDUITChFtb2R1bGF0aW9uX2NvbmZpZyJeChRM",
-            "b3JhTW9kdWxhdGlvbkNvbmZpZxIYChBiYW5kd2lkdGhfbGVnYWN5GAEgASgN",
-            "EhEKCWJhbmR3aWR0aBgDIAEoDRIZChFzcHJlYWRpbmdfZmFjdG9ycxgCIAMo",
-            "DSJTChNGc2tNb2R1bGF0aW9uQ29uZmlnEhgKEGJhbmR3aWR0aF9sZWdhY3kY",
-            "ASABKA0SEQoJYmFuZHdpZHRoGAMgASgNEg8KB2JpdHJhdGUYAiABKA0iXQoT",
-            "WHNzTW9kdWxhdGlvbkNvbmZpZxIYChBiYW5kd2lkdGhfbGVnYWN5GAEgASgN",
-            "EhEKCWJhbmR3aWR0aBgDIAEoDRIZChFzcHJlYWRpbmdfZmFjdG9ycxgCIAMo",
-            "DSL0AQoZR2F0ZXdheUNvbW1hbmRFeGVjUmVxdWVzdBIZChFnYXRld2F5X2lk",
-            "X2xlZ2FjeRgBIAEoDBISCgpnYXRld2F5X2lkGAYgASgJEg8KB2NvbW1hbmQY",
-            "AiABKAkSDwoHZXhlY19pZBgHIAEoDRINCgVzdGRpbhgEIAEoDBJDCgtlbnZp",
-            "cm9ubWVudBgFIAMoCzIuLmd3LkdhdGV3YXlDb21tYW5kRXhlY1JlcXVlc3Qu",
-            "RW52aXJvbm1lbnRFbnRyeRoyChBFbnZpcm9ubWVudEVudHJ5EgsKA2tleRgB",
-            "IAEoCRINCgV2YWx1ZRgCIAEoCToCOAEiiwEKGkdhdGV3YXlDb21tYW5kRXhl",
-            "Y1Jlc3BvbnNlEhkKEWdhdGV3YXlfaWRfbGVnYWN5GAEgASgMEhIKCmdhdGV3",
-            "YXlfaWQYBiABKAkSDwoHZXhlY19pZBgHIAEoDRIOCgZzdGRvdXQYAyABKAwS",
-            "DgoGc3RkZXJyGAQgASgMEg0KBWVycm9yGAUgASgJIlkKF1Jhd1BhY2tldEZv",
-            "cndhcmRlckV2ZW50EhkKEWdhdGV3YXlfaWRfbGVnYWN5GAEgASgMEhIKCmdh",
-            "dGV3YXlfaWQYBCABKAkSDwoHcGF5bG9hZBgDIAEoDCJbChlSYXdQYWNrZXRG",
-            "b3J3YXJkZXJDb21tYW5kEhkKEWdhdGV3YXlfaWRfbGVnYWN5GAEgASgMEhIK",
-            "CmdhdGV3YXlfaWQYBCABKAkSDwoHcGF5bG9hZBgDIAEoDCKAAQoJQ29ublN0",
-            "YXRlEhkKEWdhdGV3YXlfaWRfbGVnYWN5GAEgASgMEhIKCmdhdGV3YXlfaWQY",
-            "AyABKAkSIgoFc3RhdGUYAiABKA4yEy5ndy5Db25uU3RhdGUuU3RhdGUiIAoF",
-            "U3RhdGUSCwoHT0ZGTElORRAAEgoKBk9OTElORRABKrUBCghDb2RlUmF0ZRIQ",
-            "CgxDUl9VTkRFRklORUQQABIKCgZDUl80XzUQARIKCgZDUl80XzYQAhIKCgZD",
-            "Ul80XzcQAxIKCgZDUl80XzgQBBIKCgZDUl8zXzgQBRIKCgZDUl8yXzYQBhIK",
-            "CgZDUl8xXzQQBxIKCgZDUl8xXzYQCBIKCgZDUl81XzYQCRINCglDUl9MSV80",
-            "XzUQChINCglDUl9MSV80XzYQCxINCglDUl9MSV80XzgQDCo7Cg5Eb3dubGlu",
-            "a1RpbWluZxIPCgtJTU1FRElBVEVMWRAAEgkKBURFTEFZEAESDQoJR1BTX0VQ",
-            "T0NIEAIqNwoRRmluZVRpbWVzdGFtcFR5cGUSCAoETk9ORRAAEg0KCUVOQ1JZ",
-            "UFRFRBABEgkKBVBMQUlOEAIqMAoJQ1JDU3RhdHVzEgoKBk5PX0NSQxAAEgsK",
-            "B0JBRF9DUkMQARIKCgZDUkNfT0sQAiq8AQoLVHhBY2tTdGF0dXMSCwoHSUdO",
-            "T1JFRBAAEgYKAk9LEAESDAoIVE9PX0xBVEUQAhINCglUT09fRUFSTFkQAxIU",
-            "ChBDT0xMSVNJT05fUEFDS0VUEAQSFAoQQ09MTElTSU9OX0JFQUNPThAFEgsK",
-            "B1RYX0ZSRVEQBhIMCghUWF9QT1dFUhAHEhAKDEdQU19VTkxPQ0tFRBAIEg4K",
-            "ClFVRVVFX0ZVTEwQCRISCg5JTlRFUk5BTF9FUlJPUhAKQmoKFGlvLmNoaXJw",
-            "c3RhY2suYXBpLmd3QgxHYXRld2F5UHJvdG9QAVotZ2l0aHViLmNvbS9jaGly",
-            "cHN0YWNrL2NoaXJwc3RhY2svYXBpL2dvL3Y0L2d3qgISQ2hpcnBzdGFjay5H",
-            "YXRld2F5YgZwcm90bzM="));
+            "Q1JDU3RhdHVzEhUKDWRlbW9kdWxhdG9ySUQYFSABKAQSCgoCSUMYFiABKA0S",
+            "EAoIZm9ybWF0SUQYFyABKAkSEAoIZXNvdmVybjAYGSABKAISEQoJZnJlcXVl",
+            "bmN5GBogASgCEhQKDGRlY29kZWRCdXJzdBgfIAEoDBITCgtybENhcnJpZXJJ",
+            "RBghIAEoDRIKCgJuMBgjIAEoAhISCgpub2lzZVBvd2VyGCQgASgCEhMKC3Np",
+            "Z25hbFBvd2VyGCUgASgCEhQKDHByZUZyZXF1ZW5jeRgnIAEoAhILCgN0ZmkY",
+            "LSABKA0aLwoNTWV0YWRhdGFFbnRyeRILCgNrZXkYASABKAkSDQoFdmFsdWUY",
+            "AiABKAk6AjgBIrgEChREb3dubGlua1R4SW5mb0xlZ2FjeRISCgpnYXRld2F5",
+            "X2lkGAEgASgMEhEKCWZyZXF1ZW5jeRgFIAEoDRINCgVwb3dlchgGIAEoBRIm",
+            "Cgptb2R1bGF0aW9uGAcgASgOMhIuY29tbW9uLk1vZHVsYXRpb24SNgoUbG9y",
+            "YV9tb2R1bGF0aW9uX2luZm8YCCABKAsyFi5ndy5Mb3JhTW9kdWxhdGlvbklu",
+            "Zm9IABI0ChNmc2tfbW9kdWxhdGlvbl9pbmZvGAkgASgLMhUuZ3cuRnNrTW9k",
+            "dWxhdGlvbkluZm9IABI0ChN4c3NfbW9kdWxhdGlvbl9pbmZvGBEgASgLMhUu",
+            "Z3cuWHNzTW9kdWxhdGlvbkluZm9IABINCgVib2FyZBgKIAEoDRIPCgdhbnRl",
+            "bm5hGAsgASgNEiIKBnRpbWluZxgMIAEoDjISLmd3LkRvd25saW5rVGltaW5n",
+            "EjwKF2ltbWVkaWF0ZWx5X3RpbWluZ19pbmZvGA0gASgLMhkuZ3cuSW1tZWRp",
+            "YXRlbHlUaW1pbmdJbmZvSAESMAoRZGVsYXlfdGltaW5nX2luZm8YDiABKAsy",
+            "Ey5ndy5EZWxheVRpbWluZ0luZm9IARI3ChVncHNfZXBvY2hfdGltaW5nX2lu",
+            "Zm8YDyABKAsyFi5ndy5HUFNFcG9jaFRpbWluZ0luZm9IARIPCgdjb250ZXh0",
+            "GBAgASgMQhEKD21vZHVsYXRpb25faW5mb0INCgt0aW1pbmdfaW5mbyKjAQoO",
+            "RG93bmxpbmtUeEluZm8SEQoJZnJlcXVlbmN5GAEgASgNEg0KBXBvd2VyGAIg",
+            "ASgFEiIKCm1vZHVsYXRpb24YAyABKAsyDi5ndy5Nb2R1bGF0aW9uEg0KBWJv",
+            "YXJkGAQgASgNEg8KB2FudGVubmEYBSABKA0SGgoGdGltaW5nGAYgASgLMgou",
+            "Z3cuVGltaW5nEg8KB2NvbnRleHQYByABKAwimwEKBlRpbWluZxIwCgtpbW1l",
+            "ZGlhdGVseRgBIAEoCzIZLmd3LkltbWVkaWF0ZWx5VGltaW5nSW5mb0gAEiQK",
+            "BWRlbGF5GAIgASgLMhMuZ3cuRGVsYXlUaW1pbmdJbmZvSAASKwoJZ3BzX2Vw",
+            "b2NoGAMgASgLMhYuZ3cuR1BTRXBvY2hUaW1pbmdJbmZvSABCDAoKcGFyYW1l",
+            "dGVycyIXChVJbW1lZGlhdGVseVRpbWluZ0luZm8iOwoPRGVsYXlUaW1pbmdJ",
+            "bmZvEigKBWRlbGF5GAEgASgLMhkuZ29vZ2xlLnByb3RvYnVmLkR1cmF0aW9u",
+            "Ik0KEkdQU0Vwb2NoVGltaW5nSW5mbxI3ChR0aW1lX3NpbmNlX2dwc19lcG9j",
+            "aBgBIAEoCzIZLmdvb2dsZS5wcm90b2J1Zi5EdXJhdGlvbiLIAQoLVXBsaW5r",
+            "RnJhbWUSEwoLcGh5X3BheWxvYWQYASABKAwSLgoOdHhfaW5mb19sZWdhY3kY",
+            "AiABKAsyFi5ndy5VcGxpbmtUeEluZm9MZWdhY3kSLgoOcnhfaW5mb19sZWdh",
+            "Y3kYAyABKAsyFi5ndy5VcGxpbmtSeEluZm9MZWdhY3kSIQoHdHhfaW5mbxgE",
+            "IAEoCzIQLmd3LlVwbGlua1R4SW5mbxIhCgdyeF9pbmZvGAUgASgLMhAuZ3cu",
+            "VXBsaW5rUnhJbmZvImsKDlVwbGlua0ZyYW1lU2V0EhMKC3BoeV9wYXlsb2Fk",
+            "GAEgASgMEiEKB3R4X2luZm8YAiABKAsyEC5ndy5VcGxpbmtUeEluZm8SIQoH",
+            "cnhfaW5mbxgDIAMoCzIQLmd3LlVwbGlua1J4SW5mbyKVAQoNRG93bmxpbmtG",
+            "cmFtZRITCgtkb3dubGlua19pZBgDIAEoDRIaChJkb3dubGlua19pZF9sZWdh",
+            "Y3kYBCABKAwSJAoFaXRlbXMYBSADKAsyFS5ndy5Eb3dubGlua0ZyYW1lSXRl",
+            "bRIZChFnYXRld2F5X2lkX2xlZ2FjeRgGIAEoDBISCgpnYXRld2F5X2lkGAcg",
+            "ASgJIn8KEURvd25saW5rRnJhbWVJdGVtEhMKC3BoeV9wYXlsb2FkGAEgASgM",
+            "EjAKDnR4X2luZm9fbGVnYWN5GAIgASgLMhguZ3cuRG93bmxpbmtUeEluZm9M",
+            "ZWdhY3kSIwoHdHhfaW5mbxgDIAEoCzISLmd3LkRvd25saW5rVHhJbmZvIpUB",
+            "Cg1Eb3dubGlua1R4QWNrEhkKEWdhdGV3YXlfaWRfbGVnYWN5GAEgASgMEhIK",
+            "CmdhdGV3YXlfaWQYBiABKAkSEwoLZG93bmxpbmtfaWQYAiABKA0SGgoSZG93",
+            "bmxpbmtfaWRfbGVnYWN5GAQgASgMEiQKBWl0ZW1zGAUgAygLMhUuZ3cuRG93",
+            "bmxpbmtUeEFja0l0ZW0iNAoRRG93bmxpbmtUeEFja0l0ZW0SHwoGc3RhdHVz",
+            "GAEgASgOMg8uZ3cuVHhBY2tTdGF0dXMitQEKFEdhdGV3YXlDb25maWd1cmF0",
+            "aW9uEhkKEWdhdGV3YXlfaWRfbGVnYWN5GAEgASgMEhIKCmdhdGV3YXlfaWQY",
+            "BSABKAkSDwoHdmVyc2lvbhgCIAEoCRIqCghjaGFubmVscxgDIAMoCzIYLmd3",
+            "LkNoYW5uZWxDb25maWd1cmF0aW9uEjEKDnN0YXRzX2ludGVydmFsGAQgASgL",
+            "MhkuZ29vZ2xlLnByb3RvYnVmLkR1cmF0aW9uIsECChRDaGFubmVsQ29uZmln",
+            "dXJhdGlvbhIRCglmcmVxdWVuY3kYASABKA0SLQoRbW9kdWxhdGlvbl9sZWdh",
+            "Y3kYAiABKA4yEi5jb21tb24uTW9kdWxhdGlvbhI6ChZsb3JhX21vZHVsYXRp",
+            "b25fY29uZmlnGAMgASgLMhguZ3cuTG9yYU1vZHVsYXRpb25Db25maWdIABI4",
+            "ChVmc2tfbW9kdWxhdGlvbl9jb25maWcYBCABKAsyFy5ndy5Gc2tNb2R1bGF0",
+            "aW9uQ29uZmlnSAASOAoVeHNzX21vZHVsYXRpb25fY29uZmlnGAcgASgLMhcu",
+            "Z3cuWHNzTW9kdWxhdGlvbkNvbmZpZ0gAEg0KBWJvYXJkGAUgASgNEhMKC2Rl",
+            "bW9kdWxhdG9yGAYgASgNQhMKEW1vZHVsYXRpb25fY29uZmlnIl4KFExvcmFN",
+            "b2R1bGF0aW9uQ29uZmlnEhgKEGJhbmR3aWR0aF9sZWdhY3kYASABKA0SEQoJ",
+            "YmFuZHdpZHRoGAMgASgNEhkKEXNwcmVhZGluZ19mYWN0b3JzGAIgAygNIlMK",
+            "E0Zza01vZHVsYXRpb25Db25maWcSGAoQYmFuZHdpZHRoX2xlZ2FjeRgBIAEo",
+            "DRIRCgliYW5kd2lkdGgYAyABKA0SDwoHYml0cmF0ZRgCIAEoDSJdChNYc3NN",
+            "b2R1bGF0aW9uQ29uZmlnEhgKEGJhbmR3aWR0aF9sZWdhY3kYASABKA0SEQoJ",
+            "YmFuZHdpZHRoGAMgASgNEhkKEXNwcmVhZGluZ19mYWN0b3JzGAIgAygNIvQB",
+            "ChlHYXRld2F5Q29tbWFuZEV4ZWNSZXF1ZXN0EhkKEWdhdGV3YXlfaWRfbGVn",
+            "YWN5GAEgASgMEhIKCmdhdGV3YXlfaWQYBiABKAkSDwoHY29tbWFuZBgCIAEo",
+            "CRIPCgdleGVjX2lkGAcgASgNEg0KBXN0ZGluGAQgASgMEkMKC2Vudmlyb25t",
+            "ZW50GAUgAygLMi4uZ3cuR2F0ZXdheUNvbW1hbmRFeGVjUmVxdWVzdC5FbnZp",
+            "cm9ubWVudEVudHJ5GjIKEEVudmlyb25tZW50RW50cnkSCwoDa2V5GAEgASgJ",
+            "Eg0KBXZhbHVlGAIgASgJOgI4ASKLAQoaR2F0ZXdheUNvbW1hbmRFeGVjUmVz",
+            "cG9uc2USGQoRZ2F0ZXdheV9pZF9sZWdhY3kYASABKAwSEgoKZ2F0ZXdheV9p",
+            "ZBgGIAEoCRIPCgdleGVjX2lkGAcgASgNEg4KBnN0ZG91dBgDIAEoDBIOCgZz",
+            "dGRlcnIYBCABKAwSDQoFZXJyb3IYBSABKAkiWQoXUmF3UGFja2V0Rm9yd2Fy",
+            "ZGVyRXZlbnQSGQoRZ2F0ZXdheV9pZF9sZWdhY3kYASABKAwSEgoKZ2F0ZXdh",
+            "eV9pZBgEIAEoCRIPCgdwYXlsb2FkGAMgASgMIlsKGVJhd1BhY2tldEZvcndh",
+            "cmRlckNvbW1hbmQSGQoRZ2F0ZXdheV9pZF9sZWdhY3kYASABKAwSEgoKZ2F0",
+            "ZXdheV9pZBgEIAEoCRIPCgdwYXlsb2FkGAMgASgMIoABCglDb25uU3RhdGUS",
+            "GQoRZ2F0ZXdheV9pZF9sZWdhY3kYASABKAwSEgoKZ2F0ZXdheV9pZBgDIAEo",
+            "CRIiCgVzdGF0ZRgCIAEoDjITLmd3LkNvbm5TdGF0ZS5TdGF0ZSIgCgVTdGF0",
+            "ZRILCgdPRkZMSU5FEAASCgoGT05MSU5FEAEqtQEKCENvZGVSYXRlEhAKDENS",
+            "X1VOREVGSU5FRBAAEgoKBkNSXzRfNRABEgoKBkNSXzRfNhACEgoKBkNSXzRf",
+            "NxADEgoKBkNSXzRfOBAEEgoKBkNSXzNfOBAFEgoKBkNSXzJfNhAGEgoKBkNS",
+            "XzFfNBAHEgoKBkNSXzFfNhAIEgoKBkNSXzVfNhAJEg0KCUNSX0xJXzRfNRAK",
+            "Eg0KCUNSX0xJXzRfNhALEg0KCUNSX0xJXzRfOBAMKjsKDkRvd25saW5rVGlt",
+            "aW5nEg8KC0lNTUVESUFURUxZEAASCQoFREVMQVkQARINCglHUFNfRVBPQ0gQ",
+            "Aio3ChFGaW5lVGltZXN0YW1wVHlwZRIICgROT05FEAASDQoJRU5DUllQVEVE",
+            "EAESCQoFUExBSU4QAiowCglDUkNTdGF0dXMSCgoGTk9fQ1JDEAASCwoHQkFE",
+            "X0NSQxABEgoKBkNSQ19PSxACKrwBCgtUeEFja1N0YXR1cxILCgdJR05PUkVE",
+            "EAASBgoCT0sQARIMCghUT09fTEFURRACEg0KCVRPT19FQVJMWRADEhQKEENP",
+            "TExJU0lPTl9QQUNLRVQQBBIUChBDT0xMSVNJT05fQkVBQ09OEAUSCwoHVFhf",
+            "RlJFURAGEgwKCFRYX1BPV0VSEAcSEAoMR1BTX1VOTE9DS0VEEAgSDgoKUVVF",
+            "VUVfRlVMTBAJEhIKDklOVEVSTkFMX0VSUk9SEApCZgoUaW8uY2hpcnBzdGFj",
+            "ay5hcGkuZ3dCDEdhdGV3YXlQcm90b1ABWilnaXRodWIuY29tL2ZyYWFueC9j",
+            "aGlycHN0YWNrL2FwaS9nby92NC9nd6oCEkNoaXJwc3RhY2suR2F0ZXdheWIG",
+            "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Chirpstack.Common.CommonReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.DurationReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.StructReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Chirpstack.Gateway.CodeRate), typeof(global::Chirpstack.Gateway.DownlinkTiming), typeof(global::Chirpstack.Gateway.FineTimestampType), typeof(global::Chirpstack.Gateway.CRCStatus), typeof(global::Chirpstack.Gateway.TxAckStatus), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -207,7 +212,7 @@ namespace Chirpstack.Gateway {
             new pbr::GeneratedClrTypeInfo(typeof(global::Chirpstack.Gateway.GatewayStats), global::Chirpstack.Gateway.GatewayStats.Parser, new[]{ "GatewayIdLegacy", "GatewayId", "Time", "Location", "ConfigVersion", "RxPacketsReceived", "RxPacketsReceivedOk", "TxPacketsReceived", "TxPacketsEmitted", "Metadata", "TxPacketsPerFrequency", "RxPacketsPerFrequency", "TxPacketsPerModulation", "RxPacketsPerModulation", "TxPacketsPerStatus" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, null, null, null, }),
             new pbr::GeneratedClrTypeInfo(typeof(global::Chirpstack.Gateway.PerModulationCount), global::Chirpstack.Gateway.PerModulationCount.Parser, new[]{ "Modulation", "Count" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Chirpstack.Gateway.UplinkRxInfoLegacy), global::Chirpstack.Gateway.UplinkRxInfoLegacy.Parser, new[]{ "GatewayId", "Time", "TimeSinceGpsEpoch", "Rssi", "LoraSnr", "Channel", "RfChain", "Board", "Antenna", "Location", "FineTimestampType", "EncryptedFineTimestamp", "PlainFineTimestamp", "Context", "UplinkId", "CrcStatus", "Metadata" }, new[]{ "FineTimestamp" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Chirpstack.Gateway.UplinkRxInfo), global::Chirpstack.Gateway.UplinkRxInfo.Parser, new[]{ "GatewayId", "UplinkId", "Time", "TimeSinceGpsEpoch", "FineTimeSinceGpsEpoch", "Rssi", "Snr", "Channel", "RfChain", "Board", "Antenna", "Location", "Context", "Metadata", "CrcStatus" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Chirpstack.Gateway.UplinkRxInfo), global::Chirpstack.Gateway.UplinkRxInfo.Parser, new[]{ "GatewayId", "UplinkId", "Time", "TimeSinceGpsEpoch", "FineTimeSinceGpsEpoch", "Rssi", "Snr", "Channel", "RfChain", "Board", "Antenna", "Location", "Context", "Metadata", "CrcStatus", "DemodulatorID", "IC", "FormatID", "Esovern0", "Frequency", "DecodedBurst", "RlCarrierID", "N0", "NoisePower", "SignalPower", "PreFrequency", "Tfi" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
             new pbr::GeneratedClrTypeInfo(typeof(global::Chirpstack.Gateway.DownlinkTxInfoLegacy), global::Chirpstack.Gateway.DownlinkTxInfoLegacy.Parser, new[]{ "GatewayId", "Frequency", "Power", "Modulation", "LoraModulationInfo", "FskModulationInfo", "XssModulationInfo", "Board", "Antenna", "Timing", "ImmediatelyTimingInfo", "DelayTimingInfo", "GpsEpochTimingInfo", "Context" }, new[]{ "ModulationInfo", "TimingInfo" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Chirpstack.Gateway.DownlinkTxInfo), global::Chirpstack.Gateway.DownlinkTxInfo.Parser, new[]{ "Frequency", "Power", "Modulation", "Board", "Antenna", "Timing", "Context" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Chirpstack.Gateway.Timing), global::Chirpstack.Gateway.Timing.Parser, new[]{ "Immediately", "Delay", "GpsEpoch" }, new[]{ "Parameters" }, null, null, null),
@@ -5109,6 +5114,18 @@ namespace Chirpstack.Gateway {
       context_ = other.context_;
       metadata_ = other.metadata_.Clone();
       crcStatus_ = other.crcStatus_;
+      demodulatorID_ = other.demodulatorID_;
+      iC_ = other.iC_;
+      formatID_ = other.formatID_;
+      esovern0_ = other.esovern0_;
+      frequency_ = other.frequency_;
+      decodedBurst_ = other.decodedBurst_;
+      rlCarrierID_ = other.rlCarrierID_;
+      n0_ = other.n0_;
+      noisePower_ = other.noisePower_;
+      signalPower_ = other.signalPower_;
+      preFrequency_ = other.preFrequency_;
+      tfi_ = other.tfi_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -5345,6 +5362,150 @@ namespace Chirpstack.Gateway {
       }
     }
 
+    /// <summary>Field number for the "demodulatorID" field.</summary>
+    public const int DemodulatorIDFieldNumber = 21;
+    private ulong demodulatorID_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ulong DemodulatorID {
+      get { return demodulatorID_; }
+      set {
+        demodulatorID_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "IC" field.</summary>
+    public const int ICFieldNumber = 22;
+    private uint iC_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint IC {
+      get { return iC_; }
+      set {
+        iC_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "formatID" field.</summary>
+    public const int FormatIDFieldNumber = 23;
+    private string formatID_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string FormatID {
+      get { return formatID_; }
+      set {
+        formatID_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "esovern0" field.</summary>
+    public const int Esovern0FieldNumber = 25;
+    private float esovern0_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float Esovern0 {
+      get { return esovern0_; }
+      set {
+        esovern0_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "frequency" field.</summary>
+    public const int FrequencyFieldNumber = 26;
+    private float frequency_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float Frequency {
+      get { return frequency_; }
+      set {
+        frequency_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "decodedBurst" field.</summary>
+    public const int DecodedBurstFieldNumber = 31;
+    private pb::ByteString decodedBurst_ = pb::ByteString.Empty;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pb::ByteString DecodedBurst {
+      get { return decodedBurst_; }
+      set {
+        decodedBurst_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "rlCarrierID" field.</summary>
+    public const int RlCarrierIDFieldNumber = 33;
+    private uint rlCarrierID_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint RlCarrierID {
+      get { return rlCarrierID_; }
+      set {
+        rlCarrierID_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "n0" field.</summary>
+    public const int N0FieldNumber = 35;
+    private float n0_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float N0 {
+      get { return n0_; }
+      set {
+        n0_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "noisePower" field.</summary>
+    public const int NoisePowerFieldNumber = 36;
+    private float noisePower_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float NoisePower {
+      get { return noisePower_; }
+      set {
+        noisePower_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "signalPower" field.</summary>
+    public const int SignalPowerFieldNumber = 37;
+    private float signalPower_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float SignalPower {
+      get { return signalPower_; }
+      set {
+        signalPower_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "preFrequency" field.</summary>
+    public const int PreFrequencyFieldNumber = 39;
+    private float preFrequency_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float PreFrequency {
+      get { return preFrequency_; }
+      set {
+        preFrequency_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "tfi" field.</summary>
+    public const int TfiFieldNumber = 45;
+    private uint tfi_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint Tfi {
+      get { return tfi_; }
+      set {
+        tfi_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -5375,6 +5536,18 @@ namespace Chirpstack.Gateway {
       if (Context != other.Context) return false;
       if (!Metadata.Equals(other.Metadata)) return false;
       if (CrcStatus != other.CrcStatus) return false;
+      if (DemodulatorID != other.DemodulatorID) return false;
+      if (IC != other.IC) return false;
+      if (FormatID != other.FormatID) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Esovern0, other.Esovern0)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Frequency, other.Frequency)) return false;
+      if (DecodedBurst != other.DecodedBurst) return false;
+      if (RlCarrierID != other.RlCarrierID) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(N0, other.N0)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(NoisePower, other.NoisePower)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(SignalPower, other.SignalPower)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(PreFrequency, other.PreFrequency)) return false;
+      if (Tfi != other.Tfi) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -5397,6 +5570,18 @@ namespace Chirpstack.Gateway {
       if (Context.Length != 0) hash ^= Context.GetHashCode();
       hash ^= Metadata.GetHashCode();
       if (CrcStatus != global::Chirpstack.Gateway.CRCStatus.NoCrc) hash ^= CrcStatus.GetHashCode();
+      if (DemodulatorID != 0UL) hash ^= DemodulatorID.GetHashCode();
+      if (IC != 0) hash ^= IC.GetHashCode();
+      if (FormatID.Length != 0) hash ^= FormatID.GetHashCode();
+      if (Esovern0 != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Esovern0);
+      if (Frequency != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Frequency);
+      if (DecodedBurst.Length != 0) hash ^= DecodedBurst.GetHashCode();
+      if (RlCarrierID != 0) hash ^= RlCarrierID.GetHashCode();
+      if (N0 != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(N0);
+      if (NoisePower != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(NoisePower);
+      if (SignalPower != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(SignalPower);
+      if (PreFrequency != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(PreFrequency);
+      if (Tfi != 0) hash ^= Tfi.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -5472,6 +5657,54 @@ namespace Chirpstack.Gateway {
         output.WriteRawTag(128, 1);
         output.WriteEnum((int) CrcStatus);
       }
+      if (DemodulatorID != 0UL) {
+        output.WriteRawTag(168, 1);
+        output.WriteUInt64(DemodulatorID);
+      }
+      if (IC != 0) {
+        output.WriteRawTag(176, 1);
+        output.WriteUInt32(IC);
+      }
+      if (FormatID.Length != 0) {
+        output.WriteRawTag(186, 1);
+        output.WriteString(FormatID);
+      }
+      if (Esovern0 != 0F) {
+        output.WriteRawTag(205, 1);
+        output.WriteFloat(Esovern0);
+      }
+      if (Frequency != 0F) {
+        output.WriteRawTag(213, 1);
+        output.WriteFloat(Frequency);
+      }
+      if (DecodedBurst.Length != 0) {
+        output.WriteRawTag(250, 1);
+        output.WriteBytes(DecodedBurst);
+      }
+      if (RlCarrierID != 0) {
+        output.WriteRawTag(136, 2);
+        output.WriteUInt32(RlCarrierID);
+      }
+      if (N0 != 0F) {
+        output.WriteRawTag(157, 2);
+        output.WriteFloat(N0);
+      }
+      if (NoisePower != 0F) {
+        output.WriteRawTag(165, 2);
+        output.WriteFloat(NoisePower);
+      }
+      if (SignalPower != 0F) {
+        output.WriteRawTag(173, 2);
+        output.WriteFloat(SignalPower);
+      }
+      if (PreFrequency != 0F) {
+        output.WriteRawTag(189, 2);
+        output.WriteFloat(PreFrequency);
+      }
+      if (Tfi != 0) {
+        output.WriteRawTag(232, 2);
+        output.WriteUInt32(Tfi);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -5539,6 +5772,54 @@ namespace Chirpstack.Gateway {
         output.WriteRawTag(128, 1);
         output.WriteEnum((int) CrcStatus);
       }
+      if (DemodulatorID != 0UL) {
+        output.WriteRawTag(168, 1);
+        output.WriteUInt64(DemodulatorID);
+      }
+      if (IC != 0) {
+        output.WriteRawTag(176, 1);
+        output.WriteUInt32(IC);
+      }
+      if (FormatID.Length != 0) {
+        output.WriteRawTag(186, 1);
+        output.WriteString(FormatID);
+      }
+      if (Esovern0 != 0F) {
+        output.WriteRawTag(205, 1);
+        output.WriteFloat(Esovern0);
+      }
+      if (Frequency != 0F) {
+        output.WriteRawTag(213, 1);
+        output.WriteFloat(Frequency);
+      }
+      if (DecodedBurst.Length != 0) {
+        output.WriteRawTag(250, 1);
+        output.WriteBytes(DecodedBurst);
+      }
+      if (RlCarrierID != 0) {
+        output.WriteRawTag(136, 2);
+        output.WriteUInt32(RlCarrierID);
+      }
+      if (N0 != 0F) {
+        output.WriteRawTag(157, 2);
+        output.WriteFloat(N0);
+      }
+      if (NoisePower != 0F) {
+        output.WriteRawTag(165, 2);
+        output.WriteFloat(NoisePower);
+      }
+      if (SignalPower != 0F) {
+        output.WriteRawTag(173, 2);
+        output.WriteFloat(SignalPower);
+      }
+      if (PreFrequency != 0F) {
+        output.WriteRawTag(189, 2);
+        output.WriteFloat(PreFrequency);
+      }
+      if (Tfi != 0) {
+        output.WriteRawTag(232, 2);
+        output.WriteUInt32(Tfi);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -5591,6 +5872,42 @@ namespace Chirpstack.Gateway {
       size += metadata_.CalculateSize(_map_metadata_codec);
       if (CrcStatus != global::Chirpstack.Gateway.CRCStatus.NoCrc) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) CrcStatus);
+      }
+      if (DemodulatorID != 0UL) {
+        size += 2 + pb::CodedOutputStream.ComputeUInt64Size(DemodulatorID);
+      }
+      if (IC != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(IC);
+      }
+      if (FormatID.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(FormatID);
+      }
+      if (Esovern0 != 0F) {
+        size += 2 + 4;
+      }
+      if (Frequency != 0F) {
+        size += 2 + 4;
+      }
+      if (DecodedBurst.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeBytesSize(DecodedBurst);
+      }
+      if (RlCarrierID != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(RlCarrierID);
+      }
+      if (N0 != 0F) {
+        size += 2 + 4;
+      }
+      if (NoisePower != 0F) {
+        size += 2 + 4;
+      }
+      if (SignalPower != 0F) {
+        size += 2 + 4;
+      }
+      if (PreFrequency != 0F) {
+        size += 2 + 4;
+      }
+      if (Tfi != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(Tfi);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -5658,6 +5975,42 @@ namespace Chirpstack.Gateway {
       metadata_.Add(other.metadata_);
       if (other.CrcStatus != global::Chirpstack.Gateway.CRCStatus.NoCrc) {
         CrcStatus = other.CrcStatus;
+      }
+      if (other.DemodulatorID != 0UL) {
+        DemodulatorID = other.DemodulatorID;
+      }
+      if (other.IC != 0) {
+        IC = other.IC;
+      }
+      if (other.FormatID.Length != 0) {
+        FormatID = other.FormatID;
+      }
+      if (other.Esovern0 != 0F) {
+        Esovern0 = other.Esovern0;
+      }
+      if (other.Frequency != 0F) {
+        Frequency = other.Frequency;
+      }
+      if (other.DecodedBurst.Length != 0) {
+        DecodedBurst = other.DecodedBurst;
+      }
+      if (other.RlCarrierID != 0) {
+        RlCarrierID = other.RlCarrierID;
+      }
+      if (other.N0 != 0F) {
+        N0 = other.N0;
+      }
+      if (other.NoisePower != 0F) {
+        NoisePower = other.NoisePower;
+      }
+      if (other.SignalPower != 0F) {
+        SignalPower = other.SignalPower;
+      }
+      if (other.PreFrequency != 0F) {
+        PreFrequency = other.PreFrequency;
+      }
+      if (other.Tfi != 0) {
+        Tfi = other.Tfi;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -5746,6 +6099,54 @@ namespace Chirpstack.Gateway {
             CrcStatus = (global::Chirpstack.Gateway.CRCStatus) input.ReadEnum();
             break;
           }
+          case 168: {
+            DemodulatorID = input.ReadUInt64();
+            break;
+          }
+          case 176: {
+            IC = input.ReadUInt32();
+            break;
+          }
+          case 186: {
+            FormatID = input.ReadString();
+            break;
+          }
+          case 205: {
+            Esovern0 = input.ReadFloat();
+            break;
+          }
+          case 213: {
+            Frequency = input.ReadFloat();
+            break;
+          }
+          case 250: {
+            DecodedBurst = input.ReadBytes();
+            break;
+          }
+          case 264: {
+            RlCarrierID = input.ReadUInt32();
+            break;
+          }
+          case 285: {
+            N0 = input.ReadFloat();
+            break;
+          }
+          case 293: {
+            NoisePower = input.ReadFloat();
+            break;
+          }
+          case 301: {
+            SignalPower = input.ReadFloat();
+            break;
+          }
+          case 317: {
+            PreFrequency = input.ReadFloat();
+            break;
+          }
+          case 360: {
+            Tfi = input.ReadUInt32();
+            break;
+          }
         }
       }
     #endif
@@ -5831,6 +6232,54 @@ namespace Chirpstack.Gateway {
           }
           case 128: {
             CrcStatus = (global::Chirpstack.Gateway.CRCStatus) input.ReadEnum();
+            break;
+          }
+          case 168: {
+            DemodulatorID = input.ReadUInt64();
+            break;
+          }
+          case 176: {
+            IC = input.ReadUInt32();
+            break;
+          }
+          case 186: {
+            FormatID = input.ReadString();
+            break;
+          }
+          case 205: {
+            Esovern0 = input.ReadFloat();
+            break;
+          }
+          case 213: {
+            Frequency = input.ReadFloat();
+            break;
+          }
+          case 250: {
+            DecodedBurst = input.ReadBytes();
+            break;
+          }
+          case 264: {
+            RlCarrierID = input.ReadUInt32();
+            break;
+          }
+          case 285: {
+            N0 = input.ReadFloat();
+            break;
+          }
+          case 293: {
+            NoisePower = input.ReadFloat();
+            break;
+          }
+          case 301: {
+            SignalPower = input.ReadFloat();
+            break;
+          }
+          case 317: {
+            PreFrequency = input.ReadFloat();
+            break;
+          }
+          case 360: {
+            Tfi = input.ReadUInt32();
             break;
           }
         }

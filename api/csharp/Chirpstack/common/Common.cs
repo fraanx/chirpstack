@@ -53,10 +53,9 @@ namespace Chirpstack.Common {
             "U09MVkVSX1JTU0kQBBIVChFHRU9fUkVTT0xWRVJfR05TUxAFEhUKEUdFT19S",
             "RVNPTFZFUl9XSUZJEAYqKwoLQWdncmVnYXRpb24SCAoESE9VUhAAEgcKA0RB",
             "WRABEgkKBU1PTlRIEAIqMgoKTWV0cmljS2luZBILCgdDT1VOVEVSEAASDAoI",
-            "QUJTT0xVVEUQARIJCgVHQVVHRRACQmkKEWlvLmNoaXJwc3RhY2suYXBpQgtD",
-            "b21tb25Qcm90b1ABWjFnaXRodWIuY29tL2NoaXJwc3RhY2svY2hpcnBzdGFj",
-            "ay9hcGkvZ28vdjQvY29tbW9uqgIRQ2hpcnBzdGFjay5Db21tb25iBnByb3Rv",
-            "Mw=="));
+            "QUJTT0xVVEUQARIJCgVHQVVHRRACQmUKEWlvLmNoaXJwc3RhY2suYXBpQgtD",
+            "b21tb25Qcm90b1ABWi1naXRodWIuY29tL2ZyYWFueC9jaGlycHN0YWNrL2Fw",
+            "aS9nby92NC9jb21tb26qAhFDaGlycHN0YWNrLkNvbW1vbmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Chirpstack.Common.Modulation), typeof(global::Chirpstack.Common.Region), typeof(global::Chirpstack.Common.MType), typeof(global::Chirpstack.Common.MacVersion), typeof(global::Chirpstack.Common.RegParamsRevision), typeof(global::Chirpstack.Common.LocationSource), typeof(global::Chirpstack.Common.Aggregation), typeof(global::Chirpstack.Common.MetricKind), }, null, new pbr::GeneratedClrTypeInfo[] {

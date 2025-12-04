@@ -1,0 +1,34 @@
+
+//use tonic::{transport::Channel, Request, Response, Status};
+//use demodtelemetry::interface_client::Interface;
+use demodtelemetry::{dt_client::DtClient, PlatformRequest};
+//use tonic::{transport::Channel, Request, Response, Status};
+
+pub mod demodtelemetry {
+  tonic::include_proto!("demodtelemetry");
+}
+
+#[tokio::main]
+async fn main() -> Result<(), Box<dyn std::error::Error>> {
+  let mut client = DtClient::connect("192.168.104.25:53226").await?;
+  //let mut client = demodtelemetry::connect("192.168.104.25:53226").await?;
+
+  //let addr = "192.168.104.25:53226".parse().unwrap(); // Create a channel to communicate with the server
+  //let channel = Channel::from_static(addr).connect().await?;
+  // Create a client from the channel
+  // let mut client = Interface::new(channel);
+
+  // Create a request message
+//let request = conf::new(PlatformRequest { });
+ // let request = Request::new(ChannelWindowRequest {
+    let request = tonic::Request::new(PlatformRequest {});
+
+  // Send the request and get the response
+  let response = client.kpis(request).await?;
+  
+  // Print the response
+  println!("RESPONSE={:?}", response);
+  
+  Ok(())
+  
+}

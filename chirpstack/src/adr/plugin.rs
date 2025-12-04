@@ -94,6 +94,8 @@ impl Handler for Plugin {
                     .get("txPowerIndex")
                     .context("Get txPowerIndex response")?,
                 nb_trans: res.get("nbTrans").context("Get nbTrans response")?,
+                ch_mask: req.ch_mask,
+
             })
         })
     }

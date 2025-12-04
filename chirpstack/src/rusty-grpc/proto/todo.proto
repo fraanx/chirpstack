@@ -1,0 +1,51 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+
+package todo;
+
+message TodoItem {
+    string name = 1;
+    string description = 2;
+    int32 priority = 3;
+    bool completed = 4;
+}
+
+message GetTodosResponse {
+    repeated TodoItem todos = 1;
+}
+
+message CreateTodoRequest {
+    string name = 1;
+    string description = 2;
+    int32 priority = 3;
+}
+
+message CreateTodoResponse {
+    TodoItem todo = 1;
+    bool status = 2;
+}
+
+message KPIs {
+    uint64 packet_counters                  = 1;
+    float packet_rate_stats                 = 2;
+ }
+
+message ChannelWindowRequest {
+    uint32 window_duration = 1;
+    uint32 channel_id      = 2;
+}
+
+message ChannelWindowResponse {
+    uint32 window_duration_in_ms = 1;
+    uint32 channel_id            = 2;
+    KPIs   kpis                  = 3;
+}
+
+service Todo {
+    rpc kpis(ChannelWindowRequest) returns (ChannelWindowResponse) {}
+
+    rpc GetTodos(google.protobuf.Empty) returns (GetTodosResponse);
+    rpc CreateTodo(CreateTodoRequest) returns (CreateTodoResponse);
+}
+

@@ -28,6 +28,7 @@ enum CodeRate {
     CR_LI_4_5 = 10; // LoRa 2.4 gHz
     CR_LI_4_6 = 11;
     CR_LI_4_8 = 12;
+    CR_1_3 = 13;
 }
 
 enum DownlinkTiming {
@@ -274,6 +275,22 @@ message PerModulationCount {
     uint32 count = 2;
 }
 
+message EssaComMetadata  {
+    uint64 demodulator_id  = 1;
+    uint32 icloop          = 2;
+    string format_id       = 3;
+    float  esovern0        = 5;
+    float  residual_freq   = 6;
+    uint32 rlcarrier_id    = 13;
+    float  n0              = 15;
+    float  noise_power     = 16;
+    float  signal_power    = 17;
+    float  precomp_freq    = 19;
+    float  es              = 20;
+    uint32 tfi             = 25;
+}
+
+  
 message UplinkRxInfoLegacy {
     // Gateway ID.
     bytes gateway_id = 1;
@@ -329,6 +346,10 @@ message UplinkRxInfoLegacy {
 
     // Optional meta-data map.
     map<string, string> metadata = 18;
+
+    // Additional ESSACOM meta-data
+    EssaComMetadata essacom_metadata = 19;
+
 }
 
 message UplinkRxInfo {
@@ -379,6 +400,10 @@ message UplinkRxInfo {
 
     // CRC status.
     CRCStatus crc_status = 16;
+    
+    // Additional ESSACOM meta-data
+    EssaComMetadata essacom_metadata = 17;
+
 }
 
 message DownlinkTxInfoLegacy {

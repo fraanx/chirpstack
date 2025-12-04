@@ -55,12 +55,12 @@ services:
   redis:
     image: redis:6-alpine
     ports:
-      - "6379:6379"
+      - "6370:6370"
 
   mosquitto:
     image: eclipse-mosquitto:1.6
     ports:
-      - "1883:1883"
+      - "6883:6883"
 
   rabbitmq:
     image: rabbitmq:3-management-alpine

@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package demodtelemetry.rpc;
+
+import "demodtelemetry_data_types.proto";
+
+service Interface {
+
+
+    rpc platform(PlatformRequest)                  returns (PlatformResponse) {}
+    rpc platformPerWindow(PlatformWindowRequest)   returns (PlatformWindowResponse) {}
+    rpc channelKpis(ChannelRequest)                returns (ChannelResponse) {}
+    rpc channelKpisPerWindow(ChannelWindowRequest) returns (ChannelWindowResponse) {}
+
+    rpc getConf(PlatformRequest) returns (Conf) {}
+
+}
+
+

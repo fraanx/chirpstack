@@ -29,6 +29,7 @@ impl Handler for Algorithm {
             dr: req.dr,
             tx_power_index: req.tx_power_index,
             nb_trans: req.nb_trans,
+            ch_mask: req.ch_mask,
         };
 
         if !req.adr {

@@ -82,10 +82,10 @@ namespace Chirpstack.Integration {
             "ABIZChVET1dOTElOS19QQVlMT0FEX1NJWkUQARIQCgxVUExJTktfQ09ERUMQ",
             "AhISCg5ET1dOTElOS19DT0RFQxADEggKBE9UQUEQBBIWChJVUExJTktfRl9D",
             "TlRfUkVTRVQQBRIOCgpVUExJTktfTUlDEAYSHwobVVBMSU5LX0ZfQ05UX1JF",
-            "VFJBTlNNSVNTSU9OEAcSFAoQRE9XTkxJTktfR0FURVdBWRAIQoEBCh1pby5j",
+            "VFJBTlNNSVNTSU9OEAcSFAoQRE9XTkxJTktfR0FURVdBWRAIQoABCh1pby5j",
             "aGlycHN0YWNrLmFwaS5pbnRlZ3JhdGlvbkIQSW50ZWdyYXRpb25Qcm90b1AB",
-            "WjNnaXRodWIuY29tL2Jyb2NhYXIvY2hpcnBzdGFjay9hcGkvZ28vdjQvaW50",
-            "ZWdyYXRpb26qAhZDaGlycHN0YWNrLkludGVncmF0aW9uYgZwcm90bzM="));
+            "WjJnaXRodWIuY29tL2ZyYWFueC9jaGlycHN0YWNrL2FwaS9nby92NC9pbnRl",
+            "Z3JhdGlvbqoCFkNoaXJwc3RhY2suSW50ZWdyYXRpb25iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Chirpstack.Common.CommonReflection.Descriptor, global::Chirpstack.Gateway.GwReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.StructReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Chirpstack.Integration.LogLevel), typeof(global::Chirpstack.Integration.LogCode), }, null, new pbr::GeneratedClrTypeInfo[] {

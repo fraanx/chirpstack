@@ -299,7 +299,7 @@ fn per_modultation_to_per_dr(
             }
             gw::modulation::Parameters::Xss(v) => {
                 lrwn::region::DataRateModulation::Xss(lrwn::region::XssDataRate {
-                    spreading_factor: v.spreading_factor as u8,
+                    spreading_factor: v.spreading_factor as u16,
                     bandwidth: v.bandwidth,
                     coding_rate: v.code_rate().into(),
                 })

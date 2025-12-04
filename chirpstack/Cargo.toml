@@ -115,6 +115,10 @@ pin-project = "1.0"
 httpmock = "0.6"
 bytes = "1.4"
 
+# Build
+[build-dependencies]
+tonic-build = "0.10.2"
+
 # Debian packaging.
 [package.metadata.deb]
 assets = [

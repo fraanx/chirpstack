@@ -27,8 +27,8 @@ impl Configuration {
                             downlink: false,
                             modulation: DataRateModulation::Xss(XssDataRate {
                                 spreading_factor: 64,
-                                bandwidth: 240000,
-                                coding_rate: "4/5".into(),
+                                bandwidth: 196000,
+                                coding_rate: "2/6".into(),
                             }),
                         },
                     ),
@@ -39,8 +39,8 @@ impl Configuration {
                             downlink: false,
                             modulation: DataRateModulation::Xss(XssDataRate {
                                 spreading_factor: 128,
-                                bandwidth: 240000,
-                                coding_rate: "4/5".into(),
+                                bandwidth: 196000,
+                                coding_rate: "2/6".into(),
                             }),
                         },
                     ),
@@ -50,9 +50,9 @@ impl Configuration {
                             uplink: true,
                             downlink: false,
                             modulation: DataRateModulation::Xss(XssDataRate {
-                                spreading_factor: 255,
-                                bandwidth: 240000,
-                                coding_rate: "4/5".into(),
+                                spreading_factor: 256,
+                                bandwidth: 196000,
+                                coding_rate: "2/6".into(),
                             }),
                         },
                     ),
@@ -63,8 +63,8 @@ impl Configuration {
                             downlink: false,
                             modulation: DataRateModulation::Xss(XssDataRate {
                                 spreading_factor: 64,
-                                bandwidth: 240000,
-                                coding_rate: "4/5".into(),
+                                bandwidth: 196000,
+                                coding_rate: "2/6".into(),
                             }),
                         },
                     ),
@@ -75,8 +75,8 @@ impl Configuration {
                             downlink: false,
                             modulation: DataRateModulation::Xss(XssDataRate {
                                 spreading_factor: 128,
-                                bandwidth: 240000,
-                                coding_rate: "4/5".into(),
+                                bandwidth: 196000,
+                                coding_rate: "2/6".into(),
                             }),
                         },
                     ),
@@ -86,9 +86,9 @@ impl Configuration {
                             uplink: true,
                             downlink: false,
                             modulation: DataRateModulation::Xss(XssDataRate {
-                                spreading_factor: 255,
-                                bandwidth: 240000,
-                                coding_rate: "4/5".into(),
+                                spreading_factor: 256,
+                                bandwidth: 196000,
+                                coding_rate: "2/6".into(),
                             }),
                         },
                     ),
@@ -100,7 +100,7 @@ impl Configuration {
                             modulation: DataRateModulation::Xss(XssDataRate {
                                 spreading_factor: 16,
                                 bandwidth: 2400000,
-                                coding_rate: "4/5".into(),
+                                coding_rate: "2/6".into(),
                             }),
                         },
                     ),
@@ -450,21 +450,21 @@ impl Configuration {
                 tx_power_offsets: vec![0, -2, -4, -6, -8, -10, -12, -14],
                 uplink_channels: vec![
                     Channel {
-                        frequency: 868100000,
+                        frequency: 1571000000,
                         min_dr: 0,
                         max_dr: 5,
                         enabled: true,
                         user_defined: false,
                     },
                     Channel {
-                        frequency: 868300000,
+                        frequency: 1571240000,
                         min_dr: 0,
                         max_dr: 5,
                         enabled: true,
                         user_defined: false,
                     },
                     Channel {
-                        frequency: 868500000,
+                        frequency: 1571480000,
                         min_dr: 0,
                         max_dr: 5,
                         enabled: true,
@@ -473,21 +473,7 @@ impl Configuration {
                 ],
                 downlink_channels: vec![
                     Channel {
-                        frequency: 868100000,
-                        min_dr: 11,
-                        max_dr: 11,
-                        enabled: true,
-                        user_defined: false,
-                    },
-                    Channel {
-                        frequency: 868300000,
-                        min_dr: 11,
-                        max_dr: 11,
-                        enabled: true,
-                        user_defined: false,
-                    },
-                    Channel {
-                        frequency: 868500000,
+                        frequency: 1273000000,
                         min_dr: 11,
                         max_dr: 11,
                         enabled: true,
@@ -522,9 +508,9 @@ impl Region for Configuration {
     fn get_downlink_tx_power(&self, freq: u32) -> isize {
         // NOTE: as there are currently no further boundary checks on the frequency, this check is sufficient.
         // TODO: However, there should be some mechanism, that checks the frequency for compliance to regulations.
-        if (863000000..869200000).contains(&freq) {
+        if (153000000..159200000).contains(&freq) {
             14 //25mW
-        } else if (869400000..869650000).contains(&freq) {
+        } else if (159400000..159650000).contains(&freq) {
             27 //500mW
         } else {
             14 // Default case
@@ -533,7 +519,7 @@ impl Region for Configuration {
 
     fn get_defaults(&self) -> Defaults {
         Defaults {
-            rx2_frequency: 869525000,
+            rx2_frequency: 1350000000,
             rx2_dr: 0,
             rx1_delay: Duration::from_secs(1),
             rx2_delay: Duration::from_secs(2),
@@ -654,11 +640,11 @@ mod tests {
 
     fn config_with_user_channels() -> Configuration {
         let mut c = Configuration::new(false);
-        c.add_channel(867100000, 0, 5).unwrap();
-        c.add_channel(867300000, 0, 5).unwrap();
-        c.add_channel(867500000, 0, 5).unwrap();
-        c.add_channel(867700000, 0, 5).unwrap();
-        c.add_channel(867900000, 0, 5).unwrap();
+        c.add_channel(167100000, 0, 5).unwrap();
+        c.add_channel(167300000, 0, 5).unwrap();
+        c.add_channel(167500000, 0, 5).unwrap();
+        c.add_channel(167700000, 0, 5).unwrap();
+        c.add_channel(167900000, 0, 5).unwrap();
         c
     }
 
@@ -675,8 +661,8 @@ mod tests {
     fn get_rx1_frequency_for_uplink_frequency() {
         let c = Configuration::new(false);
         assert_eq!(
-            868300000,
-            c.get_rx1_frequency_for_uplink_frequency(868300000).unwrap()
+            158300000,
+            c.get_rx1_frequency_for_uplink_frequency(158300000).unwrap()
         );
     }
 
@@ -688,8 +674,8 @@ mod tests {
                 true,
                 DataRateModulation::Xss(XssDataRate {
                     spreading_factor: 64,
-                    bandwidth: 240000,
-                    coding_rate: "4/5".into(),
+                    bandwidth: 220000,
+                  coding_rate: "2/6".into(),
                 }),
                 0,
             ),
@@ -697,8 +683,8 @@ mod tests {
                 false,
                 DataRateModulation::Xss(XssDataRate {
                     spreading_factor: 128,
-                    bandwidth: 240000,
-                    coding_rate: "4/5".into(),
+                    bandwidth: 220000,
+                    coding_rate: "2/6".into(),
                 }),
                 0,
             ),
@@ -706,8 +692,8 @@ mod tests {
                 true,
                 DataRateModulation::Xss(XssDataRate {
                     spreading_factor: 255,
-                    bandwidth: 240000,
-                    coding_rate: "4/5".into(),
+                    bandwidth: 220000,
+                    coding_rate: "2/6".into(),
                 }),
                 5,
             ),
@@ -715,8 +701,8 @@ mod tests {
                 false,
                 DataRateModulation::Xss(XssDataRate {
                     spreading_factor: 64,
-                    bandwidth: 240000,
-                    coding_rate: "4/5".into(),
+                    bandwidth: 220000,
+                    coding_rate: "2/6".into(),
                 }),
                 5,
             ),
@@ -725,7 +711,7 @@ mod tests {
                 DataRateModulation::Xss(XssDataRate {
                     spreading_factor: 16,
                     bandwidth: 2400000,
-                    coding_rate: "4/5".into(),
+                    coding_rate: "2/6".into(),
                 }),
                 11,
             ),
@@ -849,14 +835,14 @@ mod tests {
     fn get_uplink_channel_index_for_freq_dr() {
         let c = config_with_user_channels();
         let tests = vec![
-            (3, 868100000),
-            (3, 868300000),
-            (3, 868500000),
-            (3, 867100000),
-            (3, 867300000),
-            (3, 867500000),
-            (3, 867700000),
-            (3, 867900000),
+            (3, 168100000),
+            (3, 168300000),
+            (3, 168500000),
+            (3, 167100000),
+            (3, 167300000),
+            (3, 167500000),
+            (3, 167700000),
+            (3, 167900000),
         ];
 
         for (i, channel) in tests.iter().enumerate() {
@@ -874,7 +860,7 @@ mod tests {
         assert_eq!(
             CFList::Channels(
                 CFListChannels::from_slice(&vec![
-                    867100000, 867300000, 867500000, 867700000, 867900000,
+                    167100000, 167300000, 167500000, 167700000, 167900000,
                 ])
                 .unwrap()
             ),

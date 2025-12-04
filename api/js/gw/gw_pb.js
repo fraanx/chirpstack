@@ -4701,7 +4701,19 @@ proto.gw.UplinkRxInfo.toObject = function(includeInstance, msg) {
     location: (f = msg.getLocation()) && common_common_pb.Location.toObject(includeInstance, f),
     context: msg.getContext_asB64(),
     metadataMap: (f = msg.getMetadataMap()) ? f.toObject(includeInstance, undefined) : [],
-    crcStatus: jspb.Message.getFieldWithDefault(msg, 16, 0)
+    crcStatus: jspb.Message.getFieldWithDefault(msg, 16, 0),
+    demodulatorid: jspb.Message.getFieldWithDefault(msg, 21, 0),
+    ic: jspb.Message.getFieldWithDefault(msg, 22, 0),
+    formatid: jspb.Message.getFieldWithDefault(msg, 23, ""),
+    esovern0: jspb.Message.getFloatingPointFieldWithDefault(msg, 25, 0.0),
+    frequency: jspb.Message.getFloatingPointFieldWithDefault(msg, 26, 0.0),
+    decodedburst: msg.getDecodedburst_asB64(),
+    rlcarrierid: jspb.Message.getFieldWithDefault(msg, 33, 0),
+    n0: jspb.Message.getFloatingPointFieldWithDefault(msg, 35, 0.0),
+    noisepower: jspb.Message.getFloatingPointFieldWithDefault(msg, 36, 0.0),
+    signalpower: jspb.Message.getFloatingPointFieldWithDefault(msg, 37, 0.0),
+    prefrequency: jspb.Message.getFloatingPointFieldWithDefault(msg, 39, 0.0),
+    tfi: jspb.Message.getFieldWithDefault(msg, 45, 0)
   };
 
   if (includeInstance) {
@@ -4803,6 +4815,54 @@ proto.gw.UplinkRxInfo.deserializeBinaryFromReader = function(msg, reader) {
     case 16:
       var value = /** @type {!proto.gw.CRCStatus} */ (reader.readEnum());
       msg.setCrcStatus(value);
+      break;
+    case 21:
+      var value = /** @type {number} */ (reader.readUint64());
+      msg.setDemodulatorid(value);
+      break;
+    case 22:
+      var value = /** @type {number} */ (reader.readUint32());
+      msg.setIc(value);
+      break;
+    case 23:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setFormatid(value);
+      break;
+    case 25:
+      var value = /** @type {number} */ (reader.readFloat());
+      msg.setEsovern0(value);
+      break;
+    case 26:
+      var value = /** @type {number} */ (reader.readFloat());
+      msg.setFrequency(value);
+      break;
+    case 31:
+      var value = /** @type {!Uint8Array} */ (reader.readBytes());
+      msg.setDecodedburst(value);
+      break;
+    case 33:
+      var value = /** @type {number} */ (reader.readUint32());
+      msg.setRlcarrierid(value);
+      break;
+    case 35:
+      var value = /** @type {number} */ (reader.readFloat());
+      msg.setN0(value);
+      break;
+    case 36:
+      var value = /** @type {number} */ (reader.readFloat());
+      msg.setNoisepower(value);
+      break;
+    case 37:
+      var value = /** @type {number} */ (reader.readFloat());
+      msg.setSignalpower(value);
+      break;
+    case 39:
+      var value = /** @type {number} */ (reader.readFloat());
+      msg.setPrefrequency(value);
+      break;
+    case 45:
+      var value = /** @type {number} */ (reader.readUint32());
+      msg.setTfi(value);
       break;
     default:
       reader.skipField();
@@ -4936,6 +4996,90 @@ proto.gw.UplinkRxInfo.serializeBinaryToWriter = function(message, writer) {
   if (f !== 0.0) {
     writer.writeEnum(
       16,
+      f
+    );
+  }
+  f = message.getDemodulatorid();
+  if (f !== 0) {
+    writer.writeUint64(
+      21,
+      f
+    );
+  }
+  f = message.getIc();
+  if (f !== 0) {
+    writer.writeUint32(
+      22,
+      f
+    );
+  }
+  f = message.getFormatid();
+  if (f.length > 0) {
+    writer.writeString(
+      23,
+      f
+    );
+  }
+  f = message.getEsovern0();
+  if (f !== 0.0) {
+    writer.writeFloat(
+      25,
+      f
+    );
+  }
+  f = message.getFrequency();
+  if (f !== 0.0) {
+    writer.writeFloat(
+      26,
+      f
+    );
+  }
+  f = message.getDecodedburst_asU8();
+  if (f.length > 0) {
+    writer.writeBytes(
+      31,
+      f
+    );
+  }
+  f = message.getRlcarrierid();
+  if (f !== 0) {
+    writer.writeUint32(
+      33,
+      f
+    );
+  }
+  f = message.getN0();
+  if (f !== 0.0) {
+    writer.writeFloat(
+      35,
+      f
+    );
+  }
+  f = message.getNoisepower();
+  if (f !== 0.0) {
+    writer.writeFloat(
+      36,
+      f
+    );
+  }
+  f = message.getSignalpower();
+  if (f !== 0.0) {
+    writer.writeFloat(
+      37,
+      f
+    );
+  }
+  f = message.getPrefrequency();
+  if (f !== 0.0) {
+    writer.writeFloat(
+      39,
+      f
+    );
+  }
+  f = message.getTfi();
+  if (f !== 0) {
+    writer.writeUint32(
+      45,
       f
     );
   }
@@ -5313,6 +5457,246 @@ proto.gw.UplinkRxInfo.prototype.getCrcStatus = function() {
  */
 proto.gw.UplinkRxInfo.prototype.setCrcStatus = function(value) {
   return jspb.Message.setProto3EnumField(this, 16, value);
+};
+
+
+/**
+ * optional uint64 demodulatorID = 21;
+ * @return {number}
+ */
+proto.gw.UplinkRxInfo.prototype.getDemodulatorid = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 21, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.gw.UplinkRxInfo} returns this
+ */
+proto.gw.UplinkRxInfo.prototype.setDemodulatorid = function(value) {
+  return jspb.Message.setProto3IntField(this, 21, value);
+};
+
+
+/**
+ * optional uint32 IC = 22;
+ * @return {number}
+ */
+proto.gw.UplinkRxInfo.prototype.getIc = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 22, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.gw.UplinkRxInfo} returns this
+ */
+proto.gw.UplinkRxInfo.prototype.setIc = function(value) {
+  return jspb.Message.setProto3IntField(this, 22, value);
+};
+
+
+/**
+ * optional string formatID = 23;
+ * @return {string}
+ */
+proto.gw.UplinkRxInfo.prototype.getFormatid = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 23, ""));
+};
+
+
+/**
+ * @param {string} value
+ * @return {!proto.gw.UplinkRxInfo} returns this
+ */
+proto.gw.UplinkRxInfo.prototype.setFormatid = function(value) {
+  return jspb.Message.setProto3StringField(this, 23, value);
+};
+
+
+/**
+ * optional float esovern0 = 25;
+ * @return {number}
+ */
+proto.gw.UplinkRxInfo.prototype.getEsovern0 = function() {
+  return /** @type {number} */ (jspb.Message.getFloatingPointFieldWithDefault(this, 25, 0.0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.gw.UplinkRxInfo} returns this
+ */
+proto.gw.UplinkRxInfo.prototype.setEsovern0 = function(value) {
+  return jspb.Message.setProto3FloatField(this, 25, value);
+};
+
+
+/**
+ * optional float frequency = 26;
+ * @return {number}
+ */
+proto.gw.UplinkRxInfo.prototype.getFrequency = function() {
+  return /** @type {number} */ (jspb.Message.getFloatingPointFieldWithDefault(this, 26, 0.0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.gw.UplinkRxInfo} returns this
+ */
+proto.gw.UplinkRxInfo.prototype.setFrequency = function(value) {
+  return jspb.Message.setProto3FloatField(this, 26, value);
+};
+
+
+/**
+ * optional bytes decodedBurst = 31;
+ * @return {!(string|Uint8Array)}
+ */
+proto.gw.UplinkRxInfo.prototype.getDecodedburst = function() {
+  return /** @type {!(string|Uint8Array)} */ (jspb.Message.getFieldWithDefault(this, 31, ""));
+};
+
+
+/**
+ * optional bytes decodedBurst = 31;
+ * This is a type-conversion wrapper around `getDecodedburst()`
+ * @return {string}
+ */
+proto.gw.UplinkRxInfo.prototype.getDecodedburst_asB64 = function() {
+  return /** @type {string} */ (jspb.Message.bytesAsB64(
+      this.getDecodedburst()));
+};
+
+
+/**
+ * optional bytes decodedBurst = 31;
+ * Note that Uint8Array is not supported on all browsers.
+ * @see http://caniuse.com/Uint8Array
+ * This is a type-conversion wrapper around `getDecodedburst()`
+ * @return {!Uint8Array}
+ */
+proto.gw.UplinkRxInfo.prototype.getDecodedburst_asU8 = function() {
+  return /** @type {!Uint8Array} */ (jspb.Message.bytesAsU8(
+      this.getDecodedburst()));
+};
+
+
+/**
+ * @param {!(string|Uint8Array)} value
+ * @return {!proto.gw.UplinkRxInfo} returns this
+ */
+proto.gw.UplinkRxInfo.prototype.setDecodedburst = function(value) {
+  return jspb.Message.setProto3BytesField(this, 31, value);
+};
+
+
+/**
+ * optional uint32 rlCarrierID = 33;
+ * @return {number}
+ */
+proto.gw.UplinkRxInfo.prototype.getRlcarrierid = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 33, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.gw.UplinkRxInfo} returns this
+ */
+proto.gw.UplinkRxInfo.prototype.setRlcarrierid = function(value) {
+  return jspb.Message.setProto3IntField(this, 33, value);
+};
+
+
+/**
+ * optional float n0 = 35;
+ * @return {number}
+ */
+proto.gw.UplinkRxInfo.prototype.getN0 = function() {
+  return /** @type {number} */ (jspb.Message.getFloatingPointFieldWithDefault(this, 35, 0.0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.gw.UplinkRxInfo} returns this
+ */
+proto.gw.UplinkRxInfo.prototype.setN0 = function(value) {
+  return jspb.Message.setProto3FloatField(this, 35, value);
+};
+
+
+/**
+ * optional float noisePower = 36;
+ * @return {number}
+ */
+proto.gw.UplinkRxInfo.prototype.getNoisepower = function() {
+  return /** @type {number} */ (jspb.Message.getFloatingPointFieldWithDefault(this, 36, 0.0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.gw.UplinkRxInfo} returns this
+ */
+proto.gw.UplinkRxInfo.prototype.setNoisepower = function(value) {
+  return jspb.Message.setProto3FloatField(this, 36, value);
+};
+
+
+/**
+ * optional float signalPower = 37;
+ * @return {number}
+ */
+proto.gw.UplinkRxInfo.prototype.getSignalpower = function() {
+  return /** @type {number} */ (jspb.Message.getFloatingPointFieldWithDefault(this, 37, 0.0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.gw.UplinkRxInfo} returns this
+ */
+proto.gw.UplinkRxInfo.prototype.setSignalpower = function(value) {
+  return jspb.Message.setProto3FloatField(this, 37, value);
+};
+
+
+/**
+ * optional float preFrequency = 39;
+ * @return {number}
+ */
+proto.gw.UplinkRxInfo.prototype.getPrefrequency = function() {
+  return /** @type {number} */ (jspb.Message.getFloatingPointFieldWithDefault(this, 39, 0.0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.gw.UplinkRxInfo} returns this
+ */
+proto.gw.UplinkRxInfo.prototype.setPrefrequency = function(value) {
+  return jspb.Message.setProto3FloatField(this, 39, value);
+};
+
+
+/**
+ * optional uint32 tfi = 45;
+ * @return {number}
+ */
+proto.gw.UplinkRxInfo.prototype.getTfi = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 45, 0));
+};
+
+
+/**
+ * @param {number} value
+ * @return {!proto.gw.UplinkRxInfo} returns this
+ */
+proto.gw.UplinkRxInfo.prototype.setTfi = function(value) {
+  return jspb.Message.setProto3IntField(this, 45, value);
 };
 
 

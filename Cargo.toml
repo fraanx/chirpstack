@@ -4,6 +4,7 @@ members = [
 	"lrwn",
 	"backend",
 	"api/rust",
+	"chirpstack/src/rust-grpc",
 ]
 
 [profile.release]

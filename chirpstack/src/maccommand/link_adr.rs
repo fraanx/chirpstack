@@ -56,6 +56,7 @@ pub fn handle(
         // modifcations.
 
         // reset the error counter
+
         ds.mac_command_error_count
             .remove(&(lrwn::CID::LinkADRReq.byte() as u32));
 
@@ -73,6 +74,7 @@ pub fn handle(
         ds.dr = link_adr_req.dr as u32;
         ds.nb_trans = link_adr_req.redundancy.nb_rep as u32;
         ds.enabled_uplink_channel_indices = chans.iter().map(|i| *i as u32).collect::<Vec<u32>>();
+
 
         info!(dev_eui = %dev.dev_eui, tx_power_index = ds.tx_power_index, dr = ds.dr, nb_trans = ds.nb_trans, enabled_channels = ?ds.enabled_uplink_channel_indices, "LinkADRReq acknowledged");
     } else if !ds.adr && ch_mask_ack {

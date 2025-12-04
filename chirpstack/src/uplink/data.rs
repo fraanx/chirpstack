@@ -629,6 +629,7 @@ impl Data {
         if let lrwn::Payload::MACPayload(pl) = &self.uplink_frame_set.phy_payload.payload {
             if !(*pl.fhdr.f_opts).is_empty() {
                 trace!("Mac-commands in f_opts");
+
                 let (mac_response, must_send_downlink) = maccommand::handle_uplink(
                     &self.uplink_frame_set,
                     &pl.fhdr.f_opts,
@@ -647,6 +648,7 @@ impl Data {
 
             if let Some(lrwn::FRMPayload::MACCommandSet(v)) = &pl.frm_payload {
                 trace!("Mac-commands in frmPayload");
+
                 let (mac_response, must_send_downlink) = maccommand::handle_uplink(
                     &self.uplink_frame_set,
                     v,

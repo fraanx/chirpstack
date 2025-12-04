@@ -1,0 +1,69 @@
+syntax = "proto3";
+
+package demodtelemetry.rpc;
+
+// OUTPUT
+message Conf {
+    uint32 refresh_time_ms                    = 1; 
+    repeated uint32 windows_duration_settings = 2;
+}
+
+message KPIs {
+    uint64 packet_counters                  = 1;
+    float packet_rate_stats                 = 2;
+    float stt_stats                         = 3;
+    float packet_rate_peak_to_average_ratio = 4;
+    float avg_esovern0_stats                = 5;
+    float signal_power_stats                = 6;
+    float signal_power_spread_stats         = 7;
+    float ber_stats                         = 8;
+    float freq_drift_stats                  = 9;
+}
+
+// INPUT: single Channel/single Window
+message ChannelWindowRequest {
+    uint32 window_duration = 1;
+    uint32 channel_id      = 2;
+}
+
+// OUTPUT: single Channel/single Window
+message ChannelWindowResponse {
+    uint32 window_duration_in_ms = 1;
+    uint32 channel_id            = 2;
+    KPIs   kpis                  = 3;
+}
+
+// INPUT: single channgel/multi window
+message ChannelRequest {
+    uint32 channel_id = 1;
+}
+
+// OUTPUT: single channgel/multi window
+message ChannelResponse {
+    repeated KPIs kpis_per_window = 1;
+    uint32 channel_id             = 2;
+}
+
+// INPUT: multi channel/ single window
+message PlatformWindowRequest {
+    uint32 window_duration = 1;
+}
+
+// OUTPUT: multi channel/ single window
+message PlatformWindowResponse {
+    repeated ChannelWindowResponse channel_window_kpis = 1;
+    uint32 window_duration                             = 2;
+}
+
+// INPUT: multi channel / multi window
+message PlatformRequest {
+    // empty
+}
+
+// OUTPUT: multi channel / multi window
+message PlatformResponse {
+    repeated PlatformWindowResponse platform_per_window = 1;
+}
+
+
+

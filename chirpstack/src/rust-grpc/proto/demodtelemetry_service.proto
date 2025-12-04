@@ -1,0 +1,29 @@
+syntax = "proto3";
+package demodtelemetry.rpc;
+import "demodtelemetry_data_types.proto";
+////////////////////////////////////////////////////////////////////////////////
+/// gRPC Interface
+/// Methods
+service Interface {
+  // RPC initialization and registration methods
+  rpc forceViewUpdate(Endpoint)    returns (Void)       {}
+  rpc registerRemoteView(Endpoint) returns (Void)       {}
+  rpc version(Void)                returns (Version)    {}
+  rpc systemInfo(Void)             returns (SystemInfo) {}
+  
+  // direct queries
+  rpc platform(PlatformRequest)                  returns (KpiResponse) {}
+  rpc platformPerWindow(WindowRequest)           returns (KpiResponse) {}
+  rpc channelKpis(ChannelRequest)                returns (KpiResponse) {}
+  rpc channelKpisPerWindow(ChannelWindowRequest) returns (KpiResponse) {}
+  // return the configuration
+  rpc conf(Void) returns (Conf) {}
+}
+////////////////////////////////////////////////////////////////////////////////
+/// gRPC View
+/// Methods
+service View {
+  rpc heartBeat(Void)           returns (Void) {}
+  rpc showConf(Conf)            returns (Void) {}
+  rpc showPlatform(KpiResponse) returns (Void) {}
+}

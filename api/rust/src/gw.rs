@@ -23,6 +23,7 @@ impl Into<String> for CodeRate {
             CodeRate::CrLi45 => "4/5LI",
             CodeRate::CrLi46 => "4/6LI",
             CodeRate::CrLi48 => "4/8LI",
+            CodeRate::Cr13 => "1/3",
         }
         .to_string()
     }
@@ -45,6 +46,7 @@ impl FromStr for CodeRate {
             "4/5LI" => CodeRate::CrLi45,
             "4/6LI" => CodeRate::CrLi46,
             "4/8LI" => CodeRate::CrLi48,
+            "1/3" => CodeRate::Cr13,
             _ => {
                 return Err("invalid code-rate".into());
             }
@@ -140,6 +142,7 @@ impl UplinkFrame {
                     location: rx_info.location.clone(),
                     context: rx_info.context.clone(),
                     metadata: rx_info.metadata.clone(),
+                    essacom_metadata: rx_info.essacom_metadata.clone(),
                     crc_status: rx_info.crc_status,
                 });
             }
